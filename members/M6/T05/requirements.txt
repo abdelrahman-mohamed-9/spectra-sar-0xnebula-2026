@@ -1,0 +1,5 @@
+pytest>=8,<10
+PyYAML>=6,<7
+jsonschema[format]>=4.20,<5
+requests>=2.31,<3
+psycopg[binary]>=3.1,<4

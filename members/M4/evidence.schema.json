@@ -1,0 +1,254 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.spectra-sar.org/v1/evidence.schema.json",
+  "title": "SPECTRA-SAR Scientific Evidence Record",
+  "description": "Describes traceable scientific outputs; hashes detect changes only against independently trusted baselines. Does not certify scientific validity.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "evidence_id",
+    "created_at_utc",
+    "producer",
+    "source_scenes",
+    "processing",
+    "artifacts",
+    "claims",
+    "integrity_status"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "evidence_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{7,127}$"
+    },
+    "created_at_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "producer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "member",
+        "component",
+        "version"
+      ],
+      "properties": {
+        "member": {
+          "enum": [
+            "M1",
+            "M2",
+            "M3",
+            "M4",
+            "M5",
+            "M6"
+          ]
+        },
+        "component": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "git_commit": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        }
+      }
+    },
+    "source_scenes": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "scene_id",
+          "provider",
+          "product_type",
+          "acquisition_time_utc",
+          "source_url"
+        ],
+        "properties": {
+          "scene_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "provider": {
+            "type": "string",
+            "minLength": 1
+          },
+          "product_type": {
+            "type": "string",
+            "minLength": 1
+          },
+          "acquisition_time_utc": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "source_url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "orbit_direction": {
+            "enum": [
+              "ASCENDING",
+              "DESCENDING",
+              "UNKNOWN"
+            ]
+          },
+          "polarization": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "enum": [
+                "VV",
+                "VH",
+                "HH",
+                "HV",
+                "HHHH"
+              ]
+            }
+          },
+          "incidence_angle_deg": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 90
+          }
+        }
+      }
+    },
+    "processing": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "algorithm",
+        "parameters",
+        "input_artifact_ids"
+      ],
+      "properties": {
+        "algorithm": {
+          "type": "string",
+          "minLength": 1
+        },
+        "parameters": {
+          "type": "object"
+        },
+        "input_artifact_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "software_version": {
+          "type": "string"
+        }
+      }
+    },
+    "artifacts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "artifact_id",
+          "relative_path",
+          "sha256",
+          "size_bytes",
+          "media_type"
+        ],
+        "properties": {
+          "artifact_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "relative_path": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))(?!.*\\\\).+$"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "size_bytes": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "media_type": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "claim_id",
+          "statement",
+          "supporting_artifact_ids",
+          "confidence"
+        ],
+        "properties": {
+          "claim_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "statement": {
+            "type": "string",
+            "minLength": 1
+          },
+          "supporting_artifact_ids": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string"
+            }
+          },
+          "confidence": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0,
+            "maximum": 1
+          },
+          "limitations": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "integrity_status": {
+      "enum": [
+        "UNVERIFIED",
+        "VERIFIED_AGAINST_BASELINE",
+        "FAILED"
+      ]
+    },
+    "baseline_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

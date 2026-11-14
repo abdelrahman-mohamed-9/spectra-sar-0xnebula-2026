@@ -1,0 +1,288 @@
+openapi: 3.1.0
+info:
+  title: SPECTRA-SAR Integration API
+  version: 0.1.0
+  description: >-
+    SUPERSEDED historical proposal; not the active API. The canonical runtime contract is backend/contracts/generated/openapi.json; M5 owns the active backend.
+    M1-M3 compute SAR outputs; M6 validates interface and provenance.
+    All example IDs and timestamps are illustrative, never real observations.
+servers:
+  - url: http://localhost:8000
+    description: Development only
+security:
+  - bearerAuth: []
+tags:
+  - name: Runs
+  - name: Results
+  - name: Artifacts
+  - name: Operations
+paths:
+  /health/ready:
+    get:
+      operationId: readiness
+      tags: [Operations]
+      security: []
+      summary: Readiness without revealing credentials
+      responses:
+        '200':
+          description: Backend and required dependencies ready
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/HealthResponse' }
+        '503': { $ref: '#/components/responses/Unavailable' }
+  /api/v1/runs:
+    post:
+      operationId: createRun
+      tags: [Runs]
+      summary: Queue analysis from two real provider scene identifiers
+      description: >-
+        Authenticated request; persisted with status QUEUED. Idempotency-Key
+        MUST prevent creating duplicate runs for the same owner and request
+        body; reuse with different content produces 409.
+      parameters:
+        - name: Idempotency-Key
+          in: header
+          required: true
+          schema: {type: string, minLength: 8, maxLength: 128}
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/CreateRunRequest' }
+      responses:
+        '202':
+          description: Accepted, not completed
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Run' }
+        '400': { $ref: '#/components/responses/BadRequest' }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '409': { $ref: '#/components/responses/Conflict' }
+        '422': { $ref: '#/components/responses/Unprocessable' }
+        '429': { $ref: '#/components/responses/RateLimit' }
+  /api/v1/runs/{run_id}:
+    get:
+      operationId: getRun
+      tags: [Runs]
+      summary: Get run progress and stage state
+      parameters:
+        - { $ref: '#/components/parameters/RunId' }
+      responses:
+        '200':
+          description: Run state
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Run' }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
+  /api/v1/runs/{run_id}/results:
+    get:
+      operationId: getResults
+      tags: [Results]
+      summary: Return scientifically qualified change/impact result metadata
+      parameters:
+        - { $ref: '#/components/parameters/RunId' }
+      responses:
+        '200':
+          description: Result only when run succeeded
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/ResultResponse' }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '409': { $ref: '#/components/responses/Conflict' }
+  /api/v1/runs/{run_id}/lineage:
+    get:
+      operationId: getLineage
+      tags: [Artifacts]
+      summary: Trace real inputs, processing versions and output checksums
+      parameters:
+        - { $ref: '#/components/parameters/RunId' }
+      responses:
+        '200':
+          description: Audit-safe lineage (no private storage URLs)
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/LineageResponse' }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
+  /api/v1/assets/{asset_id}:
+    get:
+      operationId: getAsset
+      tags: [Artifacts]
+      summary: Get authorized artifact metadata and optional short-lived link
+      parameters:
+        - name: asset_id
+          in: path
+          required: true
+          schema: {type: string, format: uuid}
+      responses:
+        '200':
+          description: Metadata, signed URL may be absent
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/AssetResponse' }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '403': { $ref: '#/components/responses/Forbidden' }
+        '404': { $ref: '#/components/responses/NotFound' }
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+      description: Proposed access mechanism; M4 must implement validation and authorization
+  parameters:
+    RunId:
+      name: run_id
+      in: path
+      required: true
+      schema: {type: string, format: uuid}
+  responses:
+    BadRequest: {description: Invalid request syntax, content: {application/json: {schema: {$ref: '#/components/schemas/ErrorResponse'}}}}
+    Unauthorized: {description: Missing or invalid token, content: {application/json: {schema: {$ref: '#/components/schemas/ErrorResponse'}}}}
+    Forbidden: {description: Access denied, content: {application/json: {schema: {$ref: '#/components/schemas/ErrorResponse'}}}}
+    NotFound: {description: Unknown or inaccessible resource, content: {application/json: {schema: {$ref: '#/components/schemas/ErrorResponse'}}}}
+    Conflict: {description: Invalid state or idempotency conflict, content: {application/json: {schema: {$ref: '#/components/schemas/ErrorResponse'}}}}
+    Unprocessable: {description: Scientifically incompatible inputs, content: {application/json: {schema: {$ref: '#/components/schemas/ErrorResponse'}}}}
+    RateLimit: {description: Rate limited, content: {application/json: {schema: {$ref: '#/components/schemas/ErrorResponse'}}}}
+    Unavailable: {description: Service not ready, content: {application/json: {schema: {$ref: '#/components/schemas/ErrorResponse'}}}}
+  schemas:
+    HealthResponse:
+      type: object
+      additionalProperties: false
+      required: [status]
+      properties:
+        status: {type: string, enum: [ready]}
+    CreateRunRequest:
+      type: object
+      additionalProperties: false
+      required: [scene_before_id, scene_after_id, polarization, method]
+      properties:
+        scene_before_id: {type: string, minLength: 1, description: Verified provider scene ID}
+        scene_after_id: {type: string, minLength: 1, description: Verified provider scene ID}
+        polarization: {type: string, enum: [VV, VH, HH, HV, HHHH]}
+        method:
+          type: object
+          additionalProperties: false
+          required: [name, version]
+          properties:
+            name: {type: string, minLength: 1}
+            version: {type: string, minLength: 1}
+            parameters: {type: object, additionalProperties: true}
+        aoi_geojson:
+          type: [object, 'null']
+          description: GeoJSON geometry in WGS84 longitude/latitude; server validates extent
+    Run:
+      type: object
+      additionalProperties: false
+      required: [schema_version, run_id, status, created_at, links]
+      properties:
+        schema_version: {type: string, const: 0.1.0}
+        run_id: {type: string, format: uuid}
+        status: {type: string, enum: [QUEUED, RUNNING, SUCCEEDED, FAILED, REJECTED]}
+        stage: {type: [string, 'null'], enum: [M1, M2, M3, M4, M5, M6, null]}
+        created_at: {type: string, format: date-time}
+        started_at: {type: [string, 'null'], format: date-time}
+        finished_at: {type: [string, 'null'], format: date-time}
+        warnings: {type: array, items: {type: string}}
+        error: {anyOf: [{$ref: '#/components/schemas/ApiError'}, {type: 'null'}]}
+        links:
+          type: object
+          additionalProperties: false
+          required: [self]
+          properties:
+            self: {type: string, pattern: '^/api/v1/runs/'}
+    ApiError:
+      type: object
+      additionalProperties: false
+      required: [code, message]
+      properties:
+        code: {type: string}
+        message: {type: string}
+        details: {type: array, items: {type: string}}
+        correlation_id: {type: string, description: Debug reference without secrets}
+    ErrorResponse:
+      type: object
+      additionalProperties: false
+      required: [schema_version, error]
+      properties:
+        schema_version: {type: string, const: 0.1.0}
+        run_id: {type: [string, 'null'], format: uuid}
+        error: { $ref: '#/components/schemas/ApiError' }
+    ResultResponse:
+      type: object
+      additionalProperties: false
+      required: [run_id, status, change]
+      properties:
+        run_id: {type: string, format: uuid}
+        status: {type: string, const: SUCCEEDED}
+        change:
+          type: object
+          additionalProperties: false
+          required: [asset_id, method, confidence_interpretation, limitations]
+          properties:
+            asset_id: {type: string, format: uuid}
+            method: {type: string}
+            confidence_asset_id: {type: [string, 'null'], format: uuid}
+            confidence_interpretation: {type: string, enum: [not_provided, calibrated_probability, uncalibrated_score]}
+            limitations: {type: array, items: {type: string}}
+        impact:
+          type: [object, 'null']
+          additionalProperties: false
+          properties:
+            affected_area_km2: {type: [number, 'null'], minimum: 0}
+            exposure_status: {type: string, enum: [not_assessed, assessed]}
+            limitations: {type: array, items: {type: string}}
+    LineageResponse:
+      type: object
+      additionalProperties: false
+      required: [run_id, scenes, artifacts, stages]
+      properties:
+        run_id: {type: string, format: uuid}
+        scenes:
+          type: array
+          items:
+            type: object
+            additionalProperties: false
+            required: [provider, provider_scene_id, provider_record_url]
+            properties:
+              provider: {type: string}
+              provider_scene_id: {type: string}
+              provider_record_url: {type: string, format: uri}
+        artifacts: {type: array, items: {$ref: '#/components/schemas/ArtifactManifest'}}
+        stages:
+          type: array
+          items:
+            type: object
+            additionalProperties: false
+            required: [component, stage_name, status]
+            properties:
+              component: {type: string, enum: [M1, M2, M3, M4, M5, M6]}
+              stage_name: {type: string}
+              status: {type: string, enum: [QUEUED, RUNNING, SUCCEEDED, FAILED, REJECTED]}
+              producer_version: {type: [string, 'null']}
+    ArtifactManifest:
+      type: object
+      additionalProperties: false
+      required: [asset_id, artifact_type, sha256, bytes_size, input_asset_ids]
+      properties:
+        asset_id: {type: string, format: uuid}
+        artifact_type: {type: string}
+        sha256: {type: string, pattern: '^[a-f0-9]{64}$'}
+        bytes_size: {type: integer, minimum: 0}
+        input_asset_ids: {type: array, items: {type: string, format: uuid}}
+        crs: {type: [string, 'null']}
+        raster_width: {type: [integer, 'null'], minimum: 1}
+        raster_height: {type: [integer, 'null'], minimum: 1}
+    AssetResponse:
+      type: object
+      additionalProperties: false
+      required: [manifest]
+      properties:
+        manifest: {$ref: '#/components/schemas/ArtifactManifest'}
+        download_url: {type: [string, 'null'], format: uri, description: Short-lived pre-signed HTTPS URL; never internal s3 or file path}
+        expires_at: {type: [string, 'null'], format: date-time}
