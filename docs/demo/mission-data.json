@@ -1,0 +1,1829 @@
+{
+  "version": "3.4",
+  "case_id": "Spain_1167260",
+  "name": "Spain \u00b7 Sentinel-1 holdout",
+  "coordinates": {
+    "west": -0.827887365844551,
+    "south": 38.12881257139627,
+    "east": -0.7818936232976316,
+    "north": 38.174806313943186
+  },
+  "source": "https://doi.org/10.5281/zenodo.7946594",
+  "license": "CC BY 4.0",
+  "creator": "Ritu Yadav",
+  "sensor": "Sentinel-1 / first radar band / VV (dB)",
+  "acquisition_dates": "Not verified in supplied chip metadata",
+  "study_area_note": "The benchmark tile covers approximately 4 \u00d7 5 km in southeastern Spain. This is not the Alaska NISAR pair.",
+  "population": {
+    "status": "UNAVAILABLE",
+    "estimate": null,
+    "reason": "A georeferenced population count layer for this exact Spain tile was not bundled. Do not reuse the zero-valued Alaska crop or assert people affected."
+  },
+  "methods": {
+    "baseline": {
+      "label": "Fixed 3 dB darkening",
+      "description": "Unfiltered darkening threshold. No training or labels used."
+    },
+    "ml": {
+      "label": "Spatial ML (experimental)",
+      "description": "Precomputed model trained on Ghana and USA; Spain is a held-out evaluation chip. Not a flood forecast."
+    }
+  },
+  "metrics": {
+    "baseline": {
+      "tp": 24104,
+      "fp": 15450,
+      "tn": 204150,
+      "fn": 18415,
+      "n": 262119,
+      "precision": 0.6093947514789907,
+      "recall": 0.5668995037512642,
+      "f1": 0.5873795279811875,
+      "iou": 0.4158084493436147
+    },
+    "ml": {
+      "tp": 11316,
+      "fp": 2975,
+      "tn": 216625,
+      "fn": 31203,
+      "n": 262119,
+      "precision": 0.7918270240011196,
+      "recall": 0.2661398433641431,
+      "f1": 0.39838056680161943,
+      "iou": 0.2487360970677452
+    }
+  },
+  "zones": {
+    "baseline": [
+      {
+        "id": "01",
+        "rank": 1,
+        "pixels": 7772,
+        "area_m2": 610029.3,
+        "median_change_magnitude_db": 8.31,
+        "center": {
+          "lat": 38.171857,
+          "lon": -0.814045
+        },
+        "bbox_px": [
+          50,
+          0,
+          241,
+          84
+        ],
+        "bbox_normalized": [
+          0.097656,
+          0.0,
+          0.373047,
+          0.164062
+        ],
+        "buffer_pixels": {
+          "0": 7772,
+          "50": 12703,
+          "150": 17137,
+          "300": 23688
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "02",
+        "rank": 2,
+        "pixels": 2823,
+        "area_m2": 221702.0,
+        "median_change_magnitude_db": 7.59,
+        "center": {
+          "lat": 38.130735,
+          "lon": -0.807974
+        },
+        "bbox_px": [
+          135,
+          457,
+          304,
+          512
+        ],
+        "bbox_normalized": [
+          0.263672,
+          0.892578,
+          0.330078,
+          0.107422
+        ],
+        "buffer_pixels": {
+          "0": 2823,
+          "50": 5554,
+          "150": 9521,
+          "300": 15302
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "03",
+        "rank": 3,
+        "pixels": 2481,
+        "area_m2": 194767.7,
+        "median_change_magnitude_db": 7.73,
+        "center": {
+          "lat": 38.15951,
+          "lon": -0.818774
+        },
+        "bbox_px": [
+          54,
+          130,
+          143,
+          210
+        ],
+        "bbox_normalized": [
+          0.105469,
+          0.253906,
+          0.173828,
+          0.15625
+        ],
+        "buffer_pixels": {
+          "0": 2481,
+          "50": 5349,
+          "150": 9411,
+          "300": 16582
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "04",
+        "rank": 4,
+        "pixels": 2363,
+        "area_m2": 185562.0,
+        "median_change_magnitude_db": 8.19,
+        "center": {
+          "lat": 38.136454,
+          "lon": -0.786107
+        },
+        "bbox_px": [
+          406,
+          380,
+          512,
+          476
+        ],
+        "bbox_normalized": [
+          0.792969,
+          0.742188,
+          0.207031,
+          0.1875
+        ],
+        "buffer_pixels": {
+          "0": 2363,
+          "50": 4811,
+          "150": 8776,
+          "300": 14824
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "05",
+        "rank": 5,
+        "pixels": 1556,
+        "area_m2": 122197.3,
+        "median_change_magnitude_db": 7.94,
+        "center": {
+          "lat": 38.131858,
+          "lon": -0.785243
+        },
+        "bbox_px": [
+          422,
+          458,
+          512,
+          498
+        ],
+        "bbox_normalized": [
+          0.824219,
+          0.894531,
+          0.175781,
+          0.078125
+        ],
+        "buffer_pixels": {
+          "0": 1556,
+          "50": 3183,
+          "150": 5698,
+          "300": 8926
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "06",
+        "rank": 6,
+        "pixels": 848,
+        "area_m2": 66594.3,
+        "median_change_magnitude_db": 6.17,
+        "center": {
+          "lat": 38.133769,
+          "lon": -0.819021
+        },
+        "bbox_px": [
+          76,
+          434,
+          120,
+          478
+        ],
+        "bbox_normalized": [
+          0.148438,
+          0.847656,
+          0.085938,
+          0.085938
+        ],
+        "buffer_pixels": {
+          "0": 848,
+          "50": 2255,
+          "150": 4731,
+          "300": 9878
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "07",
+        "rank": 7,
+        "pixels": 660,
+        "area_m2": 51803.1,
+        "median_change_magnitude_db": 7.16,
+        "center": {
+          "lat": 38.172924,
+          "lon": -0.796984
+        },
+        "bbox_px": [
+          305,
+          0,
+          390,
+          38
+        ],
+        "bbox_normalized": [
+          0.595703,
+          0.0,
+          0.166016,
+          0.074219
+        ],
+        "buffer_pixels": {
+          "0": 660,
+          "50": 1850,
+          "150": 4220,
+          "300": 8186
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "08",
+        "rank": 8,
+        "pixels": 573,
+        "area_m2": 44998.3,
+        "median_change_magnitude_db": 9.6,
+        "center": {
+          "lat": 38.133718,
+          "lon": -0.827065
+        },
+        "bbox_px": [
+          0,
+          436,
+          24,
+          478
+        ],
+        "bbox_normalized": [
+          0.0,
+          0.851562,
+          0.046875,
+          0.082031
+        ],
+        "buffer_pixels": {
+          "0": 573,
+          "50": 1062,
+          "150": 2248,
+          "300": 4760
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "09",
+        "rank": 9,
+        "pixels": 513,
+        "area_m2": 40282.1,
+        "median_change_magnitude_db": 5.89,
+        "center": {
+          "lat": 38.14172,
+          "lon": -0.824362
+        },
+        "bbox_px": [
+          0,
+          354,
+          72,
+          382
+        ],
+        "bbox_normalized": [
+          0.0,
+          0.691406,
+          0.140625,
+          0.054688
+        ],
+        "buffer_pixels": {
+          "0": 513,
+          "50": 1737,
+          "150": 3970,
+          "300": 7896
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "10",
+        "rank": 10,
+        "pixels": 443,
+        "area_m2": 34788.6,
+        "median_change_magnitude_db": 7.32,
+        "center": {
+          "lat": 38.135112,
+          "lon": -0.816088
+        },
+        "bbox_px": [
+          107,
+          423,
+          149,
+          457
+        ],
+        "bbox_normalized": [
+          0.208984,
+          0.826172,
+          0.082031,
+          0.066406
+        ],
+        "buffer_pixels": {
+          "0": 443,
+          "50": 1252,
+          "150": 3343,
+          "300": 7937
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "11",
+        "rank": 11,
+        "pixels": 435,
+        "area_m2": 34142.4,
+        "median_change_magnitude_db": 8.76,
+        "center": {
+          "lat": 38.17406,
+          "lon": -0.785734
+        },
+        "bbox_px": [
+          444,
+          0,
+          486,
+          24
+        ],
+        "bbox_normalized": [
+          0.867188,
+          0.0,
+          0.082031,
+          0.046875
+        ],
+        "buffer_pixels": {
+          "0": 435,
+          "50": 961,
+          "150": 2194,
+          "300": 4397
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "12",
+        "rank": 12,
+        "pixels": 412,
+        "area_m2": 32337.1,
+        "median_change_magnitude_db": 7.39,
+        "center": {
+          "lat": 38.174228,
+          "lon": -0.825892
+        },
+        "bbox_px": [
+          0,
+          0,
+          43,
+          20
+        ],
+        "bbox_normalized": [
+          0.0,
+          0.0,
+          0.083984,
+          0.039062
+        ],
+        "buffer_pixels": {
+          "0": 412,
+          "50": 901,
+          "150": 1695,
+          "300": 3219
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "13",
+        "rank": 13,
+        "pixels": 392,
+        "area_m2": 30782.1,
+        "median_change_magnitude_db": 7.44,
+        "center": {
+          "lat": 38.138772,
+          "lon": -0.827168
+        },
+        "bbox_px": [
+          0,
+          382,
+          24,
+          415
+        ],
+        "bbox_normalized": [
+          0.0,
+          0.746094,
+          0.046875,
+          0.064453
+        ],
+        "buffer_pixels": {
+          "0": 392,
+          "50": 950,
+          "150": 2127,
+          "300": 4596
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "14",
+        "rank": 14,
+        "pixels": 378,
+        "area_m2": 29670.3,
+        "median_change_magnitude_db": 6.07,
+        "center": {
+          "lat": 38.169838,
+          "lon": -0.818768
+        },
+        "bbox_px": [
+          85,
+          39,
+          118,
+          68
+        ],
+        "bbox_normalized": [
+          0.166016,
+          0.076172,
+          0.064453,
+          0.056641
+        ],
+        "buffer_pixels": {
+          "0": 378,
+          "50": 1114,
+          "150": 3017,
+          "300": 7337
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "15",
+        "rank": 15,
+        "pixels": 378,
+        "area_m2": 29680.0,
+        "median_change_magnitude_db": 6.75,
+        "center": {
+          "lat": 38.145578,
+          "lon": -0.786925
+        },
+        "bbox_px": [
+          427,
+          319,
+          479,
+          340
+        ],
+        "bbox_normalized": [
+          0.833984,
+          0.623047,
+          0.101562,
+          0.041016
+        ],
+        "buffer_pixels": {
+          "0": 378,
+          "50": 1191,
+          "150": 3256,
+          "300": 7748
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "16",
+        "rank": 16,
+        "pixels": 322,
+        "area_m2": 25288.2,
+        "median_change_magnitude_db": 5.49,
+        "center": {
+          "lat": 38.130136,
+          "lon": -0.823822
+        },
+        "bbox_px": [
+          30,
+          485,
+          61,
+          509
+        ],
+        "bbox_normalized": [
+          0.058594,
+          0.947266,
+          0.060547,
+          0.046875
+        ],
+        "buffer_pixels": {
+          "0": 322,
+          "50": 1024,
+          "150": 2310,
+          "300": 4720
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "17",
+        "rank": 17,
+        "pixels": 305,
+        "area_m2": 23952.1,
+        "median_change_magnitude_db": 5.62,
+        "center": {
+          "lat": 38.133282,
+          "lon": -0.82322
+        },
+        "bbox_px": [
+          34,
+          452,
+          77,
+          472
+        ],
+        "bbox_normalized": [
+          0.066406,
+          0.882812,
+          0.083984,
+          0.039062
+        ],
+        "buffer_pixels": {
+          "0": 305,
+          "50": 978,
+          "150": 2826,
+          "300": 7011
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "18",
+        "rank": 18,
+        "pixels": 270,
+        "area_m2": 21203.1,
+        "median_change_magnitude_db": 5.47,
+        "center": {
+          "lat": 38.134571,
+          "lon": -0.799545
+        },
+        "bbox_px": [
+          296,
+          432,
+          331,
+          464
+        ],
+        "bbox_normalized": [
+          0.578125,
+          0.84375,
+          0.068359,
+          0.0625
+        ],
+        "buffer_pixels": {
+          "0": 270,
+          "50": 1063,
+          "150": 3054,
+          "300": 7443
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "19",
+        "rank": 19,
+        "pixels": 268,
+        "area_m2": 21044.2,
+        "median_change_magnitude_db": 5.97,
+        "center": {
+          "lat": 38.141018,
+          "lon": -0.819949
+        },
+        "bbox_px": [
+          70,
+          365,
+          110,
+          386
+        ],
+        "bbox_normalized": [
+          0.136719,
+          0.712891,
+          0.078125,
+          0.041016
+        ],
+        "buffer_pixels": {
+          "0": 268,
+          "50": 963,
+          "150": 2830,
+          "300": 7074
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "20",
+        "rank": 20,
+        "pixels": 247,
+        "area_m2": 19395.7,
+        "median_change_magnitude_db": 6.56,
+        "center": {
+          "lat": 38.139137,
+          "lon": -0.823587
+        },
+        "bbox_px": [
+          36,
+          389,
+          63,
+          406
+        ],
+        "bbox_normalized": [
+          0.070312,
+          0.759766,
+          0.052734,
+          0.033203
+        ],
+        "buffer_pixels": {
+          "0": 247,
+          "50": 728,
+          "150": 2257,
+          "300": 6017
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "21",
+        "rank": 21,
+        "pixels": 242,
+        "area_m2": 19003.9,
+        "median_change_magnitude_db": 5.77,
+        "center": {
+          "lat": 38.136022,
+          "lon": -0.798855
+        },
+        "bbox_px": [
+          308,
+          414,
+          342,
+          447
+        ],
+        "bbox_normalized": [
+          0.601562,
+          0.808594,
+          0.066406,
+          0.064453
+        ],
+        "buffer_pixels": {
+          "0": 242,
+          "50": 957,
+          "150": 2918,
+          "300": 7298
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "22",
+        "rank": 22,
+        "pixels": 234,
+        "area_m2": 18368.2,
+        "median_change_magnitude_db": 6.09,
+        "center": {
+          "lat": 38.16644,
+          "lon": -0.818403
+        },
+        "bbox_px": [
+          90,
+          76,
+          128,
+          104
+        ],
+        "bbox_normalized": [
+          0.175781,
+          0.148438,
+          0.074219,
+          0.054688
+        ],
+        "buffer_pixels": {
+          "0": 234,
+          "50": 986,
+          "150": 3008,
+          "300": 7443
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "23",
+        "rank": 23,
+        "pixels": 230,
+        "area_m2": 18060.8,
+        "median_change_magnitude_db": 7.89,
+        "center": {
+          "lat": 38.139035,
+          "lon": -0.788331
+        },
+        "bbox_px": [
+          431,
+          388,
+          454,
+          408
+        ],
+        "bbox_normalized": [
+          0.841797,
+          0.757812,
+          0.044922,
+          0.039062
+        ],
+        "buffer_pixels": {
+          "0": 230,
+          "50": 766,
+          "150": 2347,
+          "300": 6198
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "24",
+        "rank": 24,
+        "pixels": 229,
+        "area_m2": 17973.9,
+        "median_change_magnitude_db": 7.56,
+        "center": {
+          "lat": 38.173688,
+          "lon": -0.788778
+        },
+        "bbox_px": [
+          425,
+          0,
+          444,
+          25
+        ],
+        "bbox_normalized": [
+          0.830078,
+          0.0,
+          0.037109,
+          0.048828
+        ],
+        "buffer_pixels": {
+          "0": 229,
+          "50": 686,
+          "150": 1822,
+          "300": 4247
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "25",
+        "rank": 25,
+        "pixels": 211,
+        "area_m2": 16571.0,
+        "median_change_magnitude_db": 7.48,
+        "center": {
+          "lat": 38.129573,
+          "lon": -0.796314
+        },
+        "bbox_px": [
+          341,
+          492,
+          363,
+          512
+        ],
+        "bbox_normalized": [
+          0.666016,
+          0.960938,
+          0.042969,
+          0.039062
+        ],
+        "buffer_pixels": {
+          "0": 211,
+          "50": 585,
+          "150": 1617,
+          "300": 3899
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      }
+    ],
+    "ml": [
+      {
+        "id": "01",
+        "rank": 1,
+        "pixels": 1330,
+        "area_m2": 104393.5,
+        "median_change_magnitude_db": 9.3,
+        "center": {
+          "lat": 38.171209,
+          "lon": -0.814347
+        },
+        "bbox_px": [
+          114,
+          0,
+          190,
+          81
+        ],
+        "bbox_normalized": [
+          0.222656,
+          0.0,
+          0.148438,
+          0.158203
+        ],
+        "buffer_pixels": {
+          "0": 1330,
+          "50": 4557,
+          "150": 8179,
+          "300": 13603
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "02",
+        "rank": 2,
+        "pixels": 989,
+        "area_m2": 77662.8,
+        "median_change_magnitude_db": 9.03,
+        "center": {
+          "lat": 38.13792,
+          "lon": -0.784234
+        },
+        "bbox_px": [
+          441,
+          383,
+          512,
+          435
+        ],
+        "bbox_normalized": [
+          0.861328,
+          0.748047,
+          0.138672,
+          0.101562
+        ],
+        "buffer_pixels": {
+          "0": 989,
+          "50": 2535,
+          "150": 4791,
+          "300": 8791
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "03",
+        "rank": 3,
+        "pixels": 795,
+        "area_m2": 62410.3,
+        "median_change_magnitude_db": 8.93,
+        "center": {
+          "lat": 38.159645,
+          "lon": -0.817884
+        },
+        "bbox_px": [
+          70,
+          150,
+          143,
+          189
+        ],
+        "bbox_normalized": [
+          0.136719,
+          0.292969,
+          0.142578,
+          0.076172
+        ],
+        "buffer_pixels": {
+          "0": 795,
+          "50": 2477,
+          "150": 5386,
+          "300": 11058
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "04",
+        "rank": 4,
+        "pixels": 738,
+        "area_m2": 57924.8,
+        "median_change_magnitude_db": 8.46,
+        "center": {
+          "lat": 38.173491,
+          "lon": -0.810945
+        },
+        "bbox_px": [
+          163,
+          0,
+          210,
+          38
+        ],
+        "bbox_normalized": [
+          0.318359,
+          0.0,
+          0.091797,
+          0.074219
+        ],
+        "buffer_pixels": {
+          "0": 738,
+          "50": 1820,
+          "150": 3448,
+          "300": 6588
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "05",
+        "rank": 5,
+        "pixels": 658,
+        "area_m2": 51674.5,
+        "median_change_magnitude_db": 9.14,
+        "center": {
+          "lat": 38.132215,
+          "lon": -0.784622
+        },
+        "bbox_px": [
+          453,
+          461,
+          510,
+          492
+        ],
+        "bbox_normalized": [
+          0.884766,
+          0.900391,
+          0.111328,
+          0.060547
+        ],
+        "buffer_pixels": {
+          "0": 658,
+          "50": 1754,
+          "150": 3656,
+          "300": 6707
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "06",
+        "rank": 6,
+        "pixels": 450,
+        "area_m2": 35339.0,
+        "median_change_magnitude_db": 9.94,
+        "center": {
+          "lat": 38.133733,
+          "lon": -0.827029
+        },
+        "bbox_px": [
+          0,
+          439,
+          24,
+          473
+        ],
+        "bbox_normalized": [
+          0.0,
+          0.857422,
+          0.046875,
+          0.066406
+        ],
+        "buffer_pixels": {
+          "0": 450,
+          "50": 941,
+          "150": 2053,
+          "300": 4462
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "07",
+        "rank": 7,
+        "pixels": 404,
+        "area_m2": 31728.3,
+        "median_change_magnitude_db": 10.35,
+        "center": {
+          "lat": 38.129656,
+          "lon": -0.812003
+        },
+        "bbox_px": [
+          156,
+          493,
+          196,
+          512
+        ],
+        "bbox_normalized": [
+          0.304688,
+          0.962891,
+          0.078125,
+          0.037109
+        ],
+        "buffer_pixels": {
+          "0": 404,
+          "50": 1062,
+          "150": 2239,
+          "300": 4744
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "08",
+        "rank": 8,
+        "pixels": 363,
+        "area_m2": 28506.6,
+        "median_change_magnitude_db": 10.37,
+        "center": {
+          "lat": 38.134021,
+          "lon": -0.789065
+        },
+        "bbox_px": [
+          417,
+          441,
+          445,
+          468
+        ],
+        "bbox_normalized": [
+          0.814453,
+          0.861328,
+          0.054688,
+          0.052734
+        ],
+        "buffer_pixels": {
+          "0": 363,
+          "50": 988,
+          "150": 2749,
+          "300": 6870
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "09",
+        "rank": 9,
+        "pixels": 314,
+        "area_m2": 24660.0,
+        "median_change_magnitude_db": 9.2,
+        "center": {
+          "lat": 38.129835,
+          "lon": -0.808035
+        },
+        "bbox_px": [
+          203,
+          483,
+          237,
+          512
+        ],
+        "bbox_normalized": [
+          0.396484,
+          0.943359,
+          0.066406,
+          0.056641
+        ],
+        "buffer_pixels": {
+          "0": 314,
+          "50": 1033,
+          "150": 2318,
+          "300": 4960
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "10",
+        "rank": 10,
+        "pixels": 282,
+        "area_m2": 22145.4,
+        "median_change_magnitude_db": 8.1,
+        "center": {
+          "lat": 38.134881,
+          "lon": -0.815804
+        },
+        "bbox_px": [
+          121,
+          432,
+          146,
+          456
+        ],
+        "bbox_normalized": [
+          0.236328,
+          0.84375,
+          0.048828,
+          0.046875
+        ],
+        "buffer_pixels": {
+          "0": 282,
+          "50": 844,
+          "150": 2464,
+          "300": 6388
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "11",
+        "rank": 11,
+        "pixels": 282,
+        "area_m2": 22146.3,
+        "median_change_magnitude_db": 9.97,
+        "center": {
+          "lat": 38.131982,
+          "lon": -0.80421
+        },
+        "bbox_px": [
+          253,
+          461,
+          276,
+          489
+        ],
+        "bbox_normalized": [
+          0.494141,
+          0.900391,
+          0.044922,
+          0.054688
+        ],
+        "buffer_pixels": {
+          "0": 282,
+          "50": 963,
+          "150": 2707,
+          "300": 6527
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "12",
+        "rank": 12,
+        "pixels": 267,
+        "area_m2": 20956.4,
+        "median_change_magnitude_db": 9.76,
+        "center": {
+          "lat": 38.174058,
+          "lon": -0.785477
+        },
+        "bbox_px": [
+          456,
+          0,
+          485,
+          21
+        ],
+        "bbox_normalized": [
+          0.890625,
+          0.0,
+          0.056641,
+          0.041016
+        ],
+        "buffer_pixels": {
+          "0": 267,
+          "50": 707,
+          "150": 1789,
+          "300": 3831
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "13",
+        "rank": 13,
+        "pixels": 246,
+        "area_m2": 19319.1,
+        "median_change_magnitude_db": 9.83,
+        "center": {
+          "lat": 38.131802,
+          "lon": -0.787964
+        },
+        "bbox_px": [
+          429,
+          469,
+          457,
+          490
+        ],
+        "bbox_normalized": [
+          0.837891,
+          0.916016,
+          0.054688,
+          0.041016
+        ],
+        "buffer_pixels": {
+          "0": 246,
+          "50": 827,
+          "150": 2441,
+          "300": 6080
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "14",
+        "rank": 14,
+        "pixels": 219,
+        "area_m2": 17189.7,
+        "median_change_magnitude_db": 8.57,
+        "center": {
+          "lat": 38.17063,
+          "lon": -0.808856
+        },
+        "bbox_px": [
+          196,
+          34,
+          224,
+          57
+        ],
+        "bbox_normalized": [
+          0.382812,
+          0.066406,
+          0.054688,
+          0.044922
+        ],
+        "buffer_pixels": {
+          "0": 219,
+          "50": 839,
+          "150": 2472,
+          "300": 6417
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "15",
+        "rank": 15,
+        "pixels": 219,
+        "area_m2": 17192.1,
+        "median_change_magnitude_db": 9.73,
+        "center": {
+          "lat": 38.160377,
+          "lon": -0.821268
+        },
+        "bbox_px": [
+          64,
+          150,
+          90,
+          171
+        ],
+        "bbox_normalized": [
+          0.125,
+          0.292969,
+          0.050781,
+          0.041016
+        ],
+        "buffer_pixels": {
+          "0": 219,
+          "50": 810,
+          "150": 2429,
+          "300": 6341
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "16",
+        "rank": 16,
+        "pixels": 177,
+        "area_m2": 13892.9,
+        "median_change_magnitude_db": 10.42,
+        "center": {
+          "lat": 38.171376,
+          "lon": -0.816325
+        },
+        "bbox_px": [
+          115,
+          26,
+          139,
+          54
+        ],
+        "bbox_normalized": [
+          0.224609,
+          0.050781,
+          0.046875,
+          0.054688
+        ],
+        "buffer_pixels": {
+          "0": 177,
+          "50": 890,
+          "150": 2632,
+          "300": 6613
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "17",
+        "rank": 17,
+        "pixels": 160,
+        "area_m2": 12564.8,
+        "median_change_magnitude_db": 6.87,
+        "center": {
+          "lat": 38.134498,
+          "lon": -0.819885
+        },
+        "bbox_px": [
+          79,
+          437,
+          100,
+          459
+        ],
+        "bbox_normalized": [
+          0.154297,
+          0.853516,
+          0.041016,
+          0.042969
+        ],
+        "buffer_pixels": {
+          "0": 160,
+          "50": 731,
+          "150": 2266,
+          "300": 6055
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "18",
+        "rank": 18,
+        "pixels": 151,
+        "area_m2": 11858.9,
+        "median_change_magnitude_db": 8.3,
+        "center": {
+          "lat": 38.129519,
+          "lon": -0.79636
+        },
+        "bbox_px": [
+          342,
+          495,
+          360,
+          512
+        ],
+        "bbox_normalized": [
+          0.667969,
+          0.966797,
+          0.035156,
+          0.033203
+        ],
+        "buffer_pixels": {
+          "0": 151,
+          "50": 484,
+          "150": 1407,
+          "300": 3532
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "19",
+        "rank": 19,
+        "pixels": 148,
+        "area_m2": 11621.7,
+        "median_change_magnitude_db": 9.54,
+        "center": {
+          "lat": 38.139393,
+          "lon": -0.827467
+        },
+        "bbox_px": [
+          0,
+          382,
+          12,
+          408
+        ],
+        "bbox_normalized": [
+          0.0,
+          0.746094,
+          0.023438,
+          0.050781
+        ],
+        "buffer_pixels": {
+          "0": 148,
+          "50": 483,
+          "150": 1393,
+          "300": 3496
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "20",
+        "rank": 20,
+        "pixels": 145,
+        "area_m2": 11386.2,
+        "median_change_magnitude_db": 8.92,
+        "center": {
+          "lat": 38.139064,
+          "lon": -0.78838
+        },
+        "bbox_px": [
+          432,
+          390,
+          449,
+          405
+        ],
+        "bbox_normalized": [
+          0.84375,
+          0.761719,
+          0.033203,
+          0.029297
+        ],
+        "buffer_pixels": {
+          "0": 145,
+          "50": 550,
+          "150": 1907,
+          "300": 5440
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "21",
+        "rank": 21,
+        "pixels": 141,
+        "area_m2": 11072.1,
+        "median_change_magnitude_db": 7.42,
+        "center": {
+          "lat": 38.139107,
+          "lon": -0.823723
+        },
+        "bbox_px": [
+          37,
+          392,
+          61,
+          405
+        ],
+        "bbox_normalized": [
+          0.072266,
+          0.765625,
+          0.046875,
+          0.025391
+        ],
+        "buffer_pixels": {
+          "0": 141,
+          "50": 576,
+          "150": 2005,
+          "300": 5634
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "22",
+        "rank": 22,
+        "pixels": 128,
+        "area_m2": 10046.5,
+        "median_change_magnitude_db": 7.22,
+        "center": {
+          "lat": 38.173753,
+          "lon": -0.794428
+        },
+        "bbox_px": [
+          357,
+          5,
+          389,
+          18
+        ],
+        "bbox_normalized": [
+          0.697266,
+          0.009766,
+          0.0625,
+          0.025391
+        ],
+        "buffer_pixels": {
+          "0": 128,
+          "50": 665,
+          "150": 1843,
+          "300": 4163
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "23",
+        "rank": 23,
+        "pixels": 127,
+        "area_m2": 9972.3,
+        "median_change_magnitude_db": 7.8,
+        "center": {
+          "lat": 38.141917,
+          "lon": -0.823065
+        },
+        "bbox_px": [
+          45,
+          355,
+          65,
+          376
+        ],
+        "bbox_normalized": [
+          0.087891,
+          0.693359,
+          0.039062,
+          0.041016
+        ],
+        "buffer_pixels": {
+          "0": 127,
+          "50": 631,
+          "150": 2144,
+          "300": 5886
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "24",
+        "rank": 24,
+        "pixels": 126,
+        "area_m2": 9889.6,
+        "median_change_magnitude_db": 9.17,
+        "center": {
+          "lat": 38.173674,
+          "lon": -0.788895
+        },
+        "bbox_px": [
+          427,
+          5,
+          442,
+          21
+        ],
+        "bbox_normalized": [
+          0.833984,
+          0.009766,
+          0.029297,
+          0.03125
+        ],
+        "buffer_pixels": {
+          "0": 126,
+          "50": 519,
+          "150": 1602,
+          "300": 3905
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      },
+      {
+        "id": "25",
+        "rank": 25,
+        "pixels": 111,
+        "area_m2": 8717.1,
+        "median_change_magnitude_db": 7.48,
+        "center": {
+          "lat": 38.132758,
+          "lon": -0.802305
+        },
+        "bbox_px": [
+          278,
+          459,
+          293,
+          478
+        ],
+        "bbox_normalized": [
+          0.542969,
+          0.896484,
+          0.029297,
+          0.037109
+        ],
+        "buffer_pixels": {
+          "0": 111,
+          "50": 558,
+          "150": 1940,
+          "300": 5514
+        },
+        "priority_reason": "Large, contiguous radar response; inspect before escalating. Not a measured hazard likelihood.",
+        "evidence": [
+          "data/benchmark/Spain_1167260/before.tif",
+          "data/benchmark/Spain_1167260/after.tif",
+          "results-phase3/external-ml-prediction.tif"
+        ]
+      }
+    ]
+  },
+  "images": {
+    "before": "before.png",
+    "after": "after.png",
+    "baseline": "baseline-overlay.png",
+    "ml": "ml-overlay.png",
+    "reference": "reference-overlay.png",
+    "delta": "delta.png"
+  },
+  "metrics_scope": "Water/flood-label benchmark, retrospective. Reference labels must not be treated as independent flood/damage verification for unrelated scenes.",
+  "priority_policy": "Sort contiguous detected raster regions by size only; boundaries computed from model output without consulting reference labels.",
+  "limits": [
+    "Sensor images and predictions are real research dataset artifacts; no simulated observations are shown.",
+    "Detected areas are candidate radar responses, not confirmed damaged/flooded areas.",
+    "ML held-out evaluation is one tile, not a scientific generalization claim.",
+    "Population exposure and confirmed casualties/damage are not available from these source files.",
+    "Spatial buffer slider visualizes inspection extent; it is not a population estimate."
+  ]
+}
