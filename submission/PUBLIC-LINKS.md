@@ -8,6 +8,7 @@
 | GitHub source code and public repository | https://github.com/abdelrahman-mohamed-9/spectra-sar-0xnebula-2026 |
 | Live interactive judge demo (static frontend) | https://abdelrahman-mohamed-9.github.io/spectra-sar-0xnebula-2026/ |
 | Project description PDF hosted in repository | [View repository PDF](SPECTRA-SAR-Project-Description-COMPLETE-FINAL.pdf) — **outdated until the confirmed AI/SI replacement has been uploaded** |
+| **Combined Project Description + User Guide (public PDF)** | https://github.com/abdelrahman-mohamed-9/spectra-sar-0xnebula-2026/blob/main/submission/SPECTRA-SAR-SUBMISSION-PROJECT-DESCRIPTION-AND-USER-GUIDE.pdf — **15-page, text-focused edition, uploaded and verified in GitHub repository** |
 | NASA/other sources | [docs/SOURCES.md](../docs/SOURCES.md) |
 | Confirmed AI/SI tool disclosure | [docs/AI-SI-DISCLOSURE.md](../docs/AI-SI-DISCLOSURE.md) |
 | Official seven-slide presentation | https://abdelrahman-mohamed-9.github.io/spectra-sar-0xnebula-2026/slides/ — **requires post-deployment Incognito verification** |
