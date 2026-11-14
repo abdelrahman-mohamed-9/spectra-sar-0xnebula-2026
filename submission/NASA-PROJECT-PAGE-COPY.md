@@ -51,7 +51,7 @@ All AI-generated video and illustrations included in final deliverables should c
 - **Public demo:** https://abdelrahman-mohamed-9.github.io/spectra-sar-0xnebula-2026/
 - **Public GitHub repository:** https://github.com/abdelrahman-mohamed-9/spectra-sar-0xnebula-2026
 - **Project description PDF:** https://github.com/abdelrahman-mohamed-9/spectra-sar-0xnebula-2026/blob/main/submission/SPECTRA-SAR-Project-Description-COMPLETE-FINAL.pdf — **the revised file is not at this link until the binary PDF upload is completed**
-- **Official short demonstration:** add the published 30-second video URL or seven-slide presentation URL after verifying public access.
+- **Official seven-slide presentation:** https://abdelrahman-mohamed-9.github.io/spectra-sar-0xnebula-2026/slides/ — **open in Incognito to verify deployment before submission**.
 - **NASA Project Page:** add its canonical URL once published.
 
 ## Submission reminders
