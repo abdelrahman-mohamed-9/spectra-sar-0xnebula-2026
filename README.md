@@ -15,6 +15,7 @@ SPECTRA-SAR is an exploratory SAR research platform that brings together satelli
 - **Source code:** https://github.com/abdelrahman-mohamed-9/spectra-sar-0xnebula-2026
 - **Project overview:** [submission/PROJECT-DESCRIPTION.md](submission/PROJECT-DESCRIPTION.md)
 - **Project description PDF:** [submission/SPECTRA-SAR-Project-Description-COMPLETE-FINAL.pdf](submission/SPECTRA-SAR-Project-Description-COMPLETE-FINAL.pdf) (**replace with the updated AI/SI-confirmed edition before final Cairo submission**)
+- **User Guide for judges and operators:** [docs/USER-GUIDE.md](docs/USER-GUIDE.md)
 - **AI/SI disclosure:** [docs/AI-SI-DISCLOSURE.md](docs/AI-SI-DISCLOSURE.md)
 - **NASA and external data sources:** [docs/SOURCES.md](docs/SOURCES.md)
 - **Submission links and remaining steps:** [submission/PUBLIC-LINKS.md](submission/PUBLIC-LINKS.md)
