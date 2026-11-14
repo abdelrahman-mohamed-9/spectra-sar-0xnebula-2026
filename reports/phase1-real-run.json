@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "run_id": "phase1_real_verification",
+  "created_at": "2026-11-14T00:01:09.708316+00:00",
+  "status": "PARTIAL",
+  "scientific_approval": false,
+  "data_kind": "USER_SUPPLIED_NOT_INDEPENDENTLY_VERIFIED",
+  "stages": {
+    "M1": {
+      "status": "PASS",
+      "detail": "Input snapshot + actual file digests created; scientific QA runs in M2"
+    },
+    "M2": {
+      "status": "PASS",
+      "detail": "Original T02\u2013T05/T09 executed; optional T06\u2013T08 require model/reference",
+      "classification_available": false,
+      "evaluation_available": false
+    },
+    "M3": {
+      "status": "BLOCKED",
+      "detail": "Candidate GeoJSON produced; independent impact inputs missing",
+      "missing": [
+        "aoi",
+        "osm",
+        "population",
+        "population_unit",
+        "population_provenance"
+      ]
+    },
+    "M4": {
+      "status": "PASS",
+      "detail": "Original evidence builder + SHA256 verifier executed"
+    },
+    "M5": {
+      "status": "PASS",
+      "detail": "M5 handoff validated and local API resource prepared; distributed services separate"
+    },
+    "M6": {
+      "status": "PASS",
+      "detail": "Original provenance schema + independent local-byte verifier executed"
+    }
+  },
+  "finished_at": "2026-11-14T00:01:12.314666+00:00"
+}

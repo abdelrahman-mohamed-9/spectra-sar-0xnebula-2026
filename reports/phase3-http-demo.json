@@ -1,0 +1,103 @@
+{
+  "id": "db740408-1c7a-42e5-849c-16f434ec20a1",
+  "dataset": "nisar-oct2026",
+  "candidate_mode": "conservative",
+  "status": "COMPLETED_EXPLORATORY",
+  "submitted_at": "2026-11-14T01:51:44.031298+00:00",
+  "started_at": "2026-11-14T01:51:46.152577+00:00",
+  "finished_at": "2026-11-14T01:51:49.503798+00:00",
+  "error_code": null,
+  "result": {
+    "status": "COMPLETED_EXPLORATORY",
+    "scientific_approval": false,
+    "pair_id": "NISAR_GCOV_073_055_20261017_20261029_REAL",
+    "phase3": {
+      "schema_version": "3.0",
+      "status": "EXPLORATORY",
+      "candidate_mode": "conservative",
+      "bounds_wgs84": [
+        -153.13396733055518,
+        64.62358308494078,
+        -153.0561627611707,
+        64.6563849890185
+      ],
+      "zones": 7,
+      "retained_pixels": 206,
+      "input_candidate_pixels": 566,
+      "confidence_policy": {
+        "geometric_factor": 0.866690481051547,
+        "processing_factor": 0.7,
+        "meaning": "threshold stability \u00d7 geometric factor \u00d7 processing compatibility; heuristic, not probability",
+        "geometric_rule": "0.5 if unknown; otherwise clip(1 - holdout_p90_px / 2, 0, 1)",
+        "processing_rule": "1 for matching known identifiers, otherwise 0.7",
+        "screen_rule": "stable at all thresholds, one-pixel validity erosion, at least 9 four-connected same-sign pixels"
+      },
+      "risk_policy": {
+        "formula": "100 \u00d7 confidence \u00d7 mean(min(people/100,1), min(buildings/10,1), min(road_metres/1000,1))",
+        "purpose": "Configurable-policy prototype for review prioritization, not calibrated hazard or expected loss",
+        "thresholds": {
+          "medium": 30,
+          "high": 60
+        },
+        "requires": "population coverage and explicit coverage_verified=true for roads and buildings"
+      },
+      "data_gaps": [
+        "spatial_population_counts",
+        "buildings_verified_coverage",
+        "roads_verified_coverage"
+      ],
+      "limitations": [
+        "No independent accuracy or calibrated confidence for the bundled pair",
+        "Filtering may remove real small or boundary changes",
+        "SAR changes alone do not identify floods or glacier displacement",
+        "Risk is unavailable when required exposure coverage is missing"
+      ],
+      "scientific_approval": false
+    },
+    "m1": {
+      "status": "SMALL_ESTIMATED_SHIFT_NO_CORRECTION",
+      "joint_valid": 88779,
+      "estimated_shift_rc": [
+        0.1,
+        -0.125
+      ],
+      "holdout_p90_residual_px": 0.266619037896906,
+      "independently_certified": false
+    },
+    "m2": {
+      "candidate_mode": "conservative",
+      "conservative_pixels": 566,
+      "review_pixels": 638,
+      "candidate_pixels": 566,
+      "pair_accuracy": "BLOCKED_NO_INDEPENDENT_LABELS",
+      "alaska_accuracy": "BLOCKED_NO_INDEPENDENT_LABELS",
+      "external_benchmark": "EXTERNAL_FLOOD_BENCHMARK_ONLY"
+    },
+    "m3": {
+      "status": "EXPLORATORY_EXPOSURE_SCREEN",
+      "candidate_area_m2": 54520.19725402554,
+      "data_gaps": [
+        "population_exposure"
+      ],
+      "estimated_residents_exposed": null,
+      "mapped_road_overlap_m": 0.0,
+      "mapped_buildings_intersecting": 0
+    },
+    "m4": {
+      "status": "VERIFIED_AGAINST_LOCAL_CATALOG",
+      "m2": {
+        "status": "PASS_LOCAL_BYTES",
+        "pair_id": "NISAR_GCOV_073_055_20261017_20261029_REAL",
+        "artifacts_verified": 9,
+        "inputs_verified": 5,
+        "scientific_approval": false
+      }
+    },
+    "acceptance_gaps": [
+      "Independent calibration, geometric and radiometric verification; review any mixed processing versions",
+      "Independent event labels and scientific review for this pair; user-supplied labels are not automatically certified",
+      "Spatially resolved population and validated asset coverage for consequence estimates"
+    ]
+  },
+  "artifacts_retrieved_and_verified": 59
+}

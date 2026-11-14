@@ -1,0 +1,60 @@
+{
+  "id": "8ac10da5-390c-495a-9e9c-28029ba38f35",
+  "dataset": "nisar-oct2026",
+  "candidate_mode": "conservative",
+  "status": "COMPLETED_EXPLORATORY",
+  "submitted_at": "2026-11-14T01:07:12.688512+00:00",
+  "started_at": "2026-11-14T01:07:27.518878+00:00",
+  "finished_at": "2026-11-14T01:07:55.735308+00:00",
+  "error_code": null,
+  "result": {
+    "status": "COMPLETED_EXPLORATORY",
+    "scientific_approval": false,
+    "pair_id": "NISAR_GCOV_073_055_20261017_20261029_REAL",
+    "m1": {
+      "status": "SMALL_ESTIMATED_SHIFT_NO_CORRECTION",
+      "joint_valid": 88779,
+      "estimated_shift_rc": [
+        0.1,
+        -0.125
+      ],
+      "holdout_p90_residual_px": 0.266619037896906,
+      "independently_certified": false
+    },
+    "m2": {
+      "candidate_mode": "conservative",
+      "conservative_pixels": 566,
+      "review_pixels": 638,
+      "candidate_pixels": 566,
+      "pair_accuracy": "BLOCKED_NO_INDEPENDENT_LABELS",
+      "alaska_accuracy": "BLOCKED_NO_INDEPENDENT_LABELS",
+      "external_benchmark": "EXTERNAL_FLOOD_BENCHMARK_ONLY"
+    },
+    "m3": {
+      "status": "EXPLORATORY_EXPOSURE_SCREEN",
+      "candidate_area_m2": 54520.19725374599,
+      "data_gaps": [
+        "population_exposure"
+      ],
+      "estimated_residents_exposed": null,
+      "mapped_road_overlap_m": 0.0,
+      "mapped_buildings_intersecting": 0
+    },
+    "m4": {
+      "status": "VERIFIED_AGAINST_LOCAL_CATALOG",
+      "m2": {
+        "status": "PASS_LOCAL_BYTES",
+        "pair_id": "NISAR_GCOV_073_055_20261017_20261029_REAL",
+        "artifacts_verified": 9,
+        "inputs_verified": 5,
+        "scientific_approval": false
+      }
+    },
+    "acceptance_gaps": [
+      "Independent calibration, geometric and radiometric verification; review any mixed processing versions",
+      "Independent event labels and scientific review for this pair; user-supplied labels are not automatically certified",
+      "Spatially resolved population and validated asset coverage for consequence estimates"
+    ]
+  },
+  "artifacts_retrieved_and_verified": 54
+}

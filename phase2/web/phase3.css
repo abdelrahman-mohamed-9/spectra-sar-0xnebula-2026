@@ -1,0 +1,14 @@
+#phase3 .controls{display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin:20px 0}
+#phase3 .controls label{flex:1;min-width:180px}
+#phase3 .controls button{flex:0 0 auto}
+#riskMap{display:block;background:#07111e;border:1px solid #2a3a50;border-radius:8px;touch-action:none;cursor:grab}
+#riskMap path{cursor:pointer}
+#riskMap path:hover,#riskMap path:focus{fill:#fff;outline:none}
+#riskMap path[aria-pressed="true"]{fill:#62ead4;stroke:#fff;stroke-width:2;vector-effect:non-scaling-stroke}
+#zoneDetails{padding:14px;border:1px solid #31576a;border-radius:8px;background:#102433;scroll-margin:20px}
+#phase3Evidence{max-height:380px;overflow:auto;overflow-wrap:anywhere}
+#zoneDetails{overflow-wrap:anywhere}
+#journey{font-family:Tahoma,Arial,sans-serif;line-height:1.9}
+#journey h2{margin-top:24px}#journey select{margin:12px 0}#journey button{margin:6px}
+#explanation,.alert-card,#comparison{padding:16px;border:1px solid #2a3a50;border-radius:8px;margin:16px 0;overflow-wrap:anywhere}
+#journey .files{direction:ltr}#journey h3{font-size:15px}

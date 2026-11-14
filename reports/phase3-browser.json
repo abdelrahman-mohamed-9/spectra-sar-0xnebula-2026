@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "zones": 7,
+  "checks": [
+    "live authenticated run",
+    "zone map and evidence",
+    "zoom/reset",
+    "confidence filter",
+    "mobile render",
+    "disconnect cleanup"
+  ],
+  "errors": []
+}

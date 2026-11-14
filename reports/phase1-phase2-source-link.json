@@ -1,0 +1,12 @@
+{
+  "before": {
+    "phase2_sha256": "c1f87d53de0de13c48712c633bc8e5bfd6ae281441fcee876dc3c0bf49bee6e8",
+    "phase1_sha256": "c1f87d53de0de13c48712c633bc8e5bfd6ae281441fcee876dc3c0bf49bee6e8",
+    "original_import_receipt": "c1f87d53de0de13c48712c633bc8e5bfd6ae281441fcee876dc3c0bf49bee6e8"
+  },
+  "after": {
+    "phase2_sha256": "396680ad535b69fbc34d18d82a877e6aab4371a70d1f6791f69fbcdd25c495ac",
+    "phase1_sha256": "396680ad535b69fbc34d18d82a877e6aab4371a70d1f6791f69fbcdd25c495ac",
+    "original_import_receipt": "396680ad535b69fbc34d18d82a877e6aab4371a70d1f6791f69fbcdd25c495ac"
+  }
+}
