@@ -1,0 +1,22 @@
+{
+  "build": "SPECTRA 3.4 offline judge demo",
+  "algorithm": "SHA-256",
+  "original_source_files": {
+    "data/benchmark/Spain_1167260/before.tif": "dfbe640646f2fadd63ad79b5dfb09f8ec259ded816ea7fdc985087cfaee9bc7a",
+    "data/benchmark/Spain_1167260/after.tif": "e838194f1f60dca63e111ce7df7f2705a6f76779fe4bc5b6181dc224e80d1f01",
+    "data/benchmark/Spain_1167260/labels.tif": "7fb2d9b5f65885b57b0f7a2e2ac02e3342ece255d3e2a6f6cb10645937f6f6e3",
+    "results-phase3/external-ml-prediction.tif": "ead042faa96db056b33206acf1fe44fa19364c0c928d320ba8f40e15492bc12e",
+    "data/benchmark-source.json": "95c28f137aa40463fb4c618b69c6721a629549adcce7f494f0fb472ba7ee7e5c",
+    "results-phase3/external-evaluation.json": "42d4cb355098b937e9c717c5c43765f501a74dcd82a05829210f6ce48bd31bd3"
+  },
+  "derived_demo_files": {
+    "after.png": "fca08f9187a5e9f32c2401c7e8632115cfc2c7f3c68833c718505186e7248656",
+    "before.png": "10a2799551542ed2e15a1a78de256058523a83314118e7ecc6a8e70f256a9f4f",
+    "reference-overlay.png": "35201ff036c46a8c0a0ddb0a44ce739cb76f91e682f73cc2f8c5fa2353f6af93",
+    "baseline-overlay.png": "9b4c30abb656983cff660472d9435c9020b165fca14a3fae5b0658c2574728c7",
+    "delta.png": "6249b8dd4d229102245bfa431e3f1e1629d4e312d0f81e4f2a8375f4540eb910",
+    "ml-overlay.png": "36981186abc15b94f35ca4ac12dee9ae20a2361bebc50d90082265559eca9029",
+    "mission-data.json": "c0e4ef9227ba423779f33bf967f0503f9395dcddb91bd76c8c8dd95468604440"
+  },
+  "note": "Local checksums attest content equality, not an independent provider signature. No internet needed after distribution."
+}
