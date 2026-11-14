@@ -1,0 +1,29 @@
+{
+  "note": "API templates only: UUID and STAC placeholders are NOT observed satellite data; not meant to be POSTed without real M1/M2/M3 results.",
+  "base_url": "http://localhost:8000/api/v1",
+  "flows": [
+    {
+      "module": "M1", "method": "POST", "path": "/resources/scenes", "authentication": "X-API-Key: <SERVER_SIDE_SERVICE_KEY>",
+      "payload_contract": "contracts/generated/m1_sar_scene.schema.json", "data_required_from": "real STAC Feature + real acquisition metadata"
+    },
+    {
+      "module": "M1", "method": "POST", "path": "/resources/scene-pairs", "authentication": "X-API-Key: <SERVER_SIDE_SERVICE_KEY>",
+      "payload_contract": "contracts/generated/m1_scene_pair.schema.json", "data_required_from": "two persisted real scene UUIDs, AOI and gate report"
+    },
+    {
+      "module": "M2", "method": "POST", "path": "/resources/change-results", "authentication": "X-API-Key: <SERVER_SIDE_SERVICE_KEY>",
+      "payload_contract": "contracts/generated/m2_change_result.schema.json", "data_required_from": "real mask and existing artifact/job UUIDs"
+    },
+    {
+      "module": "M3", "method": "POST", "path": "/resources/impact-assessments", "authentication": "X-API-Key: <SERVER_SIDE_SERVICE_KEY>",
+      "payload_contract": "contracts/generated/m3_impact_assessment.schema.json", "data_required_from": "real change_result UUID, source layers and methodology"
+    },
+    {
+      "module": "M4", "method": "GET", "path": "/auth/projects/<PROJECT_UUID>/jobs", "authentication": "Authorization: Bearer <USER_JWT>",
+      "status": "currently implemented; user must have project role"
+    },
+    {
+      "module": "M6", "method": "GET", "path": "/health/live", "authentication": "no credentials", "status": "liveness only; not scientific readiness"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "algorithm": {
+      "maxLength": 100,
+      "minLength": 2,
+      "title": "Algorithm",
+      "type": "string"
+    },
+    "algorithm_version": {
+      "maxLength": 100,
+      "minLength": 1,
+      "title": "Algorithm Version",
+      "type": "string"
+    },
+    "change_mask_artifact_id": {
+      "format": "uuid",
+      "title": "Change Mask Artifact Id",
+      "type": "string"
+    },
+    "changed_area_m2": {
+      "anyOf": [
+        {
+          "minimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Changed Area M2"
+    },
+    "confidence_artifact_id": {
+      "anyOf": [
+        {
+          "format": "uuid",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Confidence Artifact Id"
+    },
+    "evaluation_metrics": {
+      "additionalProperties": true,
+      "title": "Evaluation Metrics",
+      "type": "object"
+    },
+    "job_id": {
+      "format": "uuid",
+      "title": "Job Id",
+      "type": "string"
+    },
+    "mean_confidence": {
+      "anyOf": [
+        {
+          "maximum": 1,
+          "minimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Mean Confidence"
+    },
+    "scene_pair_id": {
+      "format": "uuid",
+      "title": "Scene Pair Id",
+      "type": "string"
+    }
+  },
+  "required": [
+    "job_id",
+    "scene_pair_id",
+    "change_mask_artifact_id",
+    "algorithm",
+    "algorithm_version"
+  ],
+  "title": "ChangeResultCreate",
+  "type": "object"
+}

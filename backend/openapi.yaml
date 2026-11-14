@@ -1,0 +1,1185 @@
+openapi: 3.1.0
+info:
+  title: SPECTRA-SAR Backend
+  description: Backend foundation with migration-aware database health. Authenticated
+    scientific data APIs included; worker processing not yet connected.
+  version: 0.1.0
+paths:
+  /health/live:
+    get:
+      tags:
+      - health
+      summary: Live
+      operationId: live_health_live_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HealthStatus'
+  /health/ready:
+    get:
+      tags:
+      - health
+      summary: Ready
+      operationId: ready_health_ready_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HealthStatus'
+  /health/database:
+    get:
+      tags:
+      - health
+      summary: Database Health
+      operationId: database_health_health_database_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                additionalProperties:
+                  type: string
+                type: object
+                title: Response Database Health Health Database Get
+  /api/v1/:
+    get:
+      tags:
+      - service
+      summary: Api Index
+      operationId: api_index_api_v1__get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                additionalProperties:
+                  type: string
+                type: object
+                title: Response Api Index Api V1  Get
+  /api/v1/resources/scenes:
+    post:
+      tags:
+      - SAR Resources
+      summary: Create Scene
+      operationId: create_scene_api_v1_resources_scenes_post
+      parameters:
+      - name: x-api-key
+        in: header
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: X-Api-Key
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SarSceneCreate'
+      responses:
+        '201':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SarSceneRead'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+    get:
+      tags:
+      - SAR Resources
+      summary: List Scenes
+      operationId: list_scenes_api_v1_resources_scenes_get
+      parameters:
+      - name: limit
+        in: query
+        required: false
+        schema:
+          type: integer
+          maximum: 100
+          minimum: 1
+          default: 50
+          title: Limit
+      - name: offset
+        in: query
+        required: false
+        schema:
+          type: integer
+          minimum: 0
+          default: 0
+          title: Offset
+      - name: x-api-key
+        in: header
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: X-Api-Key
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/SarSceneRead'
+                title: Response List Scenes Api V1 Resources Scenes Get
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/resources/scenes/{scene_id}:
+    get:
+      tags:
+      - SAR Resources
+      summary: Get Scene
+      operationId: get_scene_api_v1_resources_scenes__scene_id__get
+      parameters:
+      - name: scene_id
+        in: path
+        required: true
+        schema:
+          type: string
+          format: uuid
+          title: Scene Id
+      - name: x-api-key
+        in: header
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: X-Api-Key
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SarSceneRead'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/resources/artifacts:
+    post:
+      tags:
+      - SAR Resources
+      summary: Create Artifact
+      operationId: create_artifact_api_v1_resources_artifacts_post
+      parameters:
+      - name: x-api-key
+        in: header
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: X-Api-Key
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ArtifactCreate'
+      responses:
+        '201':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArtifactRead'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/resources/artifacts/{artifact_id}:
+    get:
+      tags:
+      - SAR Resources
+      summary: Get Artifact
+      operationId: get_artifact_api_v1_resources_artifacts__artifact_id__get
+      parameters:
+      - name: artifact_id
+        in: path
+        required: true
+        schema:
+          type: string
+          format: uuid
+          title: Artifact Id
+      - name: x-api-key
+        in: header
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: X-Api-Key
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArtifactRead'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/resources/scene-pairs:
+    post:
+      tags:
+      - SAR Resources
+      summary: Create Pair
+      operationId: create_pair_api_v1_resources_scene_pairs_post
+      parameters:
+      - name: x-api-key
+        in: header
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: X-Api-Key
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ScenePairCreate'
+      responses:
+        '201':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ScenePairRead'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/resources/scene-pairs/{pair_id}:
+    get:
+      tags:
+      - SAR Resources
+      summary: Get Pair
+      operationId: get_pair_api_v1_resources_scene_pairs__pair_id__get
+      parameters:
+      - name: pair_id
+        in: path
+        required: true
+        schema:
+          type: string
+          format: uuid
+          title: Pair Id
+      - name: x-api-key
+        in: header
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: X-Api-Key
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ScenePairRead'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/resources/jobs:
+    post:
+      tags:
+      - SAR Resources
+      summary: Create Job
+      operationId: create_job_api_v1_resources_jobs_post
+      parameters:
+      - name: x-api-key
+        in: header
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: X-Api-Key
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ProcessingJobCreate'
+      responses:
+        '201':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProcessingJobRead'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/resources/jobs/{job_id}:
+    get:
+      tags:
+      - SAR Resources
+      summary: Get Job
+      operationId: get_job_api_v1_resources_jobs__job_id__get
+      parameters:
+      - name: job_id
+        in: path
+        required: true
+        schema:
+          type: string
+          format: uuid
+          title: Job Id
+      - name: x-api-key
+        in: header
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: X-Api-Key
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProcessingJobRead'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/resources/change-results:
+    post:
+      tags:
+      - SAR Resources
+      summary: Create Change
+      operationId: create_change_api_v1_resources_change_results_post
+      parameters:
+      - name: x-api-key
+        in: header
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: X-Api-Key
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ChangeResultCreate'
+      responses:
+        '201':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ChangeResultRead'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/resources/change-results/{result_id}:
+    get:
+      tags:
+      - SAR Resources
+      summary: Get Change
+      operationId: get_change_api_v1_resources_change_results__result_id__get
+      parameters:
+      - name: result_id
+        in: path
+        required: true
+        schema:
+          type: string
+          format: uuid
+          title: Result Id
+      - name: x-api-key
+        in: header
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: X-Api-Key
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ChangeResultRead'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/resources/impact-assessments:
+    post:
+      tags:
+      - SAR Resources
+      summary: Create Impact
+      operationId: create_impact_api_v1_resources_impact_assessments_post
+      parameters:
+      - name: x-api-key
+        in: header
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: X-Api-Key
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ImpactAssessmentCreate'
+      responses:
+        '201':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ImpactAssessmentRead'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/resources/impact-assessments/{impact_id}:
+    get:
+      tags:
+      - SAR Resources
+      summary: Get Impact
+      operationId: get_impact_api_v1_resources_impact_assessments__impact_id__get
+      parameters:
+      - name: impact_id
+        in: path
+        required: true
+        schema:
+          type: string
+          format: uuid
+          title: Impact Id
+      - name: x-api-key
+        in: header
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: X-Api-Key
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ImpactAssessmentRead'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+components:
+  schemas:
+    ArtifactCreate:
+      properties:
+        project_id:
+          type: string
+          format: uuid
+          title: Project Id
+        scene_id:
+          anyOf:
+          - type: string
+            format: uuid
+          - type: 'null'
+          title: Scene Id
+        kind:
+          type: string
+          enum:
+          - raw_sar
+          - calibrated_sar
+          - filtered_sar
+          - change_mask
+          - confidence_map
+          - risk_map
+          - report
+          - other
+          title: Kind
+        storage_uri:
+          type: string
+          maxLength: 2048
+          minLength: 6
+          title: Storage Uri
+        media_type:
+          type: string
+          maxLength: 120
+          minLength: 3
+          title: Media Type
+        size_bytes:
+          anyOf:
+          - type: integer
+            minimum: 0.0
+          - type: 'null'
+          title: Size Bytes
+        sha256:
+          anyOf:
+          - type: string
+            pattern: ^[a-fA-F0-9]{64}$
+          - type: 'null'
+          title: Sha256
+        crs:
+          anyOf:
+          - type: string
+            maxLength: 100
+          - type: 'null'
+          title: Crs
+        pixel_size_m:
+          anyOf:
+          - type: number
+            exclusiveMinimum: 0.0
+          - type: 'null'
+          title: Pixel Size M
+        metadata_json:
+          additionalProperties: true
+          type: object
+          title: Metadata Json
+      additionalProperties: false
+      type: object
+      required:
+      - project_id
+      - kind
+      - storage_uri
+      - media_type
+      title: ArtifactCreate
+    ArtifactRead:
+      properties:
+        id:
+          type: string
+          format: uuid
+          title: Id
+        created_at:
+          type: string
+          format: date-time
+          title: Created At
+        updated_at:
+          type: string
+          format: date-time
+          title: Updated At
+        project_id:
+          type: string
+          format: uuid
+          title: Project Id
+        scene_id:
+          anyOf:
+          - type: string
+            format: uuid
+          - type: 'null'
+          title: Scene Id
+        kind:
+          type: string
+          title: Kind
+        storage_uri:
+          type: string
+          title: Storage Uri
+        media_type:
+          type: string
+          title: Media Type
+      type: object
+      required:
+      - id
+      - created_at
+      - updated_at
+      - project_id
+      - scene_id
+      - kind
+      - storage_uri
+      - media_type
+      title: ArtifactRead
+    ChangeResultCreate:
+      properties:
+        job_id:
+          type: string
+          format: uuid
+          title: Job Id
+        scene_pair_id:
+          type: string
+          format: uuid
+          title: Scene Pair Id
+        change_mask_artifact_id:
+          type: string
+          format: uuid
+          title: Change Mask Artifact Id
+        confidence_artifact_id:
+          anyOf:
+          - type: string
+            format: uuid
+          - type: 'null'
+          title: Confidence Artifact Id
+        changed_area_m2:
+          anyOf:
+          - type: number
+            minimum: 0.0
+          - type: 'null'
+          title: Changed Area M2
+        mean_confidence:
+          anyOf:
+          - type: number
+            maximum: 1.0
+            minimum: 0.0
+          - type: 'null'
+          title: Mean Confidence
+        algorithm:
+          type: string
+          maxLength: 100
+          minLength: 2
+          title: Algorithm
+        algorithm_version:
+          type: string
+          maxLength: 100
+          minLength: 1
+          title: Algorithm Version
+        evaluation_metrics:
+          additionalProperties: true
+          type: object
+          title: Evaluation Metrics
+      additionalProperties: false
+      type: object
+      required:
+      - job_id
+      - scene_pair_id
+      - change_mask_artifact_id
+      - algorithm
+      - algorithm_version
+      title: ChangeResultCreate
+    ChangeResultRead:
+      properties:
+        id:
+          type: string
+          format: uuid
+          title: Id
+        created_at:
+          type: string
+          format: date-time
+          title: Created At
+        updated_at:
+          type: string
+          format: date-time
+          title: Updated At
+        job_id:
+          type: string
+          format: uuid
+          title: Job Id
+        scene_pair_id:
+          type: string
+          format: uuid
+          title: Scene Pair Id
+        algorithm:
+          type: string
+          title: Algorithm
+        mean_confidence:
+          anyOf:
+          - type: number
+          - type: 'null'
+          title: Mean Confidence
+      type: object
+      required:
+      - id
+      - created_at
+      - updated_at
+      - job_id
+      - scene_pair_id
+      - algorithm
+      - mean_confidence
+      title: ChangeResultRead
+    HTTPValidationError:
+      properties:
+        detail:
+          items:
+            $ref: '#/components/schemas/ValidationError'
+          type: array
+          title: Detail
+      type: object
+      title: HTTPValidationError
+    HealthStatus:
+      properties:
+        status:
+          type: string
+          title: Status
+        components:
+          anyOf:
+          - additionalProperties:
+              type: string
+            type: object
+          - type: 'null'
+          title: Components
+      type: object
+      required:
+      - status
+      title: HealthStatus
+    ImpactAssessmentCreate:
+      properties:
+        change_result_id:
+          type: string
+          format: uuid
+          title: Change Result Id
+        job_id:
+          anyOf:
+          - type: string
+            format: uuid
+          - type: 'null'
+          title: Job Id
+        assessment_type:
+          type: string
+          maxLength: 64
+          minLength: 2
+          title: Assessment Type
+        risk_level:
+          anyOf:
+          - type: string
+            enum:
+            - low
+            - medium
+            - high
+            - critical
+            - unknown
+          - type: 'null'
+          title: Risk Level
+        affected_area:
+          anyOf:
+          - $ref: '#/components/schemas/PolygonGeometry'
+          - type: 'null'
+        risk_artifact_id:
+          anyOf:
+          - type: string
+            format: uuid
+          - type: 'null'
+          title: Risk Artifact Id
+        population_estimate:
+          anyOf:
+          - type: integer
+            minimum: 0.0
+          - type: 'null'
+          title: Population Estimate
+        findings:
+          additionalProperties: true
+          type: object
+          title: Findings
+        methods_and_sources:
+          additionalProperties: true
+          type: object
+          title: Methods And Sources
+      additionalProperties: false
+      type: object
+      required:
+      - change_result_id
+      - assessment_type
+      title: ImpactAssessmentCreate
+    ImpactAssessmentRead:
+      properties:
+        id:
+          type: string
+          format: uuid
+          title: Id
+        created_at:
+          type: string
+          format: date-time
+          title: Created At
+        updated_at:
+          type: string
+          format: date-time
+          title: Updated At
+        change_result_id:
+          type: string
+          format: uuid
+          title: Change Result Id
+        assessment_type:
+          type: string
+          title: Assessment Type
+        risk_level:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Risk Level
+      type: object
+      required:
+      - id
+      - created_at
+      - updated_at
+      - change_result_id
+      - assessment_type
+      - risk_level
+      title: ImpactAssessmentRead
+    PolygonGeometry:
+      properties:
+        type:
+          type: string
+          enum:
+          - Polygon
+          - MultiPolygon
+          title: Type
+        coordinates:
+          items: {}
+          type: array
+          title: Coordinates
+      additionalProperties: false
+      type: object
+      required:
+      - type
+      - coordinates
+      title: PolygonGeometry
+    ProcessingJobCreate:
+      properties:
+        project_id:
+          type: string
+          format: uuid
+          title: Project Id
+        scene_pair_id:
+          anyOf:
+          - type: string
+            format: uuid
+          - type: 'null'
+          title: Scene Pair Id
+        job_type:
+          type: string
+          enum:
+          - preprocess
+          - denoise
+          - change_detection
+          - impact_assessment
+          - other
+          title: Job Type
+        idempotency_key:
+          anyOf:
+          - type: string
+            maxLength: 180
+            minLength: 8
+          - type: 'null'
+          title: Idempotency Key
+        input_parameters:
+          additionalProperties: true
+          type: object
+          title: Input Parameters
+      additionalProperties: false
+      type: object
+      required:
+      - project_id
+      - job_type
+      title: ProcessingJobCreate
+    ProcessingJobRead:
+      properties:
+        id:
+          type: string
+          format: uuid
+          title: Id
+        created_at:
+          type: string
+          format: date-time
+          title: Created At
+        updated_at:
+          type: string
+          format: date-time
+          title: Updated At
+        project_id:
+          type: string
+          format: uuid
+          title: Project Id
+        job_type:
+          type: string
+          title: Job Type
+        status:
+          type: string
+          title: Status
+      type: object
+      required:
+      - id
+      - created_at
+      - updated_at
+      - project_id
+      - job_type
+      - status
+      title: ProcessingJobRead
+    SarSceneCreate:
+      properties:
+        provider:
+          type: string
+          maxLength: 60
+          minLength: 2
+          title: Provider
+        collection:
+          type: string
+          maxLength: 100
+          minLength: 2
+          title: Collection
+        provider_item_id:
+          type: string
+          maxLength: 255
+          minLength: 2
+          title: Provider Item Id
+        product_type:
+          type: string
+          maxLength: 60
+          minLength: 2
+          title: Product Type
+        acquisition_start:
+          type: string
+          format: date-time
+          title: Acquisition Start
+        acquisition_end:
+          anyOf:
+          - type: string
+            format: date-time
+          - type: 'null'
+          title: Acquisition End
+        orbit_direction:
+          anyOf:
+          - type: string
+            enum:
+            - ASCENDING
+            - DESCENDING
+          - type: 'null'
+          title: Orbit Direction
+        relative_orbit:
+          anyOf:
+          - type: integer
+            minimum: 1.0
+          - type: 'null'
+          title: Relative Orbit
+        polarizations:
+          items:
+            type: string
+            enum:
+            - VV
+            - VH
+            - HH
+            - HV
+          type: array
+          minItems: 1
+          title: Polarizations
+        incidence_angle_deg:
+          anyOf:
+          - type: number
+            maximum: 90.0
+            minimum: 0.0
+          - type: 'null'
+          title: Incidence Angle Deg
+        footprint:
+          anyOf:
+          - $ref: '#/components/schemas/PolygonGeometry'
+          - type: 'null'
+        stac_item:
+          additionalProperties: true
+          type: object
+          title: Stac Item
+      additionalProperties: false
+      type: object
+      required:
+      - provider
+      - collection
+      - provider_item_id
+      - product_type
+      - acquisition_start
+      - polarizations
+      - stac_item
+      title: SarSceneCreate
+    SarSceneRead:
+      properties:
+        id:
+          type: string
+          format: uuid
+          title: Id
+        created_at:
+          type: string
+          format: date-time
+          title: Created At
+        updated_at:
+          type: string
+          format: date-time
+          title: Updated At
+        provider:
+          type: string
+          title: Provider
+        collection:
+          type: string
+          title: Collection
+        provider_item_id:
+          type: string
+          title: Provider Item Id
+        product_type:
+          type: string
+          title: Product Type
+        acquisition_start:
+          type: string
+          format: date-time
+          title: Acquisition Start
+        orbit_direction:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Orbit Direction
+        polarizations:
+          items:
+            type: string
+          type: array
+          title: Polarizations
+      type: object
+      required:
+      - id
+      - created_at
+      - updated_at
+      - provider
+      - collection
+      - provider_item_id
+      - product_type
+      - acquisition_start
+      - orbit_direction
+      - polarizations
+      title: SarSceneRead
+    ScenePairCreate:
+      properties:
+        project_id:
+          type: string
+          format: uuid
+          title: Project Id
+        aoi_id:
+          type: string
+          format: uuid
+          title: Aoi Id
+        before_scene_id:
+          type: string
+          format: uuid
+          title: Before Scene Id
+        after_scene_id:
+          type: string
+          format: uuid
+          title: After Scene Id
+        validation_status:
+          type: string
+          enum:
+          - pending
+          - pass
+          - warning
+          - reject
+          title: Validation Status
+          default: pending
+        validation_report:
+          additionalProperties: true
+          type: object
+          title: Validation Report
+      additionalProperties: false
+      type: object
+      required:
+      - project_id
+      - aoi_id
+      - before_scene_id
+      - after_scene_id
+      title: ScenePairCreate
+    ScenePairRead:
+      properties:
+        id:
+          type: string
+          format: uuid
+          title: Id
+        created_at:
+          type: string
+          format: date-time
+          title: Created At
+        updated_at:
+          type: string
+          format: date-time
+          title: Updated At
+        project_id:
+          type: string
+          format: uuid
+          title: Project Id
+        before_scene_id:
+          type: string
+          format: uuid
+          title: Before Scene Id
+        after_scene_id:
+          type: string
+          format: uuid
+          title: After Scene Id
+        validation_status:
+          type: string
+          title: Validation Status
+      type: object
+      required:
+      - id
+      - created_at
+      - updated_at
+      - project_id
+      - before_scene_id
+      - after_scene_id
+      - validation_status
+      title: ScenePairRead
+    ValidationError:
+      properties:
+        loc:
+          items:
+            anyOf:
+            - type: string
+            - type: integer
+          type: array
+          title: Location
+        msg:
+          type: string
+          title: Message
+        type:
+          type: string
+          title: Error Type
+        input:
+          title: Input
+        ctx:
+          type: object
+          title: Context
+      type: object
+      required:
+      - loc
+      - msg
+      - type
+      title: ValidationError

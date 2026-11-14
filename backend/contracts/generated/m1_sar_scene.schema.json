@@ -1,0 +1,158 @@
+{
+  "$defs": {
+    "PolygonGeometry": {
+      "additionalProperties": false,
+      "properties": {
+        "coordinates": {
+          "items": {},
+          "title": "Coordinates",
+          "type": "array"
+        },
+        "type": {
+          "enum": [
+            "Polygon",
+            "MultiPolygon"
+          ],
+          "title": "Type",
+          "type": "string"
+        }
+      },
+      "required": [
+        "type",
+        "coordinates"
+      ],
+      "title": "PolygonGeometry",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "acquisition_end": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Acquisition End"
+    },
+    "acquisition_start": {
+      "format": "date-time",
+      "title": "Acquisition Start",
+      "type": "string"
+    },
+    "collection": {
+      "maxLength": 100,
+      "minLength": 2,
+      "title": "Collection",
+      "type": "string"
+    },
+    "footprint": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/PolygonGeometry"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "incidence_angle_deg": {
+      "anyOf": [
+        {
+          "maximum": 90,
+          "minimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Incidence Angle Deg"
+    },
+    "orbit_direction": {
+      "anyOf": [
+        {
+          "enum": [
+            "ASCENDING",
+            "DESCENDING"
+          ],
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Orbit Direction"
+    },
+    "polarizations": {
+      "items": {
+        "enum": [
+          "VV",
+          "VH",
+          "HH",
+          "HV",
+          "HHHH"
+        ],
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Polarizations",
+      "type": "array"
+    },
+    "product_type": {
+      "maxLength": 60,
+      "minLength": 2,
+      "title": "Product Type",
+      "type": "string"
+    },
+    "provider": {
+      "maxLength": 60,
+      "minLength": 2,
+      "title": "Provider",
+      "type": "string"
+    },
+    "provider_item_id": {
+      "maxLength": 255,
+      "minLength": 2,
+      "title": "Provider Item Id",
+      "type": "string"
+    },
+    "relative_orbit": {
+      "anyOf": [
+        {
+          "minimum": 1,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Relative Orbit"
+    },
+    "stac_item": {
+      "additionalProperties": true,
+      "title": "Stac Item",
+      "type": "object"
+    }
+  },
+  "required": [
+    "provider",
+    "collection",
+    "provider_item_id",
+    "product_type",
+    "acquisition_start",
+    "polarizations",
+    "stac_item"
+  ],
+  "title": "SarSceneCreate",
+  "type": "object"
+}

@@ -1,0 +1,127 @@
+{
+  "$defs": {
+    "PolygonGeometry": {
+      "additionalProperties": false,
+      "properties": {
+        "coordinates": {
+          "items": {},
+          "title": "Coordinates",
+          "type": "array"
+        },
+        "type": {
+          "enum": [
+            "Polygon",
+            "MultiPolygon"
+          ],
+          "title": "Type",
+          "type": "string"
+        }
+      },
+      "required": [
+        "type",
+        "coordinates"
+      ],
+      "title": "PolygonGeometry",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "affected_area": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/PolygonGeometry"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "assessment_type": {
+      "maxLength": 64,
+      "minLength": 2,
+      "title": "Assessment Type",
+      "type": "string"
+    },
+    "change_result_id": {
+      "format": "uuid",
+      "title": "Change Result Id",
+      "type": "string"
+    },
+    "findings": {
+      "additionalProperties": true,
+      "title": "Findings",
+      "type": "object"
+    },
+    "job_id": {
+      "anyOf": [
+        {
+          "format": "uuid",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Job Id"
+    },
+    "methods_and_sources": {
+      "additionalProperties": true,
+      "title": "Methods And Sources",
+      "type": "object"
+    },
+    "population_estimate": {
+      "anyOf": [
+        {
+          "minimum": 0,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Population Estimate"
+    },
+    "risk_artifact_id": {
+      "anyOf": [
+        {
+          "format": "uuid",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Risk Artifact Id"
+    },
+    "risk_level": {
+      "anyOf": [
+        {
+          "enum": [
+            "low",
+            "medium",
+            "high",
+            "critical",
+            "unknown"
+          ],
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Risk Level"
+    }
+  },
+  "required": [
+    "change_result_id",
+    "assessment_type"
+  ],
+  "title": "ImpactAssessmentCreate",
+  "type": "object"
+}

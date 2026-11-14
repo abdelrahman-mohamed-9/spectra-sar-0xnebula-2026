@@ -1,0 +1,49 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "after_scene_id": {
+      "format": "uuid",
+      "title": "After Scene Id",
+      "type": "string"
+    },
+    "aoi_id": {
+      "format": "uuid",
+      "title": "Aoi Id",
+      "type": "string"
+    },
+    "before_scene_id": {
+      "format": "uuid",
+      "title": "Before Scene Id",
+      "type": "string"
+    },
+    "project_id": {
+      "format": "uuid",
+      "title": "Project Id",
+      "type": "string"
+    },
+    "validation_report": {
+      "additionalProperties": true,
+      "title": "Validation Report",
+      "type": "object"
+    },
+    "validation_status": {
+      "default": "pending",
+      "enum": [
+        "pending",
+        "pass",
+        "warning",
+        "reject"
+      ],
+      "title": "Validation Status",
+      "type": "string"
+    }
+  },
+  "required": [
+    "project_id",
+    "aoi_id",
+    "before_scene_id",
+    "after_scene_id"
+  ],
+  "title": "ScenePairCreate",
+  "type": "object"
+}

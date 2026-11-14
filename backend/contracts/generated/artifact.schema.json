@@ -1,0 +1,114 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "crs": {
+      "anyOf": [
+        {
+          "maxLength": 100,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Crs"
+    },
+    "kind": {
+      "enum": [
+        "raw_sar",
+        "calibrated_sar",
+        "filtered_sar",
+        "change_mask",
+        "confidence_map",
+        "risk_map",
+        "report",
+        "other"
+      ],
+      "title": "Kind",
+      "type": "string"
+    },
+    "media_type": {
+      "maxLength": 120,
+      "minLength": 3,
+      "title": "Media Type",
+      "type": "string"
+    },
+    "metadata_json": {
+      "additionalProperties": true,
+      "title": "Metadata Json",
+      "type": "object"
+    },
+    "pixel_size_m": {
+      "anyOf": [
+        {
+          "exclusiveMinimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Pixel Size M"
+    },
+    "project_id": {
+      "format": "uuid",
+      "title": "Project Id",
+      "type": "string"
+    },
+    "scene_id": {
+      "anyOf": [
+        {
+          "format": "uuid",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Scene Id"
+    },
+    "sha256": {
+      "anyOf": [
+        {
+          "pattern": "^[a-fA-F0-9]{64}$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Sha256"
+    },
+    "size_bytes": {
+      "anyOf": [
+        {
+          "minimum": 0,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Size Bytes"
+    },
+    "storage_uri": {
+      "maxLength": 2048,
+      "minLength": 6,
+      "title": "Storage Uri",
+      "type": "string"
+    }
+  },
+  "required": [
+    "project_id",
+    "kind",
+    "storage_uri",
+    "media_type"
+  ],
+  "title": "ArtifactCreate",
+  "type": "object"
+}

@@ -1,0 +1,59 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "idempotency_key": {
+      "anyOf": [
+        {
+          "maxLength": 180,
+          "minLength": 8,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Idempotency Key"
+    },
+    "input_parameters": {
+      "additionalProperties": true,
+      "title": "Input Parameters",
+      "type": "object"
+    },
+    "job_type": {
+      "enum": [
+        "preprocess",
+        "denoise",
+        "change_detection",
+        "impact_assessment",
+        "other"
+      ],
+      "title": "Job Type",
+      "type": "string"
+    },
+    "project_id": {
+      "format": "uuid",
+      "title": "Project Id",
+      "type": "string"
+    },
+    "scene_pair_id": {
+      "anyOf": [
+        {
+          "format": "uuid",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Scene Pair Id"
+    }
+  },
+  "required": [
+    "project_id",
+    "job_type"
+  ],
+  "title": "ProcessingJobCreate",
+  "type": "object"
+}

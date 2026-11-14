@@ -1,0 +1,37 @@
+{
+  "project": "SPECTRA-SAR",
+  "owner": "M5 Backend & Geospatial Platform",
+  "contract_version": "0.1.0-draft",
+  "status": "proposed; not yet accepted by upstream module owners",
+  "api_base": "/api/v1",
+  "wire_format": "JSON UTF-8 (unless multipart upload)",
+  "geometry_crs": "EPSG:4326",
+  "resource_id_type": "UUID",
+  "integrations": [
+    {
+      "owner": "M1", "input": "Sentinel-1 provider STAC Feature and processing provenance", "schemas": ["m1_sar_scene", "m1_scene_pair", "artifact"],
+      "routes": ["POST /resources/scenes", "POST /resources/scene-pairs", "POST /storage/artifacts/upload"],
+      "auth": "internal X-API-Key, never browser", "pending": ["real example STAC product", "scene-pair selection gates", "calibration/export format", "CRS/units"]
+    },
+    {
+      "owner": "M2", "input": "true change mask, confidence raster and statistical provenance", "schemas": ["processing_job", "m2_change_result", "artifact"],
+      "routes": ["POST /resources/change-results", "POST /storage/artifacts/upload", "POST /processing-jobs/{job_id}/dispatch"],
+      "auth": "internal X-API-Key", "pending": ["change mask nodata/units", "confidence map convention", "algorithm version", "QA/accuracy metrics"]
+    },
+    {
+      "owner": "M3", "input": "real geospatial impact assessment, source and methods", "schemas": ["m3_impact_assessment", "artifact"],
+      "routes": ["POST /resources/impact-assessments", "GET /geospatial/impacts/within"],
+      "auth": "internal X-API-Key", "pending": ["risk classification thresholds", "population/basemap provenance", "spatial precision", "uncertainty"]
+    },
+    {
+      "owner": "M4", "input": "presentation/UI requirements; ownership unconfirmed", "schemas": [],
+      "routes": ["POST /auth/login", "GET /auth/me", "GET /auth/projects/{project_id}/artifacts", "GET /auth/projects/{project_id}/jobs"],
+      "auth": "browser bearer JWT, never X-API-Key", "pending": ["M4 ownership and page requirements", "scoped map API", "signed download authorization", "pagination UX"]
+    },
+    {
+      "owner": "M6", "input": "runtime, deployment, secrets and service ownership; ownership unconfirmed", "schemas": [],
+      "routes": ["GET /health/live", "GET /health/ready"],
+      "auth": "internal secrets managed server-side", "pending": ["TLS and private network", "service secret rotation", "workers and job recovery", "observability", "backup and migrations"]
+    }
+  ]
+}
