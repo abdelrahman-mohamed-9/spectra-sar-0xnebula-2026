@@ -1,0 +1,18 @@
+SPECTRA 3.4 - OFFLINE JUDGE MISSION STUDIO
+=========================================
+1) Extract this ZIP fully (do not browse inside the ZIP).
+2) Open judge-demo/index.html directly in Chrome/Edge/Safari.
+   Windows: double click OPEN-JUDGE-DEMO-WINDOWS.cmd
+   macOS:   double click OPEN-JUDGE-DEMO.command
+3) No Python, NASA login, web service, internet, or access token needed.
+4) Select a method, click a review region, use the inspection radius slider,
+   and download the JSON/CSV evidence.
+5) To run the full original SPECTRA processing workspace instead, use
+   START.command (macOS) or START-WINDOWS.cmd (Windows).
+
+SCIENTIFIC STATUS
+- Real Sentinel-1 imagery and published flood/water labels, Spain hold-out.
+- Comparison uses first VV band and a model trained on Ghana and USA.
+- No verified population-count raster is included for this Spain case.
+- No confirmed population affected, physical damage or disaster forecast.
+- Local SHA-256 hashes in judge-demo/evidence-manifest.json.

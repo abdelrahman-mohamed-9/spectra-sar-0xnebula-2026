@@ -1,0 +1,32 @@
+{
+  "project": "SPECTRA-SAR",
+  "owner": "M1",
+  "scientific_data_ready": false,
+  "review_timestamp": "2026-11-13",
+  "sources": {
+    "before_cmr": "G4319985062-ASF",
+    "after_cmr": "G4338819270-ASF",
+    "goff_cmr": "G4338825825-ASF"
+  },
+  "for_M2": {
+    "needed": "Before+after real HH-HH GCOV GeoTIFF same calibrated layer, validated CRS/grid/NoData, acquisition UTC and sensor metadata; optional GOFF displacement and quality layers after GOFF QA",
+    "currently_available": "CMR IDs, selected-scene metadata and preliminary AOI; NO verified rasters",
+    "blocked_by": "M1 T05 real download and T03 QA"
+  },
+  "for_M3": {
+    "needed": "Flood/glacier study AOIs and GeoTIFF spatial reference; later M2 change mask and validated results",
+    "currently_available": "Provisional AOI rectangles, do not treat as water/glacier extent"
+  },
+  "for_M4": {
+    "needed": "Original NASA granule URLs, downloaded-file checksums, processing/job manifests and provenance records",
+    "currently_available": "NASA CMR IDs/URLs and metadata; no download hashes yet"
+  },
+  "for_M5": {
+    "needed": "File locations, dataset schemas, availability/readiness status and scene metadata for API/catalog",
+    "currently_available": "Preliminary metadata contract; real scientific data status must remain PENDING"
+  },
+  "for_M6": {
+    "needed": "Real before/after imagery preview layers, bounds, timestamps, attribution and scientific caveats",
+    "currently_available": "AOI, source metadata and chronology only; do not display fake flood maps"
+  }
+}

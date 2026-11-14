@@ -1,0 +1,26 @@
+{
+  "source": "NASA Harmony",
+  "role": "before",
+  "collection_concept_id": "C2854338529-ASF",
+  "cmr_granule_concept_id": "G4319985062-ASF",
+  "granule_id": "NISAR_L2_PR_GCOV_031_034_A_031_4005_DHDH_A_20260920T131512_20260920T131548_P05023_N_F_J_001",
+  "source_acquisition_utc": "2026-09-20T13:15:12.000Z",
+  "variable_requested": "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+  "bbox_lonlat": [
+    -134.7,
+    58.33,
+    -134.4,
+    58.55
+  ],
+  "utc_recorded": "2026-11-13T17:32:53.111842+00:00",
+  "status": "DOWNLOADED_NOT_SCIENCE_VALIDATED",
+  "request_url": "https://harmony.earthdata.nasa.gov/C2854338529-ASF/ogc-api-coverages/1.0.0/collections/parameter_vars/coverage/rangeset?forceAsync=true&subset=lat%2858.33%3A58.55%29&subset=lon%28-134.7%3A-134.4%29&label=harmony-py&granuleId=G4319985062-ASF&format=image%2Ftiff&maxResults=1&variable=%2Fscience%2FLSAR%2FGCOV%2Fgrids%2FfrequencyA%2FHHHH",
+  "job_id": "e5ade174-33f9-4a14-a6c1-506cf9f75cd7",
+  "downloaded_filenames": [
+    "462604487_NISAR_L2_PR_GCOV_031_034_A_031_4005_DHDH_A_20260920T131512_20260920T131548_P05023_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_HHHH_subsetted.tif"
+  ],
+  "sha256": "d9b44bdc66aea9242492c7d4476beb2cf93870ab1bdf073424854ff763cbf0f7",
+  "original_geotiff_filename": "462604487_NISAR_L2_PR_GCOV_031_034_A_031_4005_DHDH_A_20260920T131512_20260920T131548_P05023_N_F_J_001_science_LSAR_GCOV_grids_frequencyA_HHHH_subsetted.tif",
+  "normalized_geotiff": "before_HHHH_20260920.tif",
+  "size_bytes": 22126661
+}

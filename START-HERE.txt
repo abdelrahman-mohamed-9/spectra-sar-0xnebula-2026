@@ -1,0 +1,5 @@
+SPECTRA Phase 1 + Phase 2 integrated release
+Read README-START-HERE.md (Arabic) or README.md (English).
+macOS/Linux: bash START.command
+Current evidence: reports/RELEASE-VALIDATION.md
+Ready-made results: results/REPORT.md

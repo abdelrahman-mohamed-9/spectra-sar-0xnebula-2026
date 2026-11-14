@@ -1,0 +1,30 @@
+{
+  "query_bbox_wgs84": [-153.134, 64.6235, -153.0561, 64.6564],
+  "queried_on": "2026-11-14",
+  "query_parameters": {
+    "where": "1=1",
+    "geometryType": "esriGeometryEnvelope",
+    "inSR": 4326,
+    "outSR": 4326,
+    "f": "geojson"
+  },
+  "population": {
+    "publisher": "U.S. Census Bureau",
+    "year": 2020,
+    "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/Census2020/Tracts_Blocks/MapServer/2/query",
+    "fields": "GEOID,POP100,AREALAND,AREAWATER",
+    "note": "Tabulation block geometry and total population, no sub-block population distribution."
+  },
+  "roads": {
+    "publisher": "U.S. Census Bureau TIGERweb",
+    "layers": [2, 6, 8],
+    "base_url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+    "note": "Mapped primary, secondary and local roads. Empty response does not prove absence."
+  },
+  "buildings": {
+    "publisher": "FEMA and ORNL, USA Structures via Esri",
+    "source": "https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query",
+    "fields": "OBJECTID",
+    "note": "Coverage limitations include the source minimum building size."
+  }
+}

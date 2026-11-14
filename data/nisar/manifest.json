@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "sensor": "NISAR",
+  "pair_id": "NISAR_GCOV_073_055_20261017_20261029_REAL",
+  "source_provider": "NASA ASF NISAR GCOV remotely read with GDAL (user supplied extracts)",
+  "processing_software": "GDAL HDF5 /vsicurl subset and SPECTRA M1 real-input importer",
+  "processing_version": "P05023 before / P05036 after (MIXED: science review required)",
+  "product_type": "GCOV",
+  "acquisition_mode": "4005",
+  "radiometry": "nisar_gcov_diagonal",
+  "units": "linear_power",
+  "polarizations": [
+    "HHHH"
+  ],
+  "grid": {
+    "crs": "EPSG:3413",
+    "pixel_size_m": 10.0,
+    "width": 293,
+    "height": 303
+  },
+  "source_ids": {
+    "before": "NISAR_L2_PR_GCOV_033_073_D_055_4005_DHDH_A_20261017T062424_20261017T062502_P05023_N_F_J_001",
+    "after": "NISAR_L2_PR_GCOV_034_073_D_055_4005_DHDH_A_20261029T062425_20261029T062502_P05036_N_F_J_001"
+  },
+  "data_limitations": [
+    "Metadata for NASA granules supplied by user ASF GDAL snippets, not independently authenticated by this software",
+    "Before PROVISIONAL P05023; After VALIDATED P05036: cross-processing comparisons may be biased",
+    "AOI is experimental near -153.1,64.64, NOT the Mendenhall Valley event area",
+    "No incidence-angle comparison, terrain/shadow masks, or subpixel registration certificate",
+    "Candidate radar backscatter changes are NOT verified flooding, damage or AI-labelled impact"
+  ],
+  "before": {
+    "scene_id": "NISAR_L2_PR_GCOV_033_073_D_055_4005_DHDH_A_20261017T062424_20261017T062502_P05023_N_F_J_001",
+    "acquired_utc": "2026-10-17T06:24:24Z",
+    "relative_orbit": 73,
+    "orbit_direction": "DESCENDING",
+    "incidence_angle_deg_summary": null,
+    "raster_files": {
+      "HHHH": "before_HHHH.tif"
+    },
+    "valid_mask_file": "before_valid_mask.tif",
+    "source_url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_033_073_D_055_4005_DHDH_A_20261017T062424_20261017T062502_P05023_N_F_J_001/NISAR_L2_PR_GCOV_033_073_D_055_4005_DHDH_A_20261017T062424_20261017T062502_P05023_N_F_J_001.h5",
+    "internal_layer": "//science/LSAR/GCOV/grids/frequencyA/HHHH",
+    "collection": "NISAR_L2_GCOV_PROVISIONAL_V1",
+    "processing_identifier": "P05023"
+  },
+  "after": {
+    "scene_id": "NISAR_L2_PR_GCOV_034_073_D_055_4005_DHDH_A_20261029T062425_20261029T062502_P05036_N_F_J_001",
+    "acquired_utc": "2026-10-29T06:24:25Z",
+    "relative_orbit": 73,
+    "orbit_direction": "DESCENDING",
+    "incidence_angle_deg_summary": null,
+    "raster_files": {
+      "HHHH": "after_HHHH.tif"
+    },
+    "valid_mask_file": "after_valid_mask.tif",
+    "source_url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_V1/NISAR_L2_PR_GCOV_034_073_D_055_4005_DHDH_A_20261029T062425_20261029T062502_P05036_N_F_J_001/NISAR_L2_PR_GCOV_034_073_D_055_4005_DHDH_A_20261029T062425_20261029T062502_P05036_N_F_J_001.h5",
+    "internal_layer": "//science/LSAR/GCOV/grids/frequencyA/HHHH",
+    "collection": "NISAR_L2_GCOV_V1",
+    "processing_identifier": "P05036"
+  }
+}

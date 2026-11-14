@@ -1,0 +1,14 @@
+{
+  "creator": "Ritu Yadav",
+  "title": "Modified Sen1Floods11 Dataset for Change Detection",
+  "doi": "10.5281/zenodo.7946594",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "chips": ["Ghana_103272", "USA_1010394", "Spain_1167260"],
+  "original_entries_for_each_chip": {
+    "before.tif": "PRE_S1-20230517T191707Z-001.zip → PRE_S1/<chip>_S1_PREHand.tif",
+    "after.tif": "POST_S1-20230517T191716Z-001.zip → POST_S1/<chip>_S1Hand.tif",
+    "labels.tif": "Labels-20230517T191741Z-001.zip → Labels/<chip>_LabelHand.tif"
+  },
+  "changes": "Only local filenames changed. Raster bytes were copied from original archives and checked by ZIP CRC and local SHA-256."
+}

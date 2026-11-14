@@ -1,0 +1,92 @@
+{
+  "nisar-oct2026": {
+    "benchmark-source.json": {
+      "sha256": "95c28f137aa40463fb4c618b69c6721a629549adcce7f494f0fb472ba7ee7e5c",
+      "bytes": 714
+    },
+    "benchmark/Ghana_103272/after.tif": {
+      "sha256": "1c46a973029c6d05ea931f7c82b1bce9f20282229cc44eb712b0fb84773fcab5",
+      "bytes": 1787221
+    },
+    "benchmark/Ghana_103272/before.tif": {
+      "sha256": "3ee3e2a8182a3abd99b4d15b29d767715dc360eb0a1e4ff55ee4a5f4a45a9a5c",
+      "bytes": 3906271
+    },
+    "benchmark/Ghana_103272/labels.tif": {
+      "sha256": "0b295adc1c5831a534b9d285a1e079cb48715220a4c47e11c7fd59550830bb59",
+      "bytes": 1413
+    },
+    "benchmark/Spain_1167260/after.tif": {
+      "sha256": "e838194f1f60dca63e111ce7df7f2705a6f76779fe4bc5b6181dc224e80d1f01",
+      "bytes": 1498434
+    },
+    "benchmark/Spain_1167260/before.tif": {
+      "sha256": "dfbe640646f2fadd63ad79b5dfb09f8ec259ded816ea7fdc985087cfaee9bc7a",
+      "bytes": 3646635
+    },
+    "benchmark/Spain_1167260/labels.tif": {
+      "sha256": "7fb2d9b5f65885b57b0f7a2e2ac02e3342ece255d3e2a6f6cb10645937f6f6e3",
+      "bytes": 11420
+    },
+    "benchmark/USA_1010394/after.tif": {
+      "sha256": "ea5b32388a30a837a0443ee2eae249370bcff2bb9127efd52a833a3d8216505f",
+      "bytes": 1467469
+    },
+    "benchmark/USA_1010394/before.tif": {
+      "sha256": "0d6655e5740ed5220b118d03e9f58620a44acdeb4f65281752e0c249a5c6c9ee",
+      "bytes": 3208840
+    },
+    "benchmark/USA_1010394/labels.tif": {
+      "sha256": "db7eff663a64d2cb7c890f1190d65739248066c7492323f42791e5d319021355",
+      "bytes": 1852
+    },
+    "geography/buildings.geojson": {
+      "sha256": "1ce7eb457779acd1dc230a1bcb4692d06f27533481f26cbfe0e9e599134c0cd4",
+      "bytes": 98
+    },
+    "geography/geography-source.json": {
+      "sha256": "dc07d2181e5393f96c98f0421f6a597d347ca612c5f5b783cd5ec39997722334",
+      "bytes": 1190
+    },
+    "geography/population.geojson": {
+      "sha256": "321b150d456881383f9a0061b6d995b1fc8019175104b5ccec35e8c677fe88d6",
+      "bytes": 428877
+    },
+    "geography/roads-2.geojson": {
+      "sha256": "ed778c73ea51338d6576fb5992b189f2b94d9f3d5e199f46c1af520d6b0b3e6c",
+      "bytes": 42
+    },
+    "geography/roads-6.geojson": {
+      "sha256": "ed778c73ea51338d6576fb5992b189f2b94d9f3d5e199f46c1af520d6b0b3e6c",
+      "bytes": 42
+    },
+    "geography/roads-8.geojson": {
+      "sha256": "ed778c73ea51338d6576fb5992b189f2b94d9f3d5e199f46c1af520d6b0b3e6c",
+      "bytes": 42
+    },
+    "nisar/after_HHHH.tif": {
+      "sha256": "396680ad535b69fbc34d18d82a877e6aab4371a70d1f6791f69fbcdd25c495ac",
+      "bytes": 310776
+    },
+    "nisar/after_valid_mask.tif": {
+      "sha256": "71d1424676c80c972841e695c92b8c3d55454192e393abc7079e6c4afcaad48a",
+      "bytes": 1033
+    },
+    "nisar/before_HHHH.tif": {
+      "sha256": "c1f87d53de0de13c48712c633bc8e5bfd6ae281441fcee876dc3c0bf49bee6e8",
+      "bytes": 311691
+    },
+    "nisar/before_valid_mask.tif": {
+      "sha256": "71d1424676c80c972841e695c92b8c3d55454192e393abc7079e6c4afcaad48a",
+      "bytes": 1033
+    },
+    "nisar/input-provenance.json": {
+      "sha256": "0f0d412fb94e6120e13a3faac58b4eaf29c9ac81ff174c52ae0694b347377c44",
+      "bytes": 1306
+    },
+    "nisar/manifest.json": {
+      "sha256": "dbe4be0902fa6325faf1cf7706e9697f250d8c375687985a6702e67b11f94805",
+      "bytes": 3035
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "exploratory": true,
+  "threshold_db": 3.0,
+  "min_pixels": 9,
+  "impact": {},
+  "pair_dir": "data/real-nisar-oct2026-pair"
+}

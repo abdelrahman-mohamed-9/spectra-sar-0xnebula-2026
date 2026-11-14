@@ -1,0 +1,13 @@
+{
+  "exploratory": true,
+  "threshold_db": 3.0,
+  "min_pixels": 9,
+  "impact": {
+    "aoi": "inputs/aoi.geojson",
+    "osm": "inputs/osm.geojson",
+    "population": "inputs/population.tif",
+    "population_unit": "count_per_pixel",
+    "population_provenance": "REPLACE_WITH_ACTUAL_DATASET_URL_YEAR_AND_LICENSE",
+    "approve_qa_warning": false
+  }
+}

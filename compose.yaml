@@ -1,0 +1,20 @@
+services:
+  api:
+    build: .
+    environment:
+      SPECTRA_PHASE2_TOKEN: ${SPECTRA_PHASE2_TOKEN:?Set a random operator token}
+      INTERNAL_API_KEY: ${INTERNAL_API_KEY:?Set a separate random Phase 1 service key}
+      SPECTRA_RUNS_DIR: /state/phase1-runs
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - phase2-state:/state
+    restart: unless-stopped
+  worker:
+    build: .
+    command: ["python", "-m", "phase2.jobs"]
+    volumes:
+      - phase2-state:/state
+    restart: unless-stopped
+volumes:
+  phase2-state:
