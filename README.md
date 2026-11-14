@@ -1,36 +1,55 @@
 # SPECTRA-SAR | 0xNEBULA
 
-NASA Space Apps Cairo 2026 — **Dancing with the SARs**.
+**NASA Space Apps Cairo 2026 — Dancing with the SARs**
 
-**Research prototype:** compare SAR acquisitions, display candidate changes, rank inspection patches, and export evidence. This is *not* a confirmed flood/damage detection or emergency alert service.
+> **From satellite signals to defensible decisions.**
 
-## Instant judge demo
+SPECTRA-SAR is an exploratory SAR research platform that brings together satellite change analysis, georeferenced candidate-region review, algorithm comparison, and traceable evidence. It helps analysts investigate *where radar backscatter changed*, *why a candidate was highlighted*, and *which evidence supports the result*.
 
-Open [judge-demo/index.html](judge-demo/index.html) (works offline). A public GitHub Pages mirror is in `/docs` after you enable Pages in Settings.
+**The goal is not just to compare two images. It is to make candidate changes explainable, reviewable, and reproducible.**
 
-## Integrated backend
+## Explore SPECTRA
 
-Using Python 3.12, from the repository root:
+- **Live interactive judge demo:** https://abdelrahman-mohamed-9.github.io/spectra-sar-0xnebula-2026/
+- **Source code:** https://github.com/abdelrahman-mohamed-9/spectra-sar-0xnebula-2026
+- **Project overview:** [submission/PROJECT-DESCRIPTION.md](submission/PROJECT-DESCRIPTION.md)
+- **Project description PDF:** [submission/SPECTRA-SAR-Project-Description-COMPLETE-FINAL.pdf](submission/SPECTRA-SAR-Project-Description-COMPLETE-FINAL.pdf) (**replace with the updated AI/SI-confirmed edition before final Cairo submission**)
+- **AI/SI disclosure:** [docs/AI-SI-DISCLOSURE.md](docs/AI-SI-DISCLOSURE.md)
+- **NASA and external data sources:** [docs/SOURCES.md](docs/SOURCES.md)
+- **Submission links and remaining steps:** [submission/PUBLIC-LINKS.md](submission/PUBLIC-LINKS.md)
+
+The publicly hosted judge demo is a **static, interactive demonstration**. It is not a public deployment of the authenticated backend or worker.
+
+## What the current prototype does
+
+1. Uses documented, real satellite observations and preserves source/provenance metadata.
+2. Examines candidate radar changes with geospatial processing and baseline / experimental methods.
+3. Supports interactive before/after review and a candidate-region inspection queue.
+4. Compares detection methods while reporting precision–recall trade-offs.
+5. Exports geographic evidence and integrity references for further inspection.
+
+The **NISAR Alaska** pair and **Sentinel-1 Spain** benchmark are separate examples and must not be merged into one event. The Alaska NISAR pair uses different product processing versions. A SHA-256 match verifies local file integrity, not satellite-source certification or scientific correctness. Reported change regions are *not* confirmed disasters, damaged buildings, or affected populations; Spain population exposure is **Unavailable** without verified, spatially aligned coverage.
+
+## Run locally (Python 3.12 recommended)
+
+From the repository root:
 
 ```bash
 bash START.command serve --port 8770
 ```
 
-Open `http://127.0.0.1:8770`, paste the locally printed operator token, select NISAR dataset, and run. Keep your token private. Use `bash START.command demo` to run the HTTP/worker evidence smoke test.
+Open `http://127.0.0.1:8770` and enter the locally generated operator token **privately**. Do not publish that token.
 
-## Evidence and data
+To view the static judge demo offline, open [judge-demo/index.html](judge-demo/index.html), or use the live GitHub Pages link above.
 
-- NASA NISAR GCOV cropped Alaska pair, 17 & 29 October 2026 (mixed processing versions; no independent scientific validation). See `data/nisar/manifest.json`.
-- Ritu Yadav, Modified Sen1Floods11 Dataset for Change Detection, DOI https://doi.org/10.5281/zenodo.7946594, CC BY 4.0. The Spanish hold-out demo is **Sentinel-1**, not NISAR.
-- Spain model retrospective precision increases while recall falls. Unverified population/damage is **Unavailable**, not assumed to be zero.
+## AI/SI disclosure
 
-## Documentation
+**Confirmed tools:** **OpenAI ChatGPT** (code drafting/refinement, debugging, testing and technical writing), **Gamma AI** (seven-slide presentation composition and visualization), and **Manus AI** (demonstration video development / visual storytelling). Experimental machine learning also uses **scikit-learn**; these outputs are not independently validated disaster predictions. See [the detailed disclosure](docs/AI-SI-DISCLOSURE.md) for responsible-use and labeling notes.
 
-- [Engineering details](README-ENGINEERING.md)
-- [NASA and third-party credits](docs/SOURCES.md)
-- [Full project description PDF](submission/SPECTRA-SAR-Project-Description-COMPLETE-FINAL.pdf)
-- [Project description](submission/PROJECT-DESCRIPTION.md)
-- [Short demo script](submission/DEMO-30-SECONDS.md)
-- [Local judging checklist](submission/CAIRO-CHECKLIST.md)
+## Scientific sources and attribution
 
-**AI assistance:** ChatGPT (OpenAI) assisted with code refinement, debugging, tests and document preparation; the team must review and disclose any further AI tools used. No blanket software license has been chosen. Third-party data licenses apply independently.
+- NASA–ISRO **NISAR L2 GCOV** Alaska cropped products; see [data/nisar/manifest.json](data/nisar/manifest.json) and [source references](docs/SOURCES.md).
+- **Modified Sen1Floods11 / Sentinel-1** retrospective benchmark, Ritu Yadav, [Zenodo DOI 10.5281/zenodo.7946594](https://doi.org/10.5281/zenodo.7946594).
+- Additional geospatial sources and open-source dependencies credited in [docs/SOURCES.md](docs/SOURCES.md).
+
+This is an **exploratory research prototype**, not an operational emergency alert system. No blanket license has yet been chosen for the original repository code; third-party licenses continue to apply independently.
