@@ -1,0 +1,38 @@
+{
+  "imported_utc": "2026-11-13T21:32:42.921812+00:00",
+  "input_sha256": {
+    "before": "c1f87d53de0de13c48712c633bc8e5bfd6ae281441fcee876dc3c0bf49bee6e8",
+    "after": "396680ad535b69fbc34d18d82a877e6aab4371a70d1f6791f69fbcdd25c495ac"
+  },
+  "input_statistics": {
+    "before": {
+      "positive_valid_pixels": 88779,
+      "pixels": 88779,
+      "fraction": 1.0
+    },
+    "after": {
+      "positive_valid_pixels": 88779,
+      "pixels": 88779,
+      "fraction": 1.0
+    }
+  },
+  "scientific_approval": false,
+  "source_granules": {
+    "before": {
+      "scene_id": "NISAR_L2_PR_GCOV_033_073_D_055_4005_DHDH_A_20261017T062424_20261017T062502_P05023_N_F_J_001",
+      "acquired_utc": "2026-10-17T06:24:24Z",
+      "collection": "NISAR_L2_GCOV_PROVISIONAL_V1",
+      "processing_identifier": "P05023",
+      "maturity": "PROVISIONAL"
+    },
+    "after": {
+      "scene_id": "NISAR_L2_PR_GCOV_034_073_D_055_4005_DHDH_A_20261029T062425_20261029T062502_P05036_N_F_J_001",
+      "acquired_utc": "2026-10-29T06:24:25Z",
+      "collection": "NISAR_L2_GCOV_V1",
+      "processing_identifier": "P05036",
+      "maturity": "VALIDATED"
+    }
+  },
+  "internal_layer": "//science/LSAR/GCOV/grids/frequencyA/HHHH",
+  "note": "Local hashes prove the imported bytes, not remote NASA signature or event attribution."
+}
