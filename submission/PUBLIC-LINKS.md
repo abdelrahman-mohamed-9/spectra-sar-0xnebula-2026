@@ -10,7 +10,7 @@
 | Project description PDF hosted in repository | [View repository PDF](SPECTRA-SAR-Project-Description-COMPLETE-FINAL.pdf) — **outdated until the confirmed AI/SI replacement has been uploaded** |
 | NASA/other sources | [docs/SOURCES.md](../docs/SOURCES.md) |
 | Confirmed AI/SI tool disclosure | [docs/AI-SI-DISCLOSURE.md](../docs/AI-SI-DISCLOSURE.md) |
-| Official 7-slide deck **or** ≤30-second video | **Public link not supplied/verified yet** |
+| Official seven-slide presentation | https://abdelrahman-mohamed-9.github.io/spectra-sar-0xnebula-2026/slides/ — **requires post-deployment Incognito verification** |
 | Official NASA Space Apps project page | **Public URL not supplied/verified yet** |
 
 ## Before submitting
