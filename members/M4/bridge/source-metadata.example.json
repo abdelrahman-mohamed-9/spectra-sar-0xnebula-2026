@@ -1,0 +1,6 @@
+{
+  "source_scenes": [
+    {"scene_id":"<REAL_BEFORE_SENTINEL1_ID>","provider":"<REAL_PROVIDER>","product_type":"RTC","acquisition_time_utc":"<REAL_UTC_TIME>","source_url":"<SOURCE_PRODUCT_URL>","orbit_direction":"ASCENDING","polarization":["VV"]},
+    {"scene_id":"<REAL_AFTER_SENTINEL1_ID>","provider":"<REAL_PROVIDER>","product_type":"RTC","acquisition_time_utc":"<REAL_UTC_TIME>","source_url":"<SOURCE_PRODUCT_URL>","orbit_direction":"ASCENDING","polarization":["VV"]}
+  ]
+}

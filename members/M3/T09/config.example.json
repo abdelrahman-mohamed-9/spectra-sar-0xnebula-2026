@@ -1,0 +1,13 @@
+{
+  "aoi": "data/real_aoi.geojson",
+  "osm": "data/real_osm.geojson",
+  "population": "data/real_worldpop.tif",
+  "hazard": "data/m2_change_footprint.geojson",
+  "hazard_provenance": "REPLACE: M2 validated change footprint with sensor/product ID + acquisition dates",
+  "population_provenance": "REPLACE: exact WorldPop raster URL, year and license",
+  "population_unit": "count_per_pixel",
+  "hazard_type": "unknown",
+  "evidence_status": "UNVERIFIED",
+  "sar_confidence": null,
+  "approve_qa_warning": false
+}

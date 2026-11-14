@@ -1,0 +1,43 @@
+schema_version: '1.0.0'
+rule_set_id: spectra-m3-t08-v1
+# Screening recommendations only, NOT safety-critical instructions.
+allowed_classes: [LOW, MODERATE, HIGH, VERY_HIGH]
+priority_rules:
+  LOW:
+    urgency: ROUTINE_REVIEW
+    recommendations:
+      - code: VERIFY_CHANGE
+        text: Review the SAR change footprint against independent imagery and event records.
+      - code: MONITOR_UPDATES
+        text: Compare with subsequent observations for persistence and false positives.
+  MODERATE:
+    urgency: ANALYST_REVIEW
+    recommendations:
+      - code: VERIFY_CHANGE
+        text: Request analyst verification of detected change and exposure estimates.
+      - code: INSPECT_ASSET_DATA
+        text: Check OSM building and road completeness within the area of interest.
+  HIGH:
+    urgency: PRIORITIZED_ANALYST_REVIEW
+    recommendations:
+      - code: PRIORITIZE_VALIDATION
+        text: Prioritize expert validation of this area relative to other screened areas.
+      - code: CROSS_CHECK
+        text: Cross-check affected-area estimates against authoritative local hazard and infrastructure data.
+  VERY_HIGH:
+    urgency: PRIORITIZED_ANALYST_REVIEW
+    recommendations:
+      - code: PRIORITIZE_VALIDATION
+        text: Prioritize expert validation and independent corroboration of this high-exposure area.
+      - code: COORDINATE_REVIEW
+        text: Share validated analytical findings with responsible domain experts for interpretation.
+review_required:
+  urgency: DATA_REVIEW
+  recommendations:
+    - code: REVIEW_EVIDENCE
+      text: Obtain verified event evidence, calibrated confidence, and adequate population data before ranking areas.
+    - code: REPORT_UNCERTAINTY
+      text: Surface missing-data and model-quality limitations prominently in the dashboard.
+quality:
+  require_full_population_coverage: true
+  require_source_provenance: true

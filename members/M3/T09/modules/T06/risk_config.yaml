@@ -1,0 +1,23 @@
+schema_version: '1.0.0'
+model_id: spectra-m3-exposure-priority-v1
+# Illustrative thresholds, not scientifically calibrated risk probabilities.
+# Must be reviewed against selected AOI and historical ground truth.
+weights:
+  population: 0.45
+  buildings: 0.35
+  roads: 0.20
+reference_scales:
+  population_people: 10000
+  building_count: 500
+  road_length_m: 50000
+classes:
+  - {name: LOW, min_score: 0.0}
+  - {name: MODERATE, min_score: 25.0}
+  - {name: HIGH, min_score: 50.0}
+  - {name: VERY_HIGH, min_score: 75.0}
+quality:
+  minimum_population_coverage: 0.95
+  maximum_outside_raster_fraction: 0.01
+  minimum_sar_confidence: 0.70
+  # Population completeness, event validation, and model confidence are gates,
+  # not evidence of true danger; don't rescale the exposure-priority index.
