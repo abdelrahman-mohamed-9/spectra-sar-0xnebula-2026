@@ -1,0 +1,603 @@
+%PDF-1.4
+%SPECTRA
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+2 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+3 0 obj
+<< /Length 3095 >>
+stream
+0.033 0.082 0.145 rg 0 0 595 842 re f
+0.09 0.80 0.71 rg 0 830 595 12 re f
+0.09 0.80 0.71 rg BT /F2 11 Tf 1 0 0 1 43 790 Tm (S P E C T R A   /   0 x N E B U L A) Tj ET
+0.70 0.79 0.84 rg BT /F2 8 Tf 1 0 0 1 43 759 Tm (PROJECT DESCRIPTION / 01) Tj ET
+0.96 0.98 1 rg BT /F2 28 Tf 1 0 0 1 43 708 Tm (SPECTRA-SAR) Tj ET
+0.09 0.80 0.71 rg BT /F1 12 Tf 1 0 0 1 44 680 Tm (From Satellite Signals to Defensible Decisions) Tj ET
+0.18 0.30 0.40 RG 1 w 43 660 m 552 660 l S
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 637 Tm (NASA Space Apps Cairo 2026 | Challenge: Dancing with the SARs) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 623.6 Tm (Team 0xNEBULA | Integrated Project Description and User Guide) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 601.2 Tm (SPECTRA-SAR is an evidence-centered synthetic aperture radar \(SAR\) change) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 587.8000000000001 Tm (review prototype. The platform makes candidate changes visible, provides) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 574.4000000000001 Tm (georeferenced investigation regions, compares analytical approaches and) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 561.0000000000001 Tm (preserves source and evidence references for later inspection.) Tj ET
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 538.6000000000001 Tm (OUR MISSION) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 519.6000000000001 Tm (See the change. Question the signal. Trust the evidence.) Tj ET
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 497.20000000000016 Tm (WHAT IS IMPLEMENTED) Tj ET
+0.96 0.98 1 rg BT /F2 9.7 Tf 1 0 0 1 48 478.20000000000016 Tm (- Public interactive judge demo featuring a Sentinel-1 Spain benchmark.) Tj ET
+0.96 0.98 1 rg BT /F2 9.7 Tf 1 0 0 1 48 464.8000000000002 Tm (- Documented NASA NISAR Alaska source-pair processing in the local workflow.) Tj ET
+0.96 0.98 1 rg BT /F2 9.7 Tf 1 0 0 1 48 451.4000000000002 Tm (- Geospatial radar analysis and candidate-region inspection.) Tj ET
+0.96 0.98 1 rg BT /F2 9.7 Tf 1 0 0 1 48 438.0000000000002 Tm (- Baseline versus experimental spatial machine-learning comparison.) Tj ET
+0.96 0.98 1 rg BT /F2 9.7 Tf 1 0 0 1 48 424.60000000000025 Tm (- Exportable evidence and traceability, with explicit scientific limitations.) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 402.2000000000003 Tm (PUBLIC SITE: https://abdelrahman-mohamed-9.github.io/spectra-sar-0xnebula-2026/) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 388.8000000000003 Tm (REPOSITORY: github.com/abdelrahman-mohamed-9/spectra-sar-0xnebula-2026) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 366.4000000000003 Tm (This PDF includes the complete user workflow for public and local review.) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 353.00000000000034 Tm (Research prototype - not an operational hazard alert or damage classifier.) Tj ET
+0.18 0.30 0.40 RG 1 w 43 49 m 552 49 l S
+0.70 0.79 0.84 rg BT /F1 8 Tf 1 0 0 1 43 33 Tm (NASA Space Apps Cairo 2026  |  Research prototype  |  Human-review required) Tj ET
+0.09 0.80 0.71 rg BT /F2 8 Tf 1 0 0 1 511 33 Tm (01 / 15) Tj ET
+endstream
+endobj
+4 0 obj
+<< /Type /Page /Parent 33 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 3 0 R >>
+endobj
+5 0 obj
+<< /Length 3149 >>
+stream
+0.033 0.082 0.145 rg 0 0 595 842 re f
+0.09 0.80 0.71 rg 0 830 595 12 re f
+0.09 0.80 0.71 rg BT /F2 11 Tf 1 0 0 1 43 790 Tm (S P E C T R A   /   0 x N E B U L A) Tj ET
+0.70 0.79 0.84 rg BT /F2 8 Tf 1 0 0 1 43 759 Tm (PROJECT DESCRIPTION / 02) Tj ET
+0.96 0.98 1 rg BT /F2 28 Tf 1 0 0 1 43 708 Tm (Executive Summary) Tj ET
+0.09 0.80 0.71 rg BT /F1 12 Tf 1 0 0 1 44 680 Tm (Why this problem matters) Tj ET
+0.18 0.30 0.40 RG 1 w 43 660 m 552 660 l S
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 637 Tm (Synthetic aperture radar can observe Earth's surface despite cloud cover) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 623.6 Tm (and low light, but radar backscatter changes are not self-explanatory.) Tj ET
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 601.2 Tm (PROBLEM) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 582.2 Tm (A difference map can contain meaningful surface variation, observation) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 568.8000000000001 Tm (artifacts and noise. Reviewers need a traceable path from imagery to) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 555.4000000000001 Tm (candidate regions and a clear separation between hypotheses and facts.) Tj ET
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 533.0000000000001 Tm (OUR RESPONSE) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 514.0000000000001 Tm (SPECTRA-SAR supports the investigation sequence:) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 500.60000000000014 Tm (OBSERVE > VALIDATE > DETECT > PRIORITIZE > PROVE) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 478.20000000000016 Tm (Radar scenes enter with documented provenance. The platform reveals) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 464.8000000000002 Tm (candidate change masks and inspection areas, shows method comparisons,) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 451.4000000000002 Tm (and links interpretation to reviewable supporting evidence.) Tj ET
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 429.0000000000002 Tm (WHO BENEFITS) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 410.0000000000002 Tm (Earth-observation researchers, remote-sensing analysts, disaster-response) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 396.60000000000025 Tm (research teams and educators who must triage potential changes without) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 383.2000000000003 Tm (treating a colored mask as an independently verified emergency.) Tj ET
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 360.8000000000003 Tm (CURRENT STATUS) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 341.8000000000003 Tm (A functioning public static demo and locally run authenticated backend) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 328.4000000000003 Tm (are available. No claim of validated flood prediction or affected-population) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 315.00000000000034 Tm (assessment is made.) Tj ET
+0.18 0.30 0.40 RG 1 w 43 49 m 552 49 l S
+0.70 0.79 0.84 rg BT /F1 8 Tf 1 0 0 1 43 33 Tm (NASA Space Apps Cairo 2026  |  Research prototype  |  Human-review required) Tj ET
+0.09 0.80 0.71 rg BT /F2 8 Tf 1 0 0 1 511 33 Tm (02 / 15) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 33 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 2882 >>
+stream
+0.033 0.082 0.145 rg 0 0 595 842 re f
+0.09 0.80 0.71 rg 0 830 595 12 re f
+0.09 0.80 0.71 rg BT /F2 11 Tf 1 0 0 1 43 790 Tm (S P E C T R A   /   0 x N E B U L A) Tj ET
+0.70 0.79 0.84 rg BT /F2 8 Tf 1 0 0 1 43 759 Tm (PROJECT DESCRIPTION / 03) Tj ET
+0.96 0.98 1 rg BT /F2 28 Tf 1 0 0 1 43 708 Tm (The Challenge) Tj ET
+0.09 0.80 0.71 rg BT /F1 12 Tf 1 0 0 1 44 680 Tm (Radar differences are not decisions) Tj ET
+0.18 0.30 0.40 RG 1 w 43 660 m 552 660 l S
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 637 Tm (Remote sensing often starts with a simple before-and-after comparison.) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 623.6 Tm (That is valuable, but incomplete for reproducible operational judgment.) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 601.2 Tm (CHALLENGE 1: OBSERVATION AMBIGUITY) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 587.8000000000001 Tm (Backscatter differences may originate from real surface change,) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 574.4000000000001 Tm (acquisition geometry, calibration, speckle and product-level variation.) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 552.0000000000001 Tm (CHALLENGE 2: MODEL TRADE-OFFS) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 538.6000000000001 Tm (A system that produces fewer false alarms may also miss more true cases.) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 525.2000000000002 Tm (Precision and recall must be discussed together, especially when the) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 511.8000000000002 Tm (available reference labels are narrow or geographically limited.) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 489.4000000000002 Tm (CHALLENGE 3: ACCOUNTABLE EVIDENCE) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 476.0000000000002 Tm (Reviewers require coordinates, original source IDs, geospatial context,) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 462.60000000000025 Tm (repeatable evaluation steps and honest acknowledgment of uncertainty.) Tj ET
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 440.2000000000003 Tm (THE KEY DESIGN QUESTION) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 421.2000000000003 Tm (How can a person prioritize investigation of radar-change candidates) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 407.8000000000003 Tm (without confusing an experimental signal with confirmed damage?) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 385.4000000000003 Tm (SPECTRA responds with an evidence-led workflow, not an automatic claim) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 372.00000000000034 Tm (that every detection represents a natural disaster.) Tj ET
+0.18 0.30 0.40 RG 1 w 43 49 m 552 49 l S
+0.70 0.79 0.84 rg BT /F1 8 Tf 1 0 0 1 43 33 Tm (NASA Space Apps Cairo 2026  |  Research prototype  |  Human-review required) Tj ET
+0.09 0.80 0.71 rg BT /F2 8 Tf 1 0 0 1 511 33 Tm (03 / 15) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 33 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Length 2823 >>
+stream
+0.033 0.082 0.145 rg 0 0 595 842 re f
+0.09 0.80 0.71 rg 0 830 595 12 re f
+0.09 0.80 0.71 rg BT /F2 11 Tf 1 0 0 1 43 790 Tm (S P E C T R A   /   0 x N E B U L A) Tj ET
+0.70 0.79 0.84 rg BT /F2 8 Tf 1 0 0 1 43 759 Tm (PROJECT DESCRIPTION / 04) Tj ET
+0.96 0.98 1 rg BT /F2 28 Tf 1 0 0 1 43 708 Tm (Workflow Design) Tj ET
+0.09 0.80 0.71 rg BT /F1 12 Tf 1 0 0 1 44 680 Tm (Observe. Validate. Detect. Prioritize. Prove.) Tj ET
+0.18 0.30 0.40 RG 1 w 43 660 m 552 660 l S
+0.96 0.98 1 rg BT /F2 9.7 Tf 1 0 0 1 48 637 Tm (01 OBSERVE) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 623.6 Tm (Use documented satellite scenes and compare the observation pair.) Tj ET
+0.96 0.98 1 rg BT /F2 9.7 Tf 1 0 0 1 48 601.2 Tm (02 VALIDATE) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 587.8000000000001 Tm (Check available metadata and scientific compatibility considerations) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 574.4000000000001 Tm (before making inferences from acquisition differences.) Tj ET
+0.96 0.98 1 rg BT /F2 9.7 Tf 1 0 0 1 48 552.0000000000001 Tm (03 DETECT) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 538.6000000000001 Tm (Apply geospatial processing and baseline or experimental candidate) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 525.2000000000002 Tm (change methods. Outputs represent hypotheses for inspection.) Tj ET
+0.96 0.98 1 rg BT /F2 9.7 Tf 1 0 0 1 48 502.8000000000002 Tm (04 PRIORITIZE) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 489.4000000000002 Tm (Organize contiguous candidate regions as a georeferenced review queue.) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 476.0000000000002 Tm (The queue is not a validated severity or emergency-risk ranking.) Tj ET
+0.96 0.98 1 rg BT /F2 9.7 Tf 1 0 0 1 48 453.60000000000025 Tm (05 PROVE) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 440.2000000000003 Tm (Retain inspectable evidence, original source references, geographic) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 426.8000000000003 Tm (information and file-integrity identifiers for reviewer examination.) Tj ET
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 404.4000000000003 Tm (THE HUMAN-IN-THE-LOOP RULE) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 385.4000000000003 Tm (Reviewers examine what changed, question the detection and decide) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 372.00000000000034 Tm (what additional datasets or ground-truth verification are needed.) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 349.60000000000036 Tm (Public demo examples are precomputed; local execution can run new jobs.) Tj ET
+0.18 0.30 0.40 RG 1 w 43 49 m 552 49 l S
+0.70 0.79 0.84 rg BT /F1 8 Tf 1 0 0 1 43 33 Tm (NASA Space Apps Cairo 2026  |  Research prototype  |  Human-review required) Tj ET
+0.09 0.80 0.71 rg BT /F2 8 Tf 1 0 0 1 511 33 Tm (04 / 15) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 33 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 9 0 R >>
+endobj
+11 0 obj
+<< /Length 2784 >>
+stream
+0.033 0.082 0.145 rg 0 0 595 842 re f
+0.09 0.80 0.71 rg 0 830 595 12 re f
+0.09 0.80 0.71 rg BT /F2 11 Tf 1 0 0 1 43 790 Tm (S P E C T R A   /   0 x N E B U L A) Tj ET
+0.70 0.79 0.84 rg BT /F2 8 Tf 1 0 0 1 43 759 Tm (PROJECT DESCRIPTION / 05) Tj ET
+0.96 0.98 1 rg BT /F2 28 Tf 1 0 0 1 43 708 Tm (Software Architecture) Tj ET
+0.09 0.80 0.71 rg BT /F1 12 Tf 1 0 0 1 44 680 Tm (Public showcase and local processing are distinct) Tj ET
+0.18 0.30 0.40 RG 1 w 43 660 m 552 660 l S
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 637 Tm (PUBLIC DEMONSTRATION) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 618 Tm (An interactive browser-based showcase is hosted on GitHub Pages.) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 604.6 Tm (It displays retrospective examples, analysis views and exports.) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 591.2 Tm (GitHub Pages cannot execute Python, FastAPI workers or a local database.) Tj ET
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 568.8000000000001 Tm (LOCAL BACKEND) Tj ET
+0.96 0.98 1 rg BT /F2 9.7 Tf 1 0 0 1 48 549.8000000000001 Tm (- Python and FastAPI API service with local operator-token access.) Tj ET
+0.96 0.98 1 rg BT /F2 9.7 Tf 1 0 0 1 48 536.4000000000001 Tm (- Independent worker for processing the supplied analysis jobs.) Tj ET
+0.96 0.98 1 rg BT /F2 9.7 Tf 1 0 0 1 48 523.0000000000001 Tm (- Raster/geospatial tooling: NumPy, SciPy, Rasterio, PyProj, Shapely, GDAL.) Tj ET
+0.96 0.98 1 rg BT /F2 9.7 Tf 1 0 0 1 48 509.60000000000014 Tm (- Experimental statistical comparison using scikit-learn.) Tj ET
+0.96 0.98 1 rg BT /F2 9.7 Tf 1 0 0 1 48 496.20000000000016 Tm (- Local stored outputs, evidence artifacts and review reports.) Tj ET
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 473.8000000000002 Tm (TRANSPARENCY) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 454.8000000000002 Tm (The public site must not be misrepresented as a hosted end-to-end) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 441.4000000000002 Tm (live processing backend. The two experiences are intentionally labeled.) Tj ET
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 419.0000000000002 Tm (ENGINEERING MATERIALS) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 400.0000000000002 Tm (Source code, run instructions, data contracts and method references) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 386.60000000000025 Tm (are documented in the public repository.) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 364.2000000000003 Tm (Security: never publish operator tokens, local state, or private logs.) Tj ET
+0.18 0.30 0.40 RG 1 w 43 49 m 552 49 l S
+0.70 0.79 0.84 rg BT /F1 8 Tf 1 0 0 1 43 33 Tm (NASA Space Apps Cairo 2026  |  Research prototype  |  Human-review required) Tj ET
+0.09 0.80 0.71 rg BT /F2 8 Tf 1 0 0 1 511 33 Tm (05 / 15) Tj ET
+endstream
+endobj
+12 0 obj
+<< /Type /Page /Parent 33 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 11 0 R >>
+endobj
+13 0 obj
+<< /Length 2749 >>
+stream
+0.033 0.082 0.145 rg 0 0 595 842 re f
+0.09 0.80 0.71 rg 0 830 595 12 re f
+0.09 0.80 0.71 rg BT /F2 11 Tf 1 0 0 1 43 790 Tm (S P E C T R A   /   0 x N E B U L A) Tj ET
+0.70 0.79 0.84 rg BT /F2 8 Tf 1 0 0 1 43 759 Tm (PROJECT DESCRIPTION / 06) Tj ET
+0.96 0.98 1 rg BT /F2 28 Tf 1 0 0 1 43 708 Tm (NASA Data Foundation) Tj ET
+0.09 0.80 0.71 rg BT /F1 12 Tf 1 0 0 1 44 680 Tm (NISAR Alaska observations and provenance) Tj ET
+0.18 0.30 0.40 RG 1 w 43 660 m 552 660 l S
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 637 Tm (NASA-ISRO NISAR L2 GCOV) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 618 Tm (The exploratory Alaska workflow uses cropped acquisitions dated) Tj ET
+0.96 0.98 1 rg BT /F2 9.7 Tf 1 0 0 1 48 604.6 Tm (17 October and 29 October 2026.) Tj ET
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 582.2 Tm (WHY NISAR) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 563.2 Tm (Radar observations offer useful surface-change evidence even when) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 549.8000000000001 Tm (optical imaging is limited by clouds or darkness.) Tj ET
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 527.4000000000001 Tm (PROVENANCE) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 508.4000000000001 Tm (Granule identities, metadata, local extracts and SHA-256 digests are) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 495.0000000000001 Tm (documented in the repository's data/nisar/manifest.json and references.) Tj ET
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 472.60000000000014 Tm (CRITICAL CAVEAT) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 453.60000000000014 Tm (The two cropped products carry differing processing-version identifiers.) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 440.20000000000016 Tm (Their scientific comparability has not been independently certified.) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 417.8000000000002 Tm (No disaster ground truth was established for the supplied Alaska sample.) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 404.4000000000002 Tm (Consequently, highlighted differences must not be described as) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 391.0000000000002 Tm (verified flood boundaries, damage estimates or glacier velocities.) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 368.60000000000025 Tm (Data source and methods: docs/SOURCES.md and data/nisar/manifest.json.) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 355.2000000000003 Tm (Use does not imply NASA endorsement or scientific validation.) Tj ET
+0.18 0.30 0.40 RG 1 w 43 49 m 552 49 l S
+0.70 0.79 0.84 rg BT /F1 8 Tf 1 0 0 1 43 33 Tm (NASA Space Apps Cairo 2026  |  Research prototype  |  Human-review required) Tj ET
+0.09 0.80 0.71 rg BT /F2 8 Tf 1 0 0 1 511 33 Tm (06 / 15) Tj ET
+endstream
+endobj
+14 0 obj
+<< /Type /Page /Parent 33 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 13 0 R >>
+endobj
+15 0 obj
+<< /Length 2971 >>
+stream
+0.033 0.082 0.145 rg 0 0 595 842 re f
+0.09 0.80 0.71 rg 0 830 595 12 re f
+0.09 0.80 0.71 rg BT /F2 11 Tf 1 0 0 1 43 790 Tm (S P E C T R A   /   0 x N E B U L A) Tj ET
+0.70 0.79 0.84 rg BT /F2 8 Tf 1 0 0 1 43 759 Tm (PROJECT DESCRIPTION / 07) Tj ET
+0.96 0.98 1 rg BT /F2 28 Tf 1 0 0 1 43 708 Tm (Experimental Benchmark) Tj ET
+0.09 0.80 0.71 rg BT /F1 12 Tf 1 0 0 1 44 680 Tm (Sentinel-1 Spain is a separate example) Tj ET
+0.18 0.30 0.40 RG 1 w 43 660 m 552 660 l S
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 637 Tm (SENTINEL-1 / SPAIN) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 618 Tm (The public judge demo uses a retrospective Spain example from the) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 604.6 Tm (Modified Sen1Floods11 dataset and source-documented evaluation chips.) Tj ET
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 582.2 Tm (REFERENCE) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 563.2 Tm (Ritu Yadav, Modified Sen1Floods11 Dataset for Change Detection.) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 549.8000000000001 Tm (Zenodo DOI: 10.5281/zenodo.7946594 \(CC BY 4.0 attribution\).) Tj ET
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 527.4000000000001 Tm (WHY TWO DATA SOURCES) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 508.4000000000001 Tm (The NASA NISAR Alaska materials demonstrate a documented source-pair) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 495.0000000000001 Tm (workflow. The separate Sentinel-1 Spain case offers labeled examples) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 481.60000000000014 Tm (for comparing baseline and experimental methods.) Tj ET
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 459.20000000000016 Tm (DO NOT CONFLATE THEM) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 440.20000000000016 Tm (Spain Sentinel-1 results are not NASA NISAR results. The two studies) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 426.8000000000002 Tm (must not be presented as observations of the same location or event.) Tj ET
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 404.4000000000002 Tm (METRIC CAUTION) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 385.4000000000002 Tm (An experimental method may improve precision while recall declines.) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 372.0000000000002 Tm (The project retains such trade-offs rather than presenting a) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 358.60000000000025 Tm (one-sided claim that a new model is universally better.) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 336.2000000000003 Tm (Population exposure for Spain is Unavailable without suitable verified) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 322.8000000000003 Tm (and spatially matched population data.) Tj ET
+0.18 0.30 0.40 RG 1 w 43 49 m 552 49 l S
+0.70 0.79 0.84 rg BT /F1 8 Tf 1 0 0 1 43 33 Tm (NASA Space Apps Cairo 2026  |  Research prototype  |  Human-review required) Tj ET
+0.09 0.80 0.71 rg BT /F2 8 Tf 1 0 0 1 511 33 Tm (07 / 15) Tj ET
+endstream
+endobj
+16 0 obj
+<< /Type /Page /Parent 33 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 15 0 R >>
+endobj
+17 0 obj
+<< /Length 2951 >>
+stream
+0.033 0.082 0.145 rg 0 0 595 842 re f
+0.09 0.80 0.71 rg 0 830 595 12 re f
+0.09 0.80 0.71 rg BT /F2 11 Tf 1 0 0 1 43 790 Tm (S P E C T R A   /   0 x N E B U L A) Tj ET
+0.70 0.79 0.84 rg BT /F2 8 Tf 1 0 0 1 43 759 Tm (PROJECT DESCRIPTION / 08) Tj ET
+0.96 0.98 1 rg BT /F2 28 Tf 1 0 0 1 43 708 Tm (Detection and Evaluation) Tj ET
+0.09 0.80 0.71 rg BT /F1 12 Tf 1 0 0 1 44 680 Tm (Transparent metrics over inflated claims) Tj ET
+0.18 0.30 0.40 RG 1 w 43 660 m 552 660 l S
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 637 Tm (PIPELINE COMPONENTS) Tj ET
+0.96 0.98 1 rg BT /F2 9.7 Tf 1 0 0 1 48 618 Tm (- Input validation and metadata consideration.) Tj ET
+0.96 0.98 1 rg BT /F2 9.7 Tf 1 0 0 1 48 604.6 Tm (- Speckle and residual noise handling where implemented.) Tj ET
+0.96 0.98 1 rg BT /F2 9.7 Tf 1 0 0 1 48 591.2 Tm (- Candidate radar-difference extraction.) Tj ET
+0.96 0.98 1 rg BT /F2 9.7 Tf 1 0 0 1 48 577.8000000000001 Tm (- Fixed-threshold baseline detection.) Tj ET
+0.96 0.98 1 rg BT /F2 9.7 Tf 1 0 0 1 48 564.4000000000001 Tm (- Experimental spatial machine-learning comparison.) Tj ET
+0.96 0.98 1 rg BT /F2 9.7 Tf 1 0 0 1 48 551.0000000000001 Tm (- Georeferenced region assembly and evidence export.) Tj ET
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 528.6000000000001 Tm (EVALUATION PRINCIPLES) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 509.60000000000014 Tm (Threshold selection and held-out evaluation must remain separate.) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 496.20000000000016 Tm (Confusion between fitting data and test data can create leakage.) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 482.8000000000002 Tm (Results should reveal both false alarms and missed reference cases.) Tj ET
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 460.4000000000002 Tm (UNCERTAINTY) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 441.4000000000002 Tm (Radar-change candidates alone cannot establish confirmed floods,) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 428.0000000000002 Tm (damaged structures, displaced population or future disaster risk.) Tj ET
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 405.60000000000025 Tm (INTEGRITY) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 386.60000000000025 Tm (SHA-256 demonstrates local file byte consistency. It is not proof) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 373.2000000000003 Tm (of remote satellite authenticity, disaster truth, or model quality.) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 350.8000000000003 Tm (The prototype is suitable for research review and demonstration;) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 337.4000000000003 Tm (operational deployment requires substantial independent validation.) Tj ET
+0.18 0.30 0.40 RG 1 w 43 49 m 552 49 l S
+0.70 0.79 0.84 rg BT /F1 8 Tf 1 0 0 1 43 33 Tm (NASA Space Apps Cairo 2026  |  Research prototype  |  Human-review required) Tj ET
+0.09 0.80 0.71 rg BT /F2 8 Tf 1 0 0 1 511 33 Tm (08 / 15) Tj ET
+endstream
+endobj
+18 0 obj
+<< /Type /Page /Parent 33 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 17 0 R >>
+endobj
+19 0 obj
+<< /Length 2939 >>
+stream
+0.033 0.082 0.145 rg 0 0 595 842 re f
+0.09 0.80 0.71 rg 0 830 595 12 re f
+0.09 0.80 0.71 rg BT /F2 11 Tf 1 0 0 1 43 790 Tm (S P E C T R A   /   0 x N E B U L A) Tj ET
+0.70 0.79 0.84 rg BT /F2 8 Tf 1 0 0 1 43 759 Tm (PROJECT DESCRIPTION / 09) Tj ET
+0.96 0.98 1 rg BT /F2 28 Tf 1 0 0 1 43 708 Tm (Decision Intelligence) Tj ET
+0.09 0.80 0.71 rg BT /F1 12 Tf 1 0 0 1 44 680 Tm (From pixels to human review) Tj ET
+0.18 0.30 0.40 RG 1 w 43 660 m 552 660 l S
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 637 Tm (MISSION REVIEW WORKFLOW) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 618 Tm (Candidates are organized into a review list with geographic context,) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 604.6 Tm (allowing analysts to investigate one patch at a time.) Tj ET
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 582.2 Tm (THE VALUE OF A REVIEW QUEUE) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 563.2 Tm (A raw binary change mask is difficult to act on. Candidate patches) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 549.8000000000001 Tm (provide an intermediate step between image differences and a) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 536.4000000000001 Tm (human's contextual examination.) Tj ET
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 514.0000000000001 Tm (AVAILABLE CONTEXT) Tj ET
+0.96 0.98 1 rg BT /F2 9.7 Tf 1 0 0 1 48 495.0000000000001 Tm (- Before and after imagery or snapshots.) Tj ET
+0.96 0.98 1 rg BT /F2 9.7 Tf 1 0 0 1 48 481.60000000000014 Tm (- Radar difference and detection mask views.) Tj ET
+0.96 0.98 1 rg BT /F2 9.7 Tf 1 0 0 1 48 468.20000000000016 Tm (- Fixed-threshold and experimental-method comparisons.) Tj ET
+0.96 0.98 1 rg BT /F2 9.7 Tf 1 0 0 1 48 454.8000000000002 Tm (- Geographic information for selected review areas.) Tj ET
+0.96 0.98 1 rg BT /F2 9.7 Tf 1 0 0 1 48 441.4000000000002 Tm (- Exportable mission briefs, comparisons or selected-region evidence.) Tj ET
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 419.0000000000002 Tm (LIMITS OF IMPACT ASSESSMENT) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 400.0000000000002 Tm (Population or infrastructure figures require correctly aligned,) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 386.60000000000025 Tm (licensed and scientifically justified external coverage.) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 373.2000000000003 Tm (Where those inputs are missing, the output is explicitly Unavailable.) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 350.8000000000003 Tm (This is decision-support research. The queue is not an emergency) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 337.4000000000003 Tm (dispatch list, and its order is not a validated hazard rating.) Tj ET
+0.18 0.30 0.40 RG 1 w 43 49 m 552 49 l S
+0.70 0.79 0.84 rg BT /F1 8 Tf 1 0 0 1 43 33 Tm (NASA Space Apps Cairo 2026  |  Research prototype  |  Human-review required) Tj ET
+0.09 0.80 0.71 rg BT /F2 8 Tf 1 0 0 1 511 33 Tm (09 / 15) Tj ET
+endstream
+endobj
+20 0 obj
+<< /Type /Page /Parent 33 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 19 0 R >>
+endobj
+21 0 obj
+<< /Length 2687 >>
+stream
+0.033 0.082 0.145 rg 0 0 595 842 re f
+0.09 0.80 0.71 rg 0 830 595 12 re f
+0.09 0.80 0.71 rg BT /F2 11 Tf 1 0 0 1 43 790 Tm (S P E C T R A   /   0 x N E B U L A) Tj ET
+0.70 0.79 0.84 rg BT /F2 8 Tf 1 0 0 1 43 759 Tm (USER GUIDE / 10) Tj ET
+0.96 0.98 1 rg BT /F2 28 Tf 1 0 0 1 43 708 Tm (Start Here - Public Demo) Tj ET
+0.09 0.80 0.71 rg BT /F1 12 Tf 1 0 0 1 44 680 Tm (No installation or account required) Tj ET
+0.18 0.30 0.40 RG 1 w 43 660 m 552 660 l S
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 637 Tm (STEP 1 - OPEN THE PROJECT) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 618 Tm (Visit: https://abdelrahman-mohamed-9.github.io/spectra-sar-0xnebula-2026/) Tj ET
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 595.6 Tm (STEP 2 - FIND THE COMPARISON) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 576.6 Tm (Inspect the Before and After satellite radar observations.) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 563.2 Tm (The public retrospective benchmark is Sentinel-1 Spain.) Tj ET
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 540.8000000000001 Tm (STEP 3 - COMPARE DETECTION APPROACHES) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 521.8000000000001 Tm (Switch between Fixed Threshold and Spatial ML where offered.) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 508.4000000000001 Tm (Review how each method changes highlighted candidate areas.) Tj ET
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 486.0000000000001 Tm (STEP 4 - INSPECT A REGION) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 467.0000000000001 Tm (Open the Priority Review Queue and select a candidate patch.) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 453.60000000000014 Tm (Examine its location and the evidence presented in the interface.) Tj ET
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 431.20000000000016 Tm (STEP 5 - DOWNLOAD EVIDENCE) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 412.20000000000016 Tm (Try Mission Brief JSON, Comparison CSV or Selected Region exports) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 398.8000000000002 Tm (where provided in the demo.) Tj ET
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 376.4000000000002 Tm (STEP 6 - EXPLAIN UNCERTAINTY) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 357.4000000000002 Tm (Emphasize that radar-change candidates are not confirmed damage.) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 344.0000000000002 Tm (No access token is needed for the public GitHub Pages demonstration.) Tj ET
+0.18 0.30 0.40 RG 1 w 43 49 m 552 49 l S
+0.70 0.79 0.84 rg BT /F1 8 Tf 1 0 0 1 43 33 Tm (NASA Space Apps Cairo 2026  |  Research prototype  |  Human-review required) Tj ET
+0.09 0.80 0.71 rg BT /F2 8 Tf 1 0 0 1 511 33 Tm (10 / 15) Tj ET
+endstream
+endobj
+22 0 obj
+<< /Type /Page /Parent 33 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 21 0 R >>
+endobj
+23 0 obj
+<< /Length 2710 >>
+stream
+0.033 0.082 0.145 rg 0 0 595 842 re f
+0.09 0.80 0.71 rg 0 830 595 12 re f
+0.09 0.80 0.71 rg BT /F2 11 Tf 1 0 0 1 43 790 Tm (S P E C T R A   /   0 x N E B U L A) Tj ET
+0.70 0.79 0.84 rg BT /F2 8 Tf 1 0 0 1 43 759 Tm (USER GUIDE / 11) Tj ET
+0.96 0.98 1 rg BT /F2 28 Tf 1 0 0 1 43 708 Tm (Run the Full Local Workspace) Tj ET
+0.09 0.80 0.71 rg BT /F1 12 Tf 1 0 0 1 44 680 Tm (Authenticated FastAPI and independent worker) Tj ET
+0.18 0.30 0.40 RG 1 w 43 660 m 552 660 l S
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 637 Tm (REQUIREMENTS) Tj ET
+0.96 0.98 1 rg BT /F2 9.7 Tf 1 0 0 1 48 618 Tm (- macOS or Linux; Python 3.12 recommended.) Tj ET
+0.96 0.98 1 rg BT /F2 9.7 Tf 1 0 0 1 48 604.6 Tm (- The full extracted project/release, with setup files.) Tj ET
+0.96 0.98 1 rg BT /F2 9.7 Tf 1 0 0 1 48 591.2 Tm (- Internet connection for initial dependency installation.) Tj ET
+0.96 0.98 1 rg BT /F2 9.7 Tf 1 0 0 1 48 577.8000000000001 Tm (- A free local TCP port \(8770 shown below\).) Tj ET
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 555.4000000000001 Tm (OPEN TERMINAL IN YOUR PROJECT ROOT) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 536.4000000000001 Tm (cd ~/Downloads/SPECTRA-Phase3) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 523.0000000000001 Tm (bash START.command serve --port 8770) Tj ET
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 500.60000000000014 Tm (OPEN THE LOCAL DASHBOARD) Tj ET
+0.70 0.79 0.84 rg BT /F1 8.8 Tf 1 0 0 1 48 481.60000000000014 Tm (http://127.0.0.1:8770) Tj ET
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 459.20000000000016 Tm (AUTHENTICATION) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 440.20000000000016 Tm (The terminal prints a private local operator token.) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 426.8000000000002 Tm (Paste it into the dashboard's Access token field and click Connect.) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 413.4000000000002 Tm (Never publish it in GitHub, a NASA page, a screenshot or a video.) Tj ET
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 391.0000000000002 Tm (START AN ANALYSIS) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 372.0000000000002 Tm (Choose a source pair, select a candidate screen, click Run analysis) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 358.60000000000025 Tm (and allow the independent worker to finish the local job.) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 336.2000000000003 Tm (To stop the supervised processes, press Ctrl+C in the Terminal.) Tj ET
+0.18 0.30 0.40 RG 1 w 43 49 m 552 49 l S
+0.70 0.79 0.84 rg BT /F1 8 Tf 1 0 0 1 43 33 Tm (NASA Space Apps Cairo 2026  |  Research prototype  |  Human-review required) Tj ET
+0.09 0.80 0.71 rg BT /F2 8 Tf 1 0 0 1 511 33 Tm (11 / 15) Tj ET
+endstream
+endobj
+24 0 obj
+<< /Type /Page /Parent 33 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 23 0 R >>
+endobj
+25 0 obj
+<< /Length 2876 >>
+stream
+0.033 0.082 0.145 rg 0 0 595 842 re f
+0.09 0.80 0.71 rg 0 830 595 12 re f
+0.09 0.80 0.71 rg BT /F2 11 Tf 1 0 0 1 43 790 Tm (S P E C T R A   /   0 x N E B U L A) Tj ET
+0.70 0.79 0.84 rg BT /F2 8 Tf 1 0 0 1 43 759 Tm (USER GUIDE / 12) Tj ET
+0.96 0.98 1 rg BT /F2 28 Tf 1 0 0 1 43 708 Tm (Run, Inspect and Troubleshoot) Tj ET
+0.09 0.80 0.71 rg BT /F1 12 Tf 1 0 0 1 44 680 Tm (Working with analyses and reports) Tj ET
+0.18 0.30 0.40 RG 1 w 43 660 m 552 660 l S
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 637 Tm (RUN A JOB) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 618 Tm (1. Choose a Source Pair in the authenticated local dashboard.) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 604.6 Tm (2. Select Conservative or Broader review candidate screening.) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 591.2 Tm (3. Click Run analysis, and keep the backend and worker running.) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 577.8000000000001 Tm (4. Refresh Recent analyses until completion or an explicit error.) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 564.4000000000001 Tm (5. Review before/after, candidate screening and exported evidence.) Tj ET
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 542.0000000000001 Tm (RUN BUNDLED ENGINEERING CHECKS) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 523.0000000000001 Tm (bash START.command test) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 509.60000000000014 Tm (bash START.command demo) Tj ET
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 487.20000000000016 Tm (COMMON ISSUES) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 468.20000000000016 Tm (Port already in use: choose another free port \(e.g., 8770\).) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 454.8000000000002 Tm (HTTP 401: reconnect using the token from the currently running server.) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 441.4000000000002 Tm (Python dependencies: confirm Python 3.12 and network availability.) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 428.0000000000002 Tm (Job pending: check the worker status and private log output.) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 414.60000000000025 Tm (Population Unavailable: do not substitute an estimated zero.) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 392.2000000000003 Tm (Changing a visualization after completion does not recalculate) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 378.8000000000003 Tm (a saved job. Submit a new job to change analysis settings.) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 356.4000000000003 Tm (Successful automated tests are not independent scientific validation.) Tj ET
+0.18 0.30 0.40 RG 1 w 43 49 m 552 49 l S
+0.70 0.79 0.84 rg BT /F1 8 Tf 1 0 0 1 43 33 Tm (NASA Space Apps Cairo 2026  |  Research prototype  |  Human-review required) Tj ET
+0.09 0.80 0.71 rg BT /F2 8 Tf 1 0 0 1 511 33 Tm (12 / 15) Tj ET
+endstream
+endobj
+26 0 obj
+<< /Type /Page /Parent 33 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 25 0 R >>
+endobj
+27 0 obj
+<< /Length 2850 >>
+stream
+0.033 0.082 0.145 rg 0 0 595 842 re f
+0.09 0.80 0.71 rg 0 830 595 12 re f
+0.09 0.80 0.71 rg BT /F2 11 Tf 1 0 0 1 43 790 Tm (S P E C T R A   /   0 x N E B U L A) Tj ET
+0.70 0.79 0.84 rg BT /F2 8 Tf 1 0 0 1 43 759 Tm (PROJECT DESCRIPTION / 13) Tj ET
+0.96 0.98 1 rg BT /F2 28 Tf 1 0 0 1 43 708 Tm (Responsible Data and Security) Tj ET
+0.09 0.80 0.71 rg BT /F1 12 Tf 1 0 0 1 44 680 Tm (Evidence can be inspected, not simply trusted) Tj ET
+0.18 0.30 0.40 RG 1 w 43 660 m 552 660 l S
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 637 Tm (TRACEABILITY) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 618 Tm (Record source references, granule IDs, benchmark metadata and) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 604.6 Tm (file-integrity digests when handing off reproducible results.) Tj ET
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 582.2 Tm (PRIVACY AND SECRETS) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 563.2 Tm (Operator tokens, local state, credentials and private logs are) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 549.8000000000001 Tm (not intended for publication. Redact secrets from all screenshots.) Tj ET
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 527.4000000000001 Tm (SCIENTIFIC INTEGRITY) Tj ET
+0.96 0.98 1 rg BT /F2 9.7 Tf 1 0 0 1 48 508.4000000000001 Tm (- Never relabel a simulated illustration as authentic NISAR imagery.) Tj ET
+0.96 0.98 1 rg BT /F2 9.7 Tf 1 0 0 1 48 495.0000000000001 Tm (- Keep NISAR Alaska and Sentinel-1 Spain examples separate.) Tj ET
+0.96 0.98 1 rg BT /F2 9.7 Tf 1 0 0 1 48 481.60000000000014 Tm (- Do not infer population exposure without compatible verified data.) Tj ET
+0.96 0.98 1 rg BT /F2 9.7 Tf 1 0 0 1 48 468.20000000000016 Tm (- Clearly label model outputs as exploratory candidates.) Tj ET
+0.96 0.98 1 rg BT /F2 9.7 Tf 1 0 0 1 48 454.8000000000002 Tm (- Attribute datasets, images, libraries and third-party contributions.) Tj ET
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 432.4000000000002 Tm (LICENSES) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 413.4000000000002 Tm (Some third-party data, including the referenced benchmark, have) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 400.0000000000002 Tm (their own license terms. No blanket license is asserted for the) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 386.60000000000025 Tm (team's original repository code.) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 364.2000000000003 Tm (Further technical references are in docs/SOURCES.md,) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 350.8000000000003 Tm (docs/DATA-CONTRACTS.md and docs/INTEGRATION-AND-OPERATIONS.md.) Tj ET
+0.18 0.30 0.40 RG 1 w 43 49 m 552 49 l S
+0.70 0.79 0.84 rg BT /F1 8 Tf 1 0 0 1 43 33 Tm (NASA Space Apps Cairo 2026  |  Research prototype  |  Human-review required) Tj ET
+0.09 0.80 0.71 rg BT /F2 8 Tf 1 0 0 1 511 33 Tm (13 / 15) Tj ET
+endstream
+endobj
+28 0 obj
+<< /Type /Page /Parent 33 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 27 0 R >>
+endobj
+29 0 obj
+<< /Length 2778 >>
+stream
+0.033 0.082 0.145 rg 0 0 595 842 re f
+0.09 0.80 0.71 rg 0 830 595 12 re f
+0.09 0.80 0.71 rg BT /F2 11 Tf 1 0 0 1 43 790 Tm (S P E C T R A   /   0 x N E B U L A) Tj ET
+0.70 0.79 0.84 rg BT /F2 8 Tf 1 0 0 1 43 759 Tm (PROJECT DESCRIPTION / 14) Tj ET
+0.96 0.98 1 rg BT /F2 28 Tf 1 0 0 1 43 708 Tm (AI and SI Transparency) Tj ET
+0.09 0.80 0.71 rg BT /F1 12 Tf 1 0 0 1 44 680 Tm (Confirmed tools and human responsibility) Tj ET
+0.18 0.30 0.40 RG 1 w 43 660 m 552 660 l S
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 637 Tm (OPENAI CHATGPT) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 618 Tm (AI-assisted software architecture, code refinement, backend) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 604.6 Tm (integration, debugging, testing and technical communication.) Tj ET
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 582.2 Tm (GAMMA AI) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 563.2 Tm (AI-assisted creation and design of presentation slides, layouts,) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 549.8000000000001 Tm (illustrations and visual explanation of the solution.) Tj ET
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 527.4000000000001 Tm (MANUS AI) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 508.4000000000001 Tm (AI-assisted demonstration video production, visual sequence) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 495.0000000000001 Tm (composition and project storytelling.) Tj ET
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 472.60000000000014 Tm (SCIENTIFIC ML) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 453.60000000000014 Tm (scikit-learn supports experimental method comparisons and) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 440.20000000000016 Tm (evaluations; it does not independently certify disaster findings.) Tj ET
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 417.8000000000002 Tm (HUMAN OVERSIGHT) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 398.8000000000002 Tm (Team members are responsible for checking generated content,) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 385.4000000000002 Tm (source attributions, engineering behavior and scientific claims.) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 363.0000000000002 Tm (SI-generated video and illustrative imagery should receive the) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 349.60000000000025 Tm (required visible labels; synthetic narration should be credited.) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 336.2000000000003 Tm (Generated illustrations must not impersonate real satellite data.) Tj ET
+0.18 0.30 0.40 RG 1 w 43 49 m 552 49 l S
+0.70 0.79 0.84 rg BT /F1 8 Tf 1 0 0 1 43 33 Tm (NASA Space Apps Cairo 2026  |  Research prototype  |  Human-review required) Tj ET
+0.09 0.80 0.71 rg BT /F2 8 Tf 1 0 0 1 511 33 Tm (14 / 15) Tj ET
+endstream
+endobj
+30 0 obj
+<< /Type /Page /Parent 33 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 29 0 R >>
+endobj
+31 0 obj
+<< /Length 3105 >>
+stream
+0.033 0.082 0.145 rg 0 0 595 842 re f
+0.09 0.80 0.71 rg 0 830 595 12 re f
+0.09 0.80 0.71 rg BT /F2 11 Tf 1 0 0 1 43 790 Tm (S P E C T R A   /   0 x N E B U L A) Tj ET
+0.70 0.79 0.84 rg BT /F2 8 Tf 1 0 0 1 43 759 Tm (PROJECT DESCRIPTION / 15) Tj ET
+0.96 0.98 1 rg BT /F2 28 Tf 1 0 0 1 43 708 Tm (Roadmap and Submission Links) Tj ET
+0.09 0.80 0.71 rg BT /F1 12 Tf 1 0 0 1 44 680 Tm (What is real today vs what remains future research) Tj ET
+0.18 0.30 0.40 RG 1 w 43 660 m 552 660 l S
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 637 Tm (CURRENT WORKING PROTOTYPE) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 618 Tm (Public judge demo, local analysis workflow, source documentation,) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 604.6 Tm (candidate review and method comparison are available for inspection.) Tj ET
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 582.2 Tm (FUTURE RESEARCH - NOT YET IMPLEMENTED) Tj ET
+0.96 0.98 1 rg BT /F2 9.7 Tf 1 0 0 1 48 563.2 Tm (- Carefully validated multi-satellite data fusion.) Tj ET
+0.96 0.98 1 rg BT /F2 9.7 Tf 1 0 0 1 48 549.8000000000001 Tm (- Geometrically corrected SAR deformation and motion estimates.) Tj ET
+0.96 0.98 1 rg BT /F2 9.7 Tf 1 0 0 1 48 536.4000000000001 Tm (- Evidence-grounded analytical assistant and uncertainty reporting.) Tj ET
+0.96 0.98 1 rg BT /F2 9.7 Tf 1 0 0 1 48 523.0000000000001 Tm (- More complete population and infrastructure exposure layers.) Tj ET
+0.96 0.98 1 rg BT /F2 9.7 Tf 1 0 0 1 48 509.60000000000014 Tm (- Multi-temporal monitoring and reproducible review workflows.) Tj ET
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 487.20000000000016 Tm (JUDGE LINKS) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 468.20000000000016 Tm (Interactive demo:) Tj ET
+0.70 0.79 0.84 rg BT /F1 8.8 Tf 1 0 0 1 48 454.8000000000002 Tm (https://abdelrahman-mohamed-9.github.io/spectra-sar-0xnebula-2026/) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 441.4000000000002 Tm (Source code and full documentation:) Tj ET
+0.70 0.79 0.84 rg BT /F1 8.8 Tf 1 0 0 1 48 428.0000000000002 Tm (https://github.com/abdelrahman-mohamed-9/spectra-sar-0xnebula-2026) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 414.60000000000025 Tm (Seven-slide presentation:) Tj ET
+0.70 0.79 0.84 rg BT /F1 8.8 Tf 1 0 0 1 48 401.2000000000003 Tm (https://abdelrahman-mohamed-9.github.io/spectra-sar-0xnebula-2026/slides/) Tj ET
+0.09 0.80 0.71 rg BT /F2 10 Tf 1 0 0 1 48 378.8000000000003 Tm (IMPORTANT SUBMISSION NOTE) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 359.8000000000003 Tm (Publishing this document does not submit the NASA project form.) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 346.4000000000003 Tm (The team must verify all public URLs and submit the NASA/Cairo forms.) Tj ET
+0.70 0.79 0.84 rg BT /F1 9.7 Tf 1 0 0 1 48 324.00000000000034 Tm (SPECTRA-SAR | Team 0xNEBULA | NASA Space Apps Cairo 2026) Tj ET
+0.18 0.30 0.40 RG 1 w 43 49 m 552 49 l S
+0.70 0.79 0.84 rg BT /F1 8 Tf 1 0 0 1 43 33 Tm (NASA Space Apps Cairo 2026  |  Research prototype  |  Human-review required) Tj ET
+0.09 0.80 0.71 rg BT /F2 8 Tf 1 0 0 1 511 33 Tm (15 / 15) Tj ET
+endstream
+endobj
+32 0 obj
+<< /Type /Page /Parent 33 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 31 0 R >>
+endobj
+33 0 obj
+<< /Type /Pages /Count 15 /Kids [4 0 R 6 0 R 8 0 R 10 0 R 12 0 R 14 0 R 16 0 R 18 0 R 20 0 R 22 0 R 24 0 R 26 0 R 28 0 R 30 0 R 32 0 R] >>
+endobj
+34 0 obj
+<< /Type /Catalog /Pages 33 0 R >>
+endobj
+35 0 obj
+<< /Title (SPECTRA-SAR - Project Description and User Guide) /Author (Team 0xNEBULA) /Subject (NASA Space Apps Cairo 2026) >>
+endobj
+xref
+0 36
+0000000000 65535 f 
+0000000018 00000 n 
+0000000088 00000 n 
+0000000163 00000 n 
+0000003309 00000 n 
+0000003446 00000 n 
+0000006646 00000 n 
+0000006783 00000 n 
+0000009716 00000 n 
+0000009853 00000 n 
+0000012727 00000 n 
+0000012865 00000 n 
+0000015701 00000 n 
+0000015840 00000 n 
+0000018641 00000 n 
+0000018780 00000 n 
+0000021803 00000 n 
+0000021942 00000 n 
+0000024945 00000 n 
+0000025084 00000 n 
+0000028075 00000 n 
+0000028214 00000 n 
+0000030953 00000 n 
+0000031092 00000 n 
+0000033854 00000 n 
+0000033993 00000 n 
+0000036921 00000 n 
+0000037060 00000 n 
+0000039962 00000 n 
+0000040101 00000 n 
+0000042931 00000 n 
+0000043070 00000 n 
+0000046227 00000 n 
+0000046366 00000 n 
+0000046521 00000 n 
+0000046572 00000 n 
+trailer
+<< /Size 36 /Root 34 0 R /Info 35 0 R >>
+startxref
+46714
+%%EOF
