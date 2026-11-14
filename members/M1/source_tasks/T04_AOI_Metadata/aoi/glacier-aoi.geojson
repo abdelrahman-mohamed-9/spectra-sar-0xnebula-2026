@@ -1,0 +1,45 @@
+{
+  "type": "FeatureCollection",
+  "name": "glacier-aoi",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "glacier-aoi",
+        "label": "Mendenhall Glacier — motion study search window",
+        "purpose": "preliminary_search_and_Harmony_spatial_subset",
+        "authoritative_boundary": false,
+        "validated_raster_coverage": false,
+        "description": "Rectangular discovery AOI, NOT a glacier outline or ice-only mask; trim to true ice pixels before speed estimates.",
+        "source": "NASA CMR query bounding boxes in user-supplied M1 T02 results"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -134.69,
+              58.44
+            ],
+            [
+              -134.3,
+              58.44
+            ],
+            [
+              -134.3,
+              58.7
+            ],
+            [
+              -134.69,
+              58.7
+            ],
+            [
+              -134.69,
+              58.44
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

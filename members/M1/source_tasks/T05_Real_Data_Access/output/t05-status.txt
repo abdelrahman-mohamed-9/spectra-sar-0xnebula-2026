@@ -1,0 +1,10 @@
+SPECTRA-SAR M1 T05 — REAL DATA STATUS
+--------------------------------
+
+BEFORE: NO_HARMONY_JOB_YET
+AFTER: NO_HARMONY_JOB_YET
+
+RASTER QA: NOT RUN (NO VERIFIED PAIR DOWNLOADED)
+
+This report never claims flood detection or glacier displacement.
+Do not send NASA login credentials or tokens.

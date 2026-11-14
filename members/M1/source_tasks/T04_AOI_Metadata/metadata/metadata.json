@@ -1,0 +1,116 @@
+{
+  "project": "SPECTRA-SAR",
+  "phase": "M1-T04",
+  "case_study": "Mendenhall Glacier and Mendenhall Valley, Juneau, Alaska, USA",
+  "catalog_origin": "user-provided NASA CMR query results",
+  "catalog_search_timestamp_utc": "2026-11-13T16:12:00.295936+00:00",
+  "discovery_aoi": {
+    "flood": [
+      -134.7,
+      58.33,
+      -134.4,
+      58.55
+    ],
+    "glacier": [
+      -134.69,
+      58.44,
+      -134.3,
+      58.7
+    ],
+    "CRS": "EPSG:4326",
+    "coordinate_order": "longitude, latitude",
+    "geometry_status": "PRELIMINARY_RECTANGULAR_WINDOWS_NOT_SCIENCE_MASKS"
+  },
+  "flood": {
+    "sensor": "NISAR",
+    "product": "L2 GCOV",
+    "analysis": "radar_backscatter_change_candidate",
+    "before": {
+      "granule_id": "NISAR_L2_PR_GCOV_031_034_A_031_4005_DHDH_A_20260920T131512_20260920T131548_P05023_N_F_J_001",
+      "cmr_concept_id": "G4319985062-ASF",
+      "collection_concept_id": "C2854338529-ASF",
+      "product": "GCOV",
+      "maturity": "PROVISIONAL",
+      "acquisition_start_utc": "2026-09-20T13:15:12.000Z",
+      "acquisition_end_utc": "2026-09-20T13:15:48.999Z",
+      "name_metadata": {
+        "cycle": "031",
+        "track": "034",
+        "direction": "A",
+        "frame": "031",
+        "mode": "4005",
+        "polarization_code": "DHDH"
+      },
+      "download_url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_031_034_A_031_4005_DHDH_A_20260920T131512_20260920T131548_P05023_N_F_J_001/NISAR_L2_PR_GCOV_031_034_A_031_4005_DHDH_A_20260920T131512_20260920T131548_P05023_N_F_J_001.h5",
+      "qa_stats_url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_031_034_A_031_4005_DHDH_A_20260920T131512_20260920T131548_P05023_N_F_J_001/NISAR_L2_PR_GCOV_031_034_A_031_4005_DHDH_A_20260920T131512_20260920T131548_P05023_N_F_J_001_QA_STATS.h5"
+    },
+    "after": {
+      "granule_id": "NISAR_L2_PR_GCOV_032_034_A_031_4005_DHDH_A_20261002T131512_20261002T131548_P05023_N_F_J_001",
+      "cmr_concept_id": "G4338819270-ASF",
+      "collection_concept_id": "C2854338529-ASF",
+      "product": "GCOV",
+      "maturity": "PROVISIONAL",
+      "acquisition_start_utc": "2026-10-02T13:15:12.000Z",
+      "acquisition_end_utc": "2026-10-02T13:15:48.999Z",
+      "name_metadata": {
+        "cycle": "032",
+        "track": "034",
+        "direction": "A",
+        "frame": "031",
+        "mode": "4005",
+        "polarization_code": "DHDH"
+      },
+      "download_url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_032_034_A_031_4005_DHDH_A_20261002T131512_20261002T131548_P05023_N_F_J_001/NISAR_L2_PR_GCOV_032_034_A_031_4005_DHDH_A_20261002T131512_20261002T131548_P05023_N_F_J_001.h5",
+      "qa_stats_url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_032_034_A_031_4005_DHDH_A_20261002T131512_20261002T131548_P05023_N_F_J_001/NISAR_L2_PR_GCOV_032_034_A_031_4005_DHDH_A_20261002T131512_20261002T131548_P05023_N_F_J_001_QA_STATS.h5"
+    },
+    "candidate_data_channel": "frequencyA/HHHH (only if actually present in BOTH granules)",
+    "band_content_check_required": true,
+    "target_output": "two same-band same-polarization GeoTIFFs cropped from NASA Harmony",
+    "time_interval_days": 12,
+    "scientific_status": "SCENE_METADATA_COMPATIBLE_RASTERS_NOT_INSPECTED",
+    "flood_inundation_confirmed": false
+  },
+  "glacier": {
+    "sensor": "NISAR",
+    "product": "L2 GOFF",
+    "analysis": "glacier_surface_displacement_candidate",
+    "primary": {
+      "granule_id": "NISAR_L2_PR_GOFF_031_034_A_031_032_4000_SH_20260920T131512_20260920T131548_20261002T131512_20261002T131548_P05023_N_F_J_001",
+      "cmr_concept_id": "G4338825825-ASF",
+      "collection_concept_id": "C2854341702-ASF",
+      "product": "GOFF",
+      "maturity": "PROVISIONAL",
+      "acquisition_start_utc": "2026-09-20T13:15:12.000Z",
+      "acquisition_end_utc": "2026-10-02T13:15:48.999Z",
+      "name_metadata": null,
+      "download_url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GOFF_PROVISIONAL_V1/NISAR_L2_PR_GOFF_031_034_A_031_032_4000_SH_20260920T131512_20260920T131548_20261002T131512_20261002T131548_P05023_N_F_J_001/NISAR_L2_PR_GOFF_031_034_A_031_032_4000_SH_20260920T131512_20260920T131548_20261002T131512_20261002T131548_P05023_N_F_J_001.h5",
+      "qa_stats_url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GOFF_PROVISIONAL_V1/NISAR_L2_PR_GOFF_031_034_A_031_032_4000_SH_20260920T131512_20260920T131548_20261002T131512_20261002T131548_P05023_N_F_J_001/NISAR_L2_PR_GOFF_031_034_A_031_032_4000_SH_20260920T131512_20260920T131548_20261002T131512_20261002T131548_P05023_N_F_J_001_QA_STATS.h5"
+    },
+    "backup": {
+      "granule_id": "NISAR_L2_PR_GOFF_031_043_D_059_032_4000_SH_20260921T043015_20260921T043051_20261003T043015_20261003T043051_P05023_N_F_J_001",
+      "cmr_concept_id": "G4340767468-ASF",
+      "collection_concept_id": "C2854341702-ASF",
+      "product": "GOFF",
+      "maturity": "PROVISIONAL",
+      "acquisition_start_utc": "2026-09-21T04:30:15.000Z",
+      "acquisition_end_utc": "2026-10-03T04:30:51.999Z",
+      "name_metadata": null,
+      "download_url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GOFF_PROVISIONAL_V1/NISAR_L2_PR_GOFF_031_043_D_059_032_4000_SH_20260921T043015_20260921T043051_20261003T043015_20261003T043051_P05023_N_F_J_001/NISAR_L2_PR_GOFF_031_043_D_059_032_4000_SH_20260921T043015_20260921T043051_20261003T043015_20261003T043051_P05023_N_F_J_001.h5",
+      "qa_stats_url": "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GOFF_PROVISIONAL_V1/NISAR_L2_PR_GOFF_031_043_D_059_032_4000_SH_20260921T043015_20260921T043051_20261003T043015_20261003T043051_P05023_N_F_J_001/NISAR_L2_PR_GOFF_031_043_D_059_032_4000_SH_20260921T043015_20260921T043051_20261003T043015_20261003T043051_P05023_N_F_J_001_QA_STATS.h5"
+    },
+    "target_output": "GOFF offset + SNR/QA GeoTIFFs cropped to glacier window",
+    "scientific_status": "CATALOG_FOUND_GOING_TO_RASTER_QA",
+    "valid_velocity_confirmed": false
+  },
+  "data_access": {
+    "earthdata_login_needed_for_file_download": true,
+    "harmony_customization_url": "https://nisar-docs.asf.alaska.edu/harmony/",
+    "data_files_downloaded": false
+  },
+  "validity": {
+    "confirmed_metadata_pairs_only": true,
+    "no_direct_raster_download_or_processing_performed": true,
+    "output_units_to_verify": true,
+    "AOIs_must_be_refined_to_feature_masks": true
+  }
+}

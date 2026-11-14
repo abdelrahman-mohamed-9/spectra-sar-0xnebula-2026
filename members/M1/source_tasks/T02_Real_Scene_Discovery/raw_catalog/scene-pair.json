@@ -1,0 +1,1807 @@
+{
+  "task": "M1-T02",
+  "scientific_area": "Mendenhall Valley flood",
+  "search_timestamp_utc": "2026-11-13T16:12:00.295936+00:00",
+  "study_area_bbox_lonlat": [
+    -134.7,
+    58.33,
+    -134.4,
+    58.55
+  ],
+  "status": "CANDIDATE_FOUND_REQUIRES_T03",
+  "confirmed_scientifically_valid_pair": false,
+  "catalog_results_count": 77,
+  "searches": [
+    {
+      "short_name": "NISAR_L2_GCOV_PROVISIONAL_V1",
+      "search_status": "RESULTS",
+      "count_returned": 73,
+      "truncated": false,
+      "query_url": "https://cmr.earthdata.nasa.gov/search/granules.json?short_name=NISAR_L2_GCOV_PROVISIONAL_V1&bounding_box=-134.7%2C58.33%2C-134.4%2C58.55&temporal=2026-06-17T00%3A00%3A00Z%2C2026-10-23T23%3A59%3A59Z&page_size=200&page_num=1&sort_key=start_date"
+    },
+    {
+      "short_name": "NISAR_L2_GCOV_V1",
+      "search_status": "RESULTS",
+      "count_returned": 4,
+      "truncated": false,
+      "query_url": "https://cmr.earthdata.nasa.gov/search/granules.json?short_name=NISAR_L2_GCOV_V1&bounding_box=-134.7%2C58.33%2C-134.4%2C58.55&temporal=2026-10-21T00%3A00%3A00Z%2C2026-11-13T23%3A59%3A59Z&page_size=200&page_num=1&sort_key=start_date"
+    }
+  ],
+  "candidate_pairs": [
+    {
+      "before": {
+        "granule_id": "NISAR_L2_PR_GCOV_028_034_A_031_4005_DHDH_A_20260815T131512_20260815T131548_P05023_N_F_J_001",
+        "cmr_concept_id": "G4284074506-ASF",
+        "collection_concept_id": "C2854338529-ASF",
+        "product": "GCOV",
+        "maturity": "PROVISIONAL",
+        "acquisition_start_utc": "2026-08-15T13:15:12.000Z",
+        "acquisition_end_utc": "2026-08-15T13:15:48.999Z",
+        "observation_times_in_id": [
+          "20260815T131512",
+          "20260815T131548"
+        ],
+        "name_metadata": {
+          "cycle": "028",
+          "track": "034",
+          "direction": "A",
+          "frame": "031",
+          "mode": "4005",
+          "polarization_code": "DHDH"
+        },
+        "download_urls": [
+          "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_028_034_A_031_4005_DHDH_A_20260815T131512_20260815T131548_P05023_N_F_J_001/NISAR_L2_PR_GCOV_028_034_A_031_4005_DHDH_A_20260815T131512_20260815T131548_P05023_N_F_J_001.h5",
+          "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_028_034_A_031_4005_DHDH_A_20260815T131512_20260815T131548_P05023_N_F_J_001/NISAR_L2_PR_GCOV_028_034_A_031_4005_DHDH_A_20260815T131512_20260815T131548_P05023_N_F_J_001.h5",
+          "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_028_034_A_031_4005_DHDH_A_20260815T131512_20260815T131548_P05023_N_F_J_001/NISAR_L2_PR_GCOV_028_034_A_031_4005_DHDH_A_20260815T131512_20260815T131548_P05023_N_F_J_001_QA_STATS.h5"
+        ],
+        "browse_url": "https://search.asf.alaska.edu/",
+        "footprint_from_CMR": [
+          [
+            "57.49149 -129.4799 59.54307 -131.2794 58.49017 -135.22343 56.50012 -133.23273 57.49149 -129.4799"
+          ]
+        ],
+        "geolocation_validated": false,
+        "actual_file_opened": false
+      },
+      "after": {
+        "granule_id": "NISAR_L2_PR_GCOV_032_034_A_031_4005_DHDH_A_20261002T131512_20261002T131548_P05023_N_F_J_001",
+        "cmr_concept_id": "G4338819270-ASF",
+        "collection_concept_id": "C2854338529-ASF",
+        "product": "GCOV",
+        "maturity": "PROVISIONAL",
+        "acquisition_start_utc": "2026-10-02T13:15:12.000Z",
+        "acquisition_end_utc": "2026-10-02T13:15:48.999Z",
+        "observation_times_in_id": [
+          "20261002T131512",
+          "20261002T131548"
+        ],
+        "name_metadata": {
+          "cycle": "032",
+          "track": "034",
+          "direction": "A",
+          "frame": "031",
+          "mode": "4005",
+          "polarization_code": "DHDH"
+        },
+        "download_urls": [
+          "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_032_034_A_031_4005_DHDH_A_20261002T131512_20261002T131548_P05023_N_F_J_001/NISAR_L2_PR_GCOV_032_034_A_031_4005_DHDH_A_20261002T131512_20261002T131548_P05023_N_F_J_001.h5",
+          "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_032_034_A_031_4005_DHDH_A_20261002T131512_20261002T131548_P05023_N_F_J_001/NISAR_L2_PR_GCOV_032_034_A_031_4005_DHDH_A_20261002T131512_20261002T131548_P05023_N_F_J_001.h5",
+          "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_032_034_A_031_4005_DHDH_A_20261002T131512_20261002T131548_P05023_N_F_J_001/NISAR_L2_PR_GCOV_032_034_A_031_4005_DHDH_A_20261002T131512_20261002T131548_P05023_N_F_J_001_QA_STATS.h5"
+        ],
+        "browse_url": "https://search.asf.alaska.edu/",
+        "footprint_from_CMR": [
+          [
+            "57.50031 -129.48686 59.55092 -131.29078 58.4991 -135.23042 56.50834 -133.2417 57.50031 -129.48686"
+          ]
+        ],
+        "geolocation_validated": false,
+        "actual_file_opened": false
+      },
+      "time_baseline_days": 48.0,
+      "known_flood_event_window": [
+        {
+          "event": "2026-10-02",
+          "after_event_days": 0.55,
+          "event_time_capture_unverified": false
+        }
+      ],
+      "interpretation": "POTENTIAL_EVENT_BRACKETING_NOT_PROOF_OF_FLOOD",
+      "metadata_match_key": {
+        "maturity": "PROVISIONAL",
+        "track": "034",
+        "direction": "A",
+        "frame": "031",
+        "mode": "4005",
+        "polarization_code": "DHDH"
+      },
+      "t03_validation_required": [
+        "full footprint intersects target AOI",
+        "matching L-band polarization/covariance layer",
+        "matching CRID or quantified processing differences",
+        "alignment/geocoding and land/ice/water masks",
+        "acquisition close enough to flood peak for inundation claim"
+      ]
+    },
+    {
+      "before": {
+        "granule_id": "NISAR_L2_PR_GCOV_029_034_A_031_4005_DHDH_A_20260827T131512_20260827T131548_P05023_N_F_J_001",
+        "cmr_concept_id": "G4291538532-ASF",
+        "collection_concept_id": "C2854338529-ASF",
+        "product": "GCOV",
+        "maturity": "PROVISIONAL",
+        "acquisition_start_utc": "2026-08-27T13:15:12.000Z",
+        "acquisition_end_utc": "2026-08-27T13:15:48.999Z",
+        "observation_times_in_id": [
+          "20260827T131512",
+          "20260827T131548"
+        ],
+        "name_metadata": {
+          "cycle": "029",
+          "track": "034",
+          "direction": "A",
+          "frame": "031",
+          "mode": "4005",
+          "polarization_code": "DHDH"
+        },
+        "download_urls": [
+          "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_029_034_A_031_4005_DHDH_A_20260827T131512_20260827T131548_P05023_N_F_J_001/NISAR_L2_PR_GCOV_029_034_A_031_4005_DHDH_A_20260827T131512_20260827T131548_P05023_N_F_J_001.h5",
+          "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_029_034_A_031_4005_DHDH_A_20260827T131512_20260827T131548_P05023_N_F_J_001/NISAR_L2_PR_GCOV_029_034_A_031_4005_DHDH_A_20260827T131512_20260827T131548_P05023_N_F_J_001.h5",
+          "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_029_034_A_031_4005_DHDH_A_20260827T131512_20260827T131548_P05023_N_F_J_001/NISAR_L2_PR_GCOV_029_034_A_031_4005_DHDH_A_20260827T131512_20260827T131548_P05023_N_F_J_001_QA_STATS.h5"
+        ],
+        "browse_url": "https://search.asf.alaska.edu/",
+        "footprint_from_CMR": [
+          [
+            "57.50647 -129.48743 59.55638 -131.29448 58.50474 -135.23372 56.51389 -133.24499 57.50647 -129.48743"
+          ]
+        ],
+        "geolocation_validated": false,
+        "actual_file_opened": false
+      },
+      "after": {
+        "granule_id": "NISAR_L2_PR_GCOV_032_034_A_031_4005_DHDH_A_20261002T131512_20261002T131548_P05023_N_F_J_001",
+        "cmr_concept_id": "G4338819270-ASF",
+        "collection_concept_id": "C2854338529-ASF",
+        "product": "GCOV",
+        "maturity": "PROVISIONAL",
+        "acquisition_start_utc": "2026-10-02T13:15:12.000Z",
+        "acquisition_end_utc": "2026-10-02T13:15:48.999Z",
+        "observation_times_in_id": [
+          "20261002T131512",
+          "20261002T131548"
+        ],
+        "name_metadata": {
+          "cycle": "032",
+          "track": "034",
+          "direction": "A",
+          "frame": "031",
+          "mode": "4005",
+          "polarization_code": "DHDH"
+        },
+        "download_urls": [
+          "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_032_034_A_031_4005_DHDH_A_20261002T131512_20261002T131548_P05023_N_F_J_001/NISAR_L2_PR_GCOV_032_034_A_031_4005_DHDH_A_20261002T131512_20261002T131548_P05023_N_F_J_001.h5",
+          "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_032_034_A_031_4005_DHDH_A_20261002T131512_20261002T131548_P05023_N_F_J_001/NISAR_L2_PR_GCOV_032_034_A_031_4005_DHDH_A_20261002T131512_20261002T131548_P05023_N_F_J_001.h5",
+          "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_032_034_A_031_4005_DHDH_A_20261002T131512_20261002T131548_P05023_N_F_J_001/NISAR_L2_PR_GCOV_032_034_A_031_4005_DHDH_A_20261002T131512_20261002T131548_P05023_N_F_J_001_QA_STATS.h5"
+        ],
+        "browse_url": "https://search.asf.alaska.edu/",
+        "footprint_from_CMR": [
+          [
+            "57.50031 -129.48686 59.55092 -131.29078 58.4991 -135.23042 56.50834 -133.2417 57.50031 -129.48686"
+          ]
+        ],
+        "geolocation_validated": false,
+        "actual_file_opened": false
+      },
+      "time_baseline_days": 36.0,
+      "known_flood_event_window": [
+        {
+          "event": "2026-10-02",
+          "after_event_days": 0.55,
+          "event_time_capture_unverified": false
+        }
+      ],
+      "interpretation": "POTENTIAL_EVENT_BRACKETING_NOT_PROOF_OF_FLOOD",
+      "metadata_match_key": {
+        "maturity": "PROVISIONAL",
+        "track": "034",
+        "direction": "A",
+        "frame": "031",
+        "mode": "4005",
+        "polarization_code": "DHDH"
+      },
+      "t03_validation_required": [
+        "full footprint intersects target AOI",
+        "matching L-band polarization/covariance layer",
+        "matching CRID or quantified processing differences",
+        "alignment/geocoding and land/ice/water masks",
+        "acquisition close enough to flood peak for inundation claim"
+      ]
+    },
+    {
+      "before": {
+        "granule_id": "NISAR_L2_PR_GCOV_030_034_A_031_4005_DHDH_A_20260908T131512_20260908T131548_P05023_N_F_J_001",
+        "cmr_concept_id": "G4306437356-ASF",
+        "collection_concept_id": "C2854338529-ASF",
+        "product": "GCOV",
+        "maturity": "PROVISIONAL",
+        "acquisition_start_utc": "2026-09-08T13:15:12.000Z",
+        "acquisition_end_utc": "2026-09-08T13:15:48.999Z",
+        "observation_times_in_id": [
+          "20260908T131512",
+          "20260908T131548"
+        ],
+        "name_metadata": {
+          "cycle": "030",
+          "track": "034",
+          "direction": "A",
+          "frame": "031",
+          "mode": "4005",
+          "polarization_code": "DHDH"
+        },
+        "download_urls": [
+          "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_030_034_A_031_4005_DHDH_A_20260908T131512_20260908T131548_P05023_N_F_J_001/NISAR_L2_PR_GCOV_030_034_A_031_4005_DHDH_A_20260908T131512_20260908T131548_P05023_N_F_J_001.h5",
+          "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_030_034_A_031_4005_DHDH_A_20260908T131512_20260908T131548_P05023_N_F_J_001/NISAR_L2_PR_GCOV_030_034_A_031_4005_DHDH_A_20260908T131512_20260908T131548_P05023_N_F_J_001.h5",
+          "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_030_034_A_031_4005_DHDH_A_20260908T131512_20260908T131548_P05023_N_F_J_001/NISAR_L2_PR_GCOV_030_034_A_031_4005_DHDH_A_20260908T131512_20260908T131548_P05023_N_F_J_001_QA_STATS.h5"
+        ],
+        "browse_url": "https://search.asf.alaska.edu/",
+        "footprint_from_CMR": [
+          [
+            "57.51549 -129.48978 59.56307 -131.3068 58.51422 -135.23554 56.5211 -133.25418 57.51549 -129.48978"
+          ]
+        ],
+        "geolocation_validated": false,
+        "actual_file_opened": false
+      },
+      "after": {
+        "granule_id": "NISAR_L2_PR_GCOV_032_034_A_031_4005_DHDH_A_20261002T131512_20261002T131548_P05023_N_F_J_001",
+        "cmr_concept_id": "G4338819270-ASF",
+        "collection_concept_id": "C2854338529-ASF",
+        "product": "GCOV",
+        "maturity": "PROVISIONAL",
+        "acquisition_start_utc": "2026-10-02T13:15:12.000Z",
+        "acquisition_end_utc": "2026-10-02T13:15:48.999Z",
+        "observation_times_in_id": [
+          "20261002T131512",
+          "20261002T131548"
+        ],
+        "name_metadata": {
+          "cycle": "032",
+          "track": "034",
+          "direction": "A",
+          "frame": "031",
+          "mode": "4005",
+          "polarization_code": "DHDH"
+        },
+        "download_urls": [
+          "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_032_034_A_031_4005_DHDH_A_20261002T131512_20261002T131548_P05023_N_F_J_001/NISAR_L2_PR_GCOV_032_034_A_031_4005_DHDH_A_20261002T131512_20261002T131548_P05023_N_F_J_001.h5",
+          "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_032_034_A_031_4005_DHDH_A_20261002T131512_20261002T131548_P05023_N_F_J_001/NISAR_L2_PR_GCOV_032_034_A_031_4005_DHDH_A_20261002T131512_20261002T131548_P05023_N_F_J_001.h5",
+          "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_032_034_A_031_4005_DHDH_A_20261002T131512_20261002T131548_P05023_N_F_J_001/NISAR_L2_PR_GCOV_032_034_A_031_4005_DHDH_A_20261002T131512_20261002T131548_P05023_N_F_J_001_QA_STATS.h5"
+        ],
+        "browse_url": "https://search.asf.alaska.edu/",
+        "footprint_from_CMR": [
+          [
+            "57.50031 -129.48686 59.55092 -131.29078 58.4991 -135.23042 56.50834 -133.2417 57.50031 -129.48686"
+          ]
+        ],
+        "geolocation_validated": false,
+        "actual_file_opened": false
+      },
+      "time_baseline_days": 24.0,
+      "known_flood_event_window": [
+        {
+          "event": "2026-10-02",
+          "after_event_days": 0.55,
+          "event_time_capture_unverified": false
+        }
+      ],
+      "interpretation": "POTENTIAL_EVENT_BRACKETING_NOT_PROOF_OF_FLOOD",
+      "metadata_match_key": {
+        "maturity": "PROVISIONAL",
+        "track": "034",
+        "direction": "A",
+        "frame": "031",
+        "mode": "4005",
+        "polarization_code": "DHDH"
+      },
+      "t03_validation_required": [
+        "full footprint intersects target AOI",
+        "matching L-band polarization/covariance layer",
+        "matching CRID or quantified processing differences",
+        "alignment/geocoding and land/ice/water masks",
+        "acquisition close enough to flood peak for inundation claim"
+      ]
+    },
+    {
+      "before": {
+        "granule_id": "NISAR_L2_PR_GCOV_031_034_A_031_4005_DHDH_A_20260920T131512_20260920T131548_P05023_N_F_J_001",
+        "cmr_concept_id": "G4319985062-ASF",
+        "collection_concept_id": "C2854338529-ASF",
+        "product": "GCOV",
+        "maturity": "PROVISIONAL",
+        "acquisition_start_utc": "2026-09-20T13:15:12.000Z",
+        "acquisition_end_utc": "2026-09-20T13:15:48.999Z",
+        "observation_times_in_id": [
+          "20260920T131512",
+          "20260920T131548"
+        ],
+        "name_metadata": {
+          "cycle": "031",
+          "track": "034",
+          "direction": "A",
+          "frame": "031",
+          "mode": "4005",
+          "polarization_code": "DHDH"
+        },
+        "download_urls": [
+          "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_031_034_A_031_4005_DHDH_A_20260920T131512_20260920T131548_P05023_N_F_J_001/NISAR_L2_PR_GCOV_031_034_A_031_4005_DHDH_A_20260920T131512_20260920T131548_P05023_N_F_J_001.h5",
+          "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_031_034_A_031_4005_DHDH_A_20260920T131512_20260920T131548_P05023_N_F_J_001/NISAR_L2_PR_GCOV_031_034_A_031_4005_DHDH_A_20260920T131512_20260920T131548_P05023_N_F_J_001.h5",
+          "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_031_034_A_031_4005_DHDH_A_20260920T131512_20260920T131548_P05023_N_F_J_001/NISAR_L2_PR_GCOV_031_034_A_031_4005_DHDH_A_20260920T131512_20260920T131548_P05023_N_F_J_001_QA_STATS.h5"
+        ],
+        "browse_url": "https://search.asf.alaska.edu/",
+        "footprint_from_CMR": [
+          [
+            "57.50839 -129.48909 59.55775 -131.29852 58.50621 -135.23696 56.51529 -133.24837 57.50839 -129.48909"
+          ]
+        ],
+        "geolocation_validated": false,
+        "actual_file_opened": false
+      },
+      "after": {
+        "granule_id": "NISAR_L2_PR_GCOV_032_034_A_031_4005_DHDH_A_20261002T131512_20261002T131548_P05023_N_F_J_001",
+        "cmr_concept_id": "G4338819270-ASF",
+        "collection_concept_id": "C2854338529-ASF",
+        "product": "GCOV",
+        "maturity": "PROVISIONAL",
+        "acquisition_start_utc": "2026-10-02T13:15:12.000Z",
+        "acquisition_end_utc": "2026-10-02T13:15:48.999Z",
+        "observation_times_in_id": [
+          "20261002T131512",
+          "20261002T131548"
+        ],
+        "name_metadata": {
+          "cycle": "032",
+          "track": "034",
+          "direction": "A",
+          "frame": "031",
+          "mode": "4005",
+          "polarization_code": "DHDH"
+        },
+        "download_urls": [
+          "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_032_034_A_031_4005_DHDH_A_20261002T131512_20261002T131548_P05023_N_F_J_001/NISAR_L2_PR_GCOV_032_034_A_031_4005_DHDH_A_20261002T131512_20261002T131548_P05023_N_F_J_001.h5",
+          "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_032_034_A_031_4005_DHDH_A_20261002T131512_20261002T131548_P05023_N_F_J_001/NISAR_L2_PR_GCOV_032_034_A_031_4005_DHDH_A_20261002T131512_20261002T131548_P05023_N_F_J_001.h5",
+          "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_032_034_A_031_4005_DHDH_A_20261002T131512_20261002T131548_P05023_N_F_J_001/NISAR_L2_PR_GCOV_032_034_A_031_4005_DHDH_A_20261002T131512_20261002T131548_P05023_N_F_J_001_QA_STATS.h5"
+        ],
+        "browse_url": "https://search.asf.alaska.edu/",
+        "footprint_from_CMR": [
+          [
+            "57.50031 -129.48686 59.55092 -131.29078 58.4991 -135.23042 56.50834 -133.2417 57.50031 -129.48686"
+          ]
+        ],
+        "geolocation_validated": false,
+        "actual_file_opened": false
+      },
+      "time_baseline_days": 12.0,
+      "known_flood_event_window": [
+        {
+          "event": "2026-10-02",
+          "after_event_days": 0.55,
+          "event_time_capture_unverified": false
+        }
+      ],
+      "interpretation": "POTENTIAL_EVENT_BRACKETING_NOT_PROOF_OF_FLOOD",
+      "metadata_match_key": {
+        "maturity": "PROVISIONAL",
+        "track": "034",
+        "direction": "A",
+        "frame": "031",
+        "mode": "4005",
+        "polarization_code": "DHDH"
+      },
+      "t03_validation_required": [
+        "full footprint intersects target AOI",
+        "matching L-band polarization/covariance layer",
+        "matching CRID or quantified processing differences",
+        "alignment/geocoding and land/ice/water masks",
+        "acquisition close enough to flood peak for inundation claim"
+      ]
+    },
+    {
+      "before": {
+        "granule_id": "NISAR_L2_PR_GCOV_028_034_A_032_4005_DHDH_A_20260815T131547_20260815T131623_P05023_N_F_J_001",
+        "cmr_concept_id": "G4284077192-ASF",
+        "collection_concept_id": "C2854338529-ASF",
+        "product": "GCOV",
+        "maturity": "PROVISIONAL",
+        "acquisition_start_utc": "2026-08-15T13:15:47.000Z",
+        "acquisition_end_utc": "2026-08-15T13:16:23.999Z",
+        "observation_times_in_id": [
+          "20260815T131547",
+          "20260815T131623"
+        ],
+        "name_metadata": {
+          "cycle": "028",
+          "track": "034",
+          "direction": "A",
+          "frame": "032",
+          "mode": "4005",
+          "polarization_code": "DHDH"
+        },
+        "download_urls": [
+          "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_028_034_A_032_4005_DHDH_A_20260815T131547_20260815T131623_P05023_N_F_J_001/NISAR_L2_PR_GCOV_028_034_A_032_4005_DHDH_A_20260815T131547_20260815T131623_P05023_N_F_J_001.h5",
+          "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_028_034_A_032_4005_DHDH_A_20260815T131547_20260815T131623_P05023_N_F_J_001/NISAR_L2_PR_GCOV_028_034_A_032_4005_DHDH_A_20260815T131547_20260815T131623_P05023_N_F_J_001.h5",
+          "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_028_034_A_032_4005_DHDH_A_20260815T131547_20260815T131623_P05023_N_F_J_001/NISAR_L2_PR_GCOV_028_034_A_032_4005_DHDH_A_20260815T131547_20260815T131623_P05023_N_F_J_001_QA_STATS.h5"
+        ],
+        "browse_url": "https://search.asf.alaska.edu/",
+        "footprint_from_CMR": [
+          [
+            "59.43182 -131.18099 61.45423 -133.20746 60.34459 -137.31056 58.38613 -135.10105 59.43182 -131.18099"
+          ]
+        ],
+        "geolocation_validated": false,
+        "actual_file_opened": false
+      },
+      "after": {
+        "granule_id": "NISAR_L2_PR_GCOV_032_034_A_032_4005_DHDH_A_20261002T131547_20261002T131623_P05023_N_F_J_001",
+        "cmr_concept_id": "G4338819392-ASF",
+        "collection_concept_id": "C2854338529-ASF",
+        "product": "GCOV",
+        "maturity": "PROVISIONAL",
+        "acquisition_start_utc": "2026-10-02T13:15:47.000Z",
+        "acquisition_end_utc": "2026-10-02T13:16:23.999Z",
+        "observation_times_in_id": [
+          "20261002T131547",
+          "20261002T131623"
+        ],
+        "name_metadata": {
+          "cycle": "032",
+          "track": "034",
+          "direction": "A",
+          "frame": "032",
+          "mode": "4005",
+          "polarization_code": "DHDH"
+        },
+        "download_urls": [
+          "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_032_034_A_032_4005_DHDH_A_20261002T131547_20261002T131623_P05023_N_F_J_001/NISAR_L2_PR_GCOV_032_034_A_032_4005_DHDH_A_20261002T131547_20261002T131623_P05023_N_F_J_001.h5",
+          "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_032_034_A_032_4005_DHDH_A_20261002T131547_20261002T131623_P05023_N_F_J_001/NISAR_L2_PR_GCOV_032_034_A_032_4005_DHDH_A_20261002T131547_20261002T131623_P05023_N_F_J_001.h5",
+          "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_032_034_A_032_4005_DHDH_A_20261002T131547_20261002T131623_P05023_N_F_J_001/NISAR_L2_PR_GCOV_032_034_A_032_4005_DHDH_A_20261002T131547_20261002T131623_P05023_N_F_J_001_QA_STATS.h5"
+        ],
+        "browse_url": "https://search.asf.alaska.edu/",
+        "footprint_from_CMR": [
+          [
+            "59.43979 -131.19187 61.46138 -133.22214 60.35234 -137.32204 58.39368 -135.11273 59.43979 -131.19187"
+          ]
+        ],
+        "geolocation_validated": false,
+        "actual_file_opened": false
+      },
+      "time_baseline_days": 48.0,
+      "known_flood_event_window": [
+        {
+          "event": "2026-10-02",
+          "after_event_days": 0.55,
+          "event_time_capture_unverified": false
+        }
+      ],
+      "interpretation": "POTENTIAL_EVENT_BRACKETING_NOT_PROOF_OF_FLOOD",
+      "metadata_match_key": {
+        "maturity": "PROVISIONAL",
+        "track": "034",
+        "direction": "A",
+        "frame": "032",
+        "mode": "4005",
+        "polarization_code": "DHDH"
+      },
+      "t03_validation_required": [
+        "full footprint intersects target AOI",
+        "matching L-band polarization/covariance layer",
+        "matching CRID or quantified processing differences",
+        "alignment/geocoding and land/ice/water masks",
+        "acquisition close enough to flood peak for inundation claim"
+      ]
+    },
+    {
+      "before": {
+        "granule_id": "NISAR_L2_PR_GCOV_029_034_A_032_4005_DHDH_A_20260827T131547_20260827T131623_P05023_N_F_J_001",
+        "cmr_concept_id": "G4291631536-ASF",
+        "collection_concept_id": "C2854338529-ASF",
+        "product": "GCOV",
+        "maturity": "PROVISIONAL",
+        "acquisition_start_utc": "2026-08-27T13:15:47.000Z",
+        "acquisition_end_utc": "2026-08-27T13:16:23.999Z",
+        "observation_times_in_id": [
+          "20260827T131547",
+          "20260827T131623"
+        ],
+        "name_metadata": {
+          "cycle": "029",
+          "track": "034",
+          "direction": "A",
+          "frame": "032",
+          "mode": "4005",
+          "polarization_code": "DHDH"
+        },
+        "download_urls": [
+          "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_029_034_A_032_4005_DHDH_A_20260827T131547_20260827T131623_P05023_N_F_J_001/NISAR_L2_PR_GCOV_029_034_A_032_4005_DHDH_A_20260827T131547_20260827T131623_P05023_N_F_J_001.h5",
+          "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_029_034_A_032_4005_DHDH_A_20260827T131547_20260827T131623_P05023_N_F_J_001/NISAR_L2_PR_GCOV_029_034_A_032_4005_DHDH_A_20260827T131547_20260827T131623_P05023_N_F_J_001.h5",
+          "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_029_034_A_032_4005_DHDH_A_20260827T131547_20260827T131623_P05023_N_F_J_001/NISAR_L2_PR_GCOV_029_034_A_032_4005_DHDH_A_20260827T131547_20260827T131623_P05023_N_F_J_001_QA_STATS.h5"
+        ],
+        "browse_url": "https://search.asf.alaska.edu/",
+        "footprint_from_CMR": [
+          [
+            "59.4448 -131.19741 61.46703 -133.22542 60.35757 -137.32708 58.39938 -135.1158 59.4448 -131.19741"
+          ]
+        ],
+        "geolocation_validated": false,
+        "actual_file_opened": false
+      },
+      "after": {
+        "granule_id": "NISAR_L2_PR_GCOV_032_034_A_032_4005_DHDH_A_20261002T131547_20261002T131623_P05023_N_F_J_001",
+        "cmr_concept_id": "G4338819392-ASF",
+        "collection_concept_id": "C2854338529-ASF",
+        "product": "GCOV",
+        "maturity": "PROVISIONAL",
+        "acquisition_start_utc": "2026-10-02T13:15:47.000Z",
+        "acquisition_end_utc": "2026-10-02T13:16:23.999Z",
+        "observation_times_in_id": [
+          "20261002T131547",
+          "20261002T131623"
+        ],
+        "name_metadata": {
+          "cycle": "032",
+          "track": "034",
+          "direction": "A",
+          "frame": "032",
+          "mode": "4005",
+          "polarization_code": "DHDH"
+        },
+        "download_urls": [
+          "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_032_034_A_032_4005_DHDH_A_20261002T131547_20261002T131623_P05023_N_F_J_001/NISAR_L2_PR_GCOV_032_034_A_032_4005_DHDH_A_20261002T131547_20261002T131623_P05023_N_F_J_001.h5",
+          "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_032_034_A_032_4005_DHDH_A_20261002T131547_20261002T131623_P05023_N_F_J_001/NISAR_L2_PR_GCOV_032_034_A_032_4005_DHDH_A_20261002T131547_20261002T131623_P05023_N_F_J_001.h5",
+          "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_032_034_A_032_4005_DHDH_A_20261002T131547_20261002T131623_P05023_N_F_J_001/NISAR_L2_PR_GCOV_032_034_A_032_4005_DHDH_A_20261002T131547_20261002T131623_P05023_N_F_J_001_QA_STATS.h5"
+        ],
+        "browse_url": "https://search.asf.alaska.edu/",
+        "footprint_from_CMR": [
+          [
+            "59.43979 -131.19187 61.46138 -133.22214 60.35234 -137.32204 58.39368 -135.11273 59.43979 -131.19187"
+          ]
+        ],
+        "geolocation_validated": false,
+        "actual_file_opened": false
+      },
+      "time_baseline_days": 36.0,
+      "known_flood_event_window": [
+        {
+          "event": "2026-10-02",
+          "after_event_days": 0.55,
+          "event_time_capture_unverified": false
+        }
+      ],
+      "interpretation": "POTENTIAL_EVENT_BRACKETING_NOT_PROOF_OF_FLOOD",
+      "metadata_match_key": {
+        "maturity": "PROVISIONAL",
+        "track": "034",
+        "direction": "A",
+        "frame": "032",
+        "mode": "4005",
+        "polarization_code": "DHDH"
+      },
+      "t03_validation_required": [
+        "full footprint intersects target AOI",
+        "matching L-band polarization/covariance layer",
+        "matching CRID or quantified processing differences",
+        "alignment/geocoding and land/ice/water masks",
+        "acquisition close enough to flood peak for inundation claim"
+      ]
+    },
+    {
+      "before": {
+        "granule_id": "NISAR_L2_PR_GCOV_030_034_A_032_4005_DHDH_A_20260908T131547_20260908T131623_P05023_N_F_J_001",
+        "cmr_concept_id": "G4306422398-ASF",
+        "collection_concept_id": "C2854338529-ASF",
+        "product": "GCOV",
+        "maturity": "PROVISIONAL",
+        "acquisition_start_utc": "2026-09-08T13:15:47.000Z",
+        "acquisition_end_utc": "2026-09-08T13:16:23.999Z",
+        "observation_times_in_id": [
+          "20260908T131547",
+          "20260908T131623"
+        ],
+        "name_metadata": {
+          "cycle": "030",
+          "track": "034",
+          "direction": "A",
+          "frame": "032",
+          "mode": "4005",
+          "polarization_code": "DHDH"
+        },
+        "download_urls": [
+          "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_030_034_A_032_4005_DHDH_A_20260908T131547_20260908T131623_P05023_N_F_J_001/NISAR_L2_PR_GCOV_030_034_A_032_4005_DHDH_A_20260908T131547_20260908T131623_P05023_N_F_J_001.h5",
+          "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_030_034_A_032_4005_DHDH_A_20260908T131547_20260908T131623_P05023_N_F_J_001/NISAR_L2_PR_GCOV_030_034_A_032_4005_DHDH_A_20260908T131547_20260908T131623_P05023_N_F_J_001.h5",
+          "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_030_034_A_032_4005_DHDH_A_20260908T131547_20260908T131623_P05023_N_F_J_001/NISAR_L2_PR_GCOV_030_034_A_032_4005_DHDH_A_20260908T131547_20260908T131623_P05023_N_F_J_001_QA_STATS.h5"
+        ],
+        "browse_url": "https://search.asf.alaska.edu/",
+        "footprint_from_CMR": [
+          [
+            "59.4523 -131.2064 61.47489 -133.23344 60.36462 -137.33764 58.40778 -135.12128 59.4523 -131.2064"
+          ]
+        ],
+        "geolocation_validated": false,
+        "actual_file_opened": false
+      },
+      "after": {
+        "granule_id": "NISAR_L2_PR_GCOV_032_034_A_032_4005_DHDH_A_20261002T131547_20261002T131623_P05023_N_F_J_001",
+        "cmr_concept_id": "G4338819392-ASF",
+        "collection_concept_id": "C2854338529-ASF",
+        "product": "GCOV",
+        "maturity": "PROVISIONAL",
+        "acquisition_start_utc": "2026-10-02T13:15:47.000Z",
+        "acquisition_end_utc": "2026-10-02T13:16:23.999Z",
+        "observation_times_in_id": [
+          "20261002T131547",
+          "20261002T131623"
+        ],
+        "name_metadata": {
+          "cycle": "032",
+          "track": "034",
+          "direction": "A",
+          "frame": "032",
+          "mode": "4005",
+          "polarization_code": "DHDH"
+        },
+        "download_urls": [
+          "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_032_034_A_032_4005_DHDH_A_20261002T131547_20261002T131623_P05023_N_F_J_001/NISAR_L2_PR_GCOV_032_034_A_032_4005_DHDH_A_20261002T131547_20261002T131623_P05023_N_F_J_001.h5",
+          "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_032_034_A_032_4005_DHDH_A_20261002T131547_20261002T131623_P05023_N_F_J_001/NISAR_L2_PR_GCOV_032_034_A_032_4005_DHDH_A_20261002T131547_20261002T131623_P05023_N_F_J_001.h5",
+          "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_032_034_A_032_4005_DHDH_A_20261002T131547_20261002T131623_P05023_N_F_J_001/NISAR_L2_PR_GCOV_032_034_A_032_4005_DHDH_A_20261002T131547_20261002T131623_P05023_N_F_J_001_QA_STATS.h5"
+        ],
+        "browse_url": "https://search.asf.alaska.edu/",
+        "footprint_from_CMR": [
+          [
+            "59.43979 -131.19187 61.46138 -133.22214 60.35234 -137.32204 58.39368 -135.11273 59.43979 -131.19187"
+          ]
+        ],
+        "geolocation_validated": false,
+        "actual_file_opened": false
+      },
+      "time_baseline_days": 24.0,
+      "known_flood_event_window": [
+        {
+          "event": "2026-10-02",
+          "after_event_days": 0.55,
+          "event_time_capture_unverified": false
+        }
+      ],
+      "interpretation": "POTENTIAL_EVENT_BRACKETING_NOT_PROOF_OF_FLOOD",
+      "metadata_match_key": {
+        "maturity": "PROVISIONAL",
+        "track": "034",
+        "direction": "A",
+        "frame": "032",
+        "mode": "4005",
+        "polarization_code": "DHDH"
+      },
+      "t03_validation_required": [
+        "full footprint intersects target AOI",
+        "matching L-band polarization/covariance layer",
+        "matching CRID or quantified processing differences",
+        "alignment/geocoding and land/ice/water masks",
+        "acquisition close enough to flood peak for inundation claim"
+      ]
+    },
+    {
+      "before": {
+        "granule_id": "NISAR_L2_PR_GCOV_031_034_A_032_4005_DHDH_A_20260920T131547_20260920T131623_P05023_N_F_J_001",
+        "cmr_concept_id": "G4319999739-ASF",
+        "collection_concept_id": "C2854338529-ASF",
+        "product": "GCOV",
+        "maturity": "PROVISIONAL",
+        "acquisition_start_utc": "2026-09-20T13:15:47.000Z",
+        "acquisition_end_utc": "2026-09-20T13:16:23.999Z",
+        "observation_times_in_id": [
+          "20260920T131547",
+          "20260920T131623"
+        ],
+        "name_metadata": {
+          "cycle": "031",
+          "track": "034",
+          "direction": "A",
+          "frame": "032",
+          "mode": "4005",
+          "polarization_code": "DHDH"
+        },
+        "download_urls": [
+          "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_031_034_A_032_4005_DHDH_A_20260920T131547_20260920T131623_P05023_N_F_J_001/NISAR_L2_PR_GCOV_031_034_A_032_4005_DHDH_A_20260920T131547_20260920T131623_P05023_N_F_J_001.h5",
+          "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_031_034_A_032_4005_DHDH_A_20260920T131547_20260920T131623_P05023_N_F_J_001/NISAR_L2_PR_GCOV_031_034_A_032_4005_DHDH_A_20260920T131547_20260920T131623_P05023_N_F_J_001.h5",
+          "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_031_034_A_032_4005_DHDH_A_20260920T131547_20260920T131623_P05023_N_F_J_001/NISAR_L2_PR_GCOV_031_034_A_032_4005_DHDH_A_20260920T131547_20260920T131623_P05023_N_F_J_001_QA_STATS.h5"
+        ],
+        "browse_url": "https://search.asf.alaska.edu/",
+        "footprint_from_CMR": [
+          [
+            "59.44613 -131.20158 61.46856 -133.22893 60.35885 -137.33104 58.40115 -135.11802 59.44613 -131.20158"
+          ]
+        ],
+        "geolocation_validated": false,
+        "actual_file_opened": false
+      },
+      "after": {
+        "granule_id": "NISAR_L2_PR_GCOV_032_034_A_032_4005_DHDH_A_20261002T131547_20261002T131623_P05023_N_F_J_001",
+        "cmr_concept_id": "G4338819392-ASF",
+        "collection_concept_id": "C2854338529-ASF",
+        "product": "GCOV",
+        "maturity": "PROVISIONAL",
+        "acquisition_start_utc": "2026-10-02T13:15:47.000Z",
+        "acquisition_end_utc": "2026-10-02T13:16:23.999Z",
+        "observation_times_in_id": [
+          "20261002T131547",
+          "20261002T131623"
+        ],
+        "name_metadata": {
+          "cycle": "032",
+          "track": "034",
+          "direction": "A",
+          "frame": "032",
+          "mode": "4005",
+          "polarization_code": "DHDH"
+        },
+        "download_urls": [
+          "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_032_034_A_032_4005_DHDH_A_20261002T131547_20261002T131623_P05023_N_F_J_001/NISAR_L2_PR_GCOV_032_034_A_032_4005_DHDH_A_20261002T131547_20261002T131623_P05023_N_F_J_001.h5",
+          "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_032_034_A_032_4005_DHDH_A_20261002T131547_20261002T131623_P05023_N_F_J_001/NISAR_L2_PR_GCOV_032_034_A_032_4005_DHDH_A_20261002T131547_20261002T131623_P05023_N_F_J_001.h5",
+          "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_032_034_A_032_4005_DHDH_A_20261002T131547_20261002T131623_P05023_N_F_J_001/NISAR_L2_PR_GCOV_032_034_A_032_4005_DHDH_A_20261002T131547_20261002T131623_P05023_N_F_J_001_QA_STATS.h5"
+        ],
+        "browse_url": "https://search.asf.alaska.edu/",
+        "footprint_from_CMR": [
+          [
+            "59.43979 -131.19187 61.46138 -133.22214 60.35234 -137.32204 58.39368 -135.11273 59.43979 -131.19187"
+          ]
+        ],
+        "geolocation_validated": false,
+        "actual_file_opened": false
+      },
+      "time_baseline_days": 12.0,
+      "known_flood_event_window": [
+        {
+          "event": "2026-10-02",
+          "after_event_days": 0.55,
+          "event_time_capture_unverified": false
+        }
+      ],
+      "interpretation": "POTENTIAL_EVENT_BRACKETING_NOT_PROOF_OF_FLOOD",
+      "metadata_match_key": {
+        "maturity": "PROVISIONAL",
+        "track": "034",
+        "direction": "A",
+        "frame": "032",
+        "mode": "4005",
+        "polarization_code": "DHDH"
+      },
+      "t03_validation_required": [
+        "full footprint intersects target AOI",
+        "matching L-band polarization/covariance layer",
+        "matching CRID or quantified processing differences",
+        "alignment/geocoding and land/ice/water masks",
+        "acquisition close enough to flood peak for inundation claim"
+      ]
+    }
+  ],
+  "other_returned_granules": [
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_023_043_D_059_4005_DHDH_A_20260617T043018_20260617T043054_P05023_F_F_J_001",
+      "cmr_concept_id": "G4249947075-ASF",
+      "collection_concept_id": "C2854338529-ASF",
+      "product": "GCOV",
+      "maturity": "PROVISIONAL",
+      "acquisition_start_utc": "2026-06-17T04:30:18.000Z",
+      "acquisition_end_utc": "2026-06-17T04:30:54.999Z",
+      "observation_times_in_id": [
+        "20260617T043018",
+        "20260617T043054"
+      ],
+      "name_metadata": {
+        "cycle": "023",
+        "track": "043",
+        "direction": "D",
+        "frame": "059",
+        "mode": "4005",
+        "polarization_code": "DHDH"
+      },
+      "download_urls": [
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_023_043_D_059_4005_DHDH_A_20260617T043018_20260617T043054_P05023_F_F_J_001/NISAR_L2_PR_GCOV_023_043_D_059_4005_DHDH_A_20260617T043018_20260617T043054_P05023_F_F_J_001.h5",
+        "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_023_043_D_059_4005_DHDH_A_20260617T043018_20260617T043054_P05023_F_F_J_001/NISAR_L2_PR_GCOV_023_043_D_059_4005_DHDH_A_20260617T043018_20260617T043054_P05023_F_F_J_001.h5",
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_023_043_D_059_4005_DHDH_A_20260617T043018_20260617T043054_P05023_F_F_J_001/NISAR_L2_PR_GCOV_023_043_D_059_4005_DHDH_A_20260617T043018_20260617T043054_P05023_F_F_J_001_QA_STATS.h5"
+      ],
+      "browse_url": "https://search.asf.alaska.edu/",
+      "footprint_from_CMR": [
+        [
+          "59.59055 -134.37421 57.54659 -136.20753 56.53239 -132.37673 58.51797 -130.36897 59.59055 -134.37421"
+        ]
+      ],
+      "geolocation_validated": false,
+      "actual_file_opened": false
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_023_063_A_031_4005_DHDH_A_20260618T133154_20260618T133230_P05023_N_F_J_001",
+      "cmr_concept_id": "G4240285894-ASF",
+      "collection_concept_id": "C2854338529-ASF",
+      "product": "GCOV",
+      "maturity": "PROVISIONAL",
+      "acquisition_start_utc": "2026-06-18T13:31:54.000Z",
+      "acquisition_end_utc": "2026-06-18T13:32:30.999Z",
+      "observation_times_in_id": [
+        "20260618T133154",
+        "20260618T133230"
+      ],
+      "name_metadata": {
+        "cycle": "023",
+        "track": "063",
+        "direction": "A",
+        "frame": "031",
+        "mode": "4005",
+        "polarization_code": "DHDH"
+      },
+      "download_urls": [
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_023_063_A_031_4005_DHDH_A_20260618T133154_20260618T133230_P05023_N_F_J_001/NISAR_L2_PR_GCOV_023_063_A_031_4005_DHDH_A_20260618T133154_20260618T133230_P05023_N_F_J_001.h5",
+        "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_023_063_A_031_4005_DHDH_A_20260618T133154_20260618T133230_P05023_N_F_J_001/NISAR_L2_PR_GCOV_023_063_A_031_4005_DHDH_A_20260618T133154_20260618T133230_P05023_N_F_J_001.h5",
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_023_063_A_031_4005_DHDH_A_20260618T133154_20260618T133230_P05023_N_F_J_001/NISAR_L2_PR_GCOV_023_063_A_031_4005_DHDH_A_20260618T133154_20260618T133230_P05023_N_F_J_001_QA_STATS.h5"
+      ],
+      "browse_url": "https://search.asf.alaska.edu/",
+      "footprint_from_CMR": [
+        [
+          "57.50833 -133.6416 59.55525 -135.46103 58.48741 -139.45505 56.49518 -137.4719 57.50833 -133.6416"
+        ]
+      ],
+      "geolocation_validated": false,
+      "actual_file_opened": false
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_023_072_D_058_4005_DHDH_A_20260619T044622_20260619T044658_P05023_N_F_J_001",
+      "cmr_concept_id": "G4249027300-ASF",
+      "collection_concept_id": "C2854338529-ASF",
+      "product": "GCOV",
+      "maturity": "PROVISIONAL",
+      "acquisition_start_utc": "2026-06-19T04:46:22.000Z",
+      "acquisition_end_utc": "2026-06-19T04:46:58.999Z",
+      "observation_times_in_id": [
+        "20260619T044622",
+        "20260619T044658"
+      ],
+      "name_metadata": {
+        "cycle": "023",
+        "track": "072",
+        "direction": "D",
+        "frame": "058",
+        "mode": "4005",
+        "polarization_code": "DHDH"
+      },
+      "download_urls": [
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_023_072_D_058_4005_DHDH_A_20260619T044622_20260619T044658_P05023_N_F_J_001/NISAR_L2_PR_GCOV_023_072_D_058_4005_DHDH_A_20260619T044622_20260619T044658_P05023_N_F_J_001.h5",
+        "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_023_072_D_058_4005_DHDH_A_20260619T044622_20260619T044658_P05023_N_F_J_001/NISAR_L2_PR_GCOV_023_072_D_058_4005_DHDH_A_20260619T044622_20260619T044658_P05023_N_F_J_001.h5",
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_023_072_D_058_4005_DHDH_A_20260619T044622_20260619T044658_P05023_N_F_J_001/NISAR_L2_PR_GCOV_023_072_D_058_4005_DHDH_A_20260619T044622_20260619T044658_P05023_N_F_J_001_QA_STATS.h5"
+      ],
+      "browse_url": "https://search.asf.alaska.edu/",
+      "footprint_from_CMR": [
+        [
+          "61.47913 -136.59866 59.46104 -138.64451 58.40248 -134.68733 60.35906 -132.47037 61.47913 -136.59866"
+        ]
+      ],
+      "geolocation_validated": false,
+      "actual_file_opened": false
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_023_072_D_059_4005_DHDH_A_20260619T044657_20260619T044720_P05023_N_P_J_001",
+      "cmr_concept_id": "G4251687225-ASF",
+      "collection_concept_id": "C2854338529-ASF",
+      "product": "GCOV",
+      "maturity": "PROVISIONAL",
+      "acquisition_start_utc": "2026-06-19T04:46:57.000Z",
+      "acquisition_end_utc": "2026-06-19T04:47:20.999Z",
+      "observation_times_in_id": [
+        "20260619T044657",
+        "20260619T044720"
+      ],
+      "name_metadata": {
+        "cycle": "023",
+        "track": "072",
+        "direction": "D",
+        "frame": "059",
+        "mode": "4005",
+        "polarization_code": "DHDH"
+      },
+      "download_urls": [
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_023_072_D_059_4005_DHDH_A_20260619T044657_20260619T044720_P05023_N_P_J_001/NISAR_L2_PR_GCOV_023_072_D_059_4005_DHDH_A_20260619T044657_20260619T044720_P05023_N_P_J_001.h5",
+        "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_023_072_D_059_4005_DHDH_A_20260619T044657_20260619T044720_P05023_N_P_J_001/NISAR_L2_PR_GCOV_023_072_D_059_4005_DHDH_A_20260619T044657_20260619T044720_P05023_N_P_J_001.h5",
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_023_072_D_059_4005_DHDH_A_20260619T044657_20260619T044720_P05023_N_P_J_001/NISAR_L2_PR_GCOV_023_072_D_059_4005_DHDH_A_20260619T044657_20260619T044720_P05023_N_P_J_001_QA_STATS.h5"
+      ],
+      "browse_url": "https://search.asf.alaska.edu/",
+      "footprint_from_CMR": [
+        [
+          "59.56964 -138.5352 58.24885 -139.75606 57.22242 -135.89217 58.50778 -134.56919 59.56964 -138.5352"
+        ]
+      ],
+      "geolocation_validated": false,
+      "actual_file_opened": false
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_023_135_A_031_4005_DHDH_A_20260623T132335_20260623T132411_P05023_N_F_J_001",
+      "cmr_concept_id": "G4246372839-ASF",
+      "collection_concept_id": "C2854338529-ASF",
+      "product": "GCOV",
+      "maturity": "PROVISIONAL",
+      "acquisition_start_utc": "2026-06-23T13:23:35.000Z",
+      "acquisition_end_utc": "2026-06-23T13:24:11.999Z",
+      "observation_times_in_id": [
+        "20260623T132335",
+        "20260623T132411"
+      ],
+      "name_metadata": {
+        "cycle": "023",
+        "track": "135",
+        "direction": "A",
+        "frame": "031",
+        "mode": "4005",
+        "polarization_code": "DHDH"
+      },
+      "download_urls": [
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_023_135_A_031_4005_DHDH_A_20260623T132335_20260623T132411_P05023_N_F_J_001/NISAR_L2_PR_GCOV_023_135_A_031_4005_DHDH_A_20260623T132335_20260623T132411_P05023_N_F_J_001.h5",
+        "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_023_135_A_031_4005_DHDH_A_20260623T132335_20260623T132411_P05023_N_F_J_001/NISAR_L2_PR_GCOV_023_135_A_031_4005_DHDH_A_20260623T132335_20260623T132411_P05023_N_F_J_001.h5",
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_023_135_A_031_4005_DHDH_A_20260623T132335_20260623T132411_P05023_N_F_J_001/NISAR_L2_PR_GCOV_023_135_A_031_4005_DHDH_A_20260623T132335_20260623T132411_P05023_N_F_J_001_QA_STATS.h5"
+      ],
+      "browse_url": "https://search.asf.alaska.edu/",
+      "footprint_from_CMR": [
+        [
+          "57.53708 -131.61372 59.58147 -133.44503 58.53151 -137.37191 56.54002 -135.38388 57.53708 -131.61372"
+        ]
+      ],
+      "geolocation_validated": false,
+      "actual_file_opened": false
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_023_144_D_059_4005_DHDH_A_20260624T043838_20260624T043914_P05023_N_F_J_001",
+      "cmr_concept_id": "G4244346206-ASF",
+      "collection_concept_id": "C2854338529-ASF",
+      "product": "GCOV",
+      "maturity": "PROVISIONAL",
+      "acquisition_start_utc": "2026-06-24T04:38:38.000Z",
+      "acquisition_end_utc": "2026-06-24T04:39:14.999Z",
+      "observation_times_in_id": [
+        "20260624T043838",
+        "20260624T043914"
+      ],
+      "name_metadata": {
+        "cycle": "023",
+        "track": "144",
+        "direction": "D",
+        "frame": "059",
+        "mode": "4005",
+        "polarization_code": "DHDH"
+      },
+      "download_urls": [
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_023_144_D_059_4005_DHDH_A_20260624T043838_20260624T043914_P05023_N_F_J_001/NISAR_L2_PR_GCOV_023_144_D_059_4005_DHDH_A_20260624T043838_20260624T043914_P05023_N_F_J_001.h5",
+        "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_023_144_D_059_4005_DHDH_A_20260624T043838_20260624T043914_P05023_N_F_J_001/NISAR_L2_PR_GCOV_023_144_D_059_4005_DHDH_A_20260624T043838_20260624T043914_P05023_N_F_J_001.h5",
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_023_144_D_059_4005_DHDH_A_20260624T043838_20260624T043914_P05023_N_F_J_001/NISAR_L2_PR_GCOV_023_144_D_059_4005_DHDH_A_20260624T043838_20260624T043914_P05023_N_F_J_001_QA_STATS.h5"
+      ],
+      "browse_url": "https://search.asf.alaska.edu/",
+      "footprint_from_CMR": [
+        [
+          "59.53764 -136.49543 57.49215 -138.31983 56.50158 -134.5726 58.49169 -132.58206 59.53764 -136.49543"
+        ]
+      ],
+      "geolocation_validated": false,
+      "actual_file_opened": false
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_024_034_A_031_4005_DHDH_A_20260628T131515_20260628T131550_P05023_N_F_J_001",
+      "cmr_concept_id": "G4251129970-ASF",
+      "collection_concept_id": "C2854338529-ASF",
+      "product": "GCOV",
+      "maturity": "PROVISIONAL",
+      "acquisition_start_utc": "2026-06-28T13:15:15.000Z",
+      "acquisition_end_utc": "2026-06-28T13:15:50.999Z",
+      "observation_times_in_id": [
+        "20260628T131515",
+        "20260628T131550"
+      ],
+      "name_metadata": {
+        "cycle": "024",
+        "track": "034",
+        "direction": "A",
+        "frame": "031",
+        "mode": "4005",
+        "polarization_code": "DHDH"
+      },
+      "download_urls": [
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_024_034_A_031_4005_DHDH_A_20260628T131515_20260628T131550_P05023_N_F_J_001/NISAR_L2_PR_GCOV_024_034_A_031_4005_DHDH_A_20260628T131515_20260628T131550_P05023_N_F_J_001.h5",
+        "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_024_034_A_031_4005_DHDH_A_20260628T131515_20260628T131550_P05023_N_F_J_001/NISAR_L2_PR_GCOV_024_034_A_031_4005_DHDH_A_20260628T131515_20260628T131550_P05023_N_F_J_001.h5",
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_024_034_A_031_4005_DHDH_A_20260628T131515_20260628T131550_P05023_N_F_J_001/NISAR_L2_PR_GCOV_024_034_A_031_4005_DHDH_A_20260628T131515_20260628T131550_P05023_N_F_J_001_QA_STATS.h5"
+      ],
+      "browse_url": "https://search.asf.alaska.edu/",
+      "footprint_from_CMR": [
+        [
+          "57.52824 -129.49373 59.51955 -131.26462 58.47189 -135.19005 56.53281 -133.26253 57.52824 -129.49373"
+        ]
+      ],
+      "geolocation_validated": false,
+      "actual_file_opened": false
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_024_034_A_032_4005_DHDH_A_20260628T131549_20260628T131625_P05023_N_F_J_001",
+      "cmr_concept_id": "G4251119964-ASF",
+      "collection_concept_id": "C2854338529-ASF",
+      "product": "GCOV",
+      "maturity": "PROVISIONAL",
+      "acquisition_start_utc": "2026-06-28T13:15:49.000Z",
+      "acquisition_end_utc": "2026-06-28T13:16:25.999Z",
+      "observation_times_in_id": [
+        "20260628T131549",
+        "20260628T131625"
+      ],
+      "name_metadata": {
+        "cycle": "024",
+        "track": "034",
+        "direction": "A",
+        "frame": "032",
+        "mode": "4005",
+        "polarization_code": "DHDH"
+      },
+      "download_urls": [
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_024_034_A_032_4005_DHDH_A_20260628T131549_20260628T131625_P05023_N_F_J_001/NISAR_L2_PR_GCOV_024_034_A_032_4005_DHDH_A_20260628T131549_20260628T131625_P05023_N_F_J_001.h5",
+        "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_024_034_A_032_4005_DHDH_A_20260628T131549_20260628T131625_P05023_N_F_J_001/NISAR_L2_PR_GCOV_024_034_A_032_4005_DHDH_A_20260628T131549_20260628T131625_P05023_N_F_J_001.h5",
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_024_034_A_032_4005_DHDH_A_20260628T131549_20260628T131625_P05023_N_F_J_001/NISAR_L2_PR_GCOV_024_034_A_032_4005_DHDH_A_20260628T131549_20260628T131625_P05023_N_F_J_001_QA_STATS.h5"
+      ],
+      "browse_url": "https://search.asf.alaska.edu/",
+      "footprint_from_CMR": [
+        [
+          "59.41078 -131.15616 61.43265 -133.18352 60.32512 -137.28003 58.36604 -135.07391 59.41078 -131.15616"
+        ]
+      ],
+      "geolocation_validated": false,
+      "actual_file_opened": false
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_024_043_D_059_4005_DHDH_A_20260629T043018_20260629T043054_P05023_N_F_J_001",
+      "cmr_concept_id": "G4243189627-ASF",
+      "collection_concept_id": "C2854338529-ASF",
+      "product": "GCOV",
+      "maturity": "PROVISIONAL",
+      "acquisition_start_utc": "2026-06-29T04:30:18.000Z",
+      "acquisition_end_utc": "2026-06-29T04:30:54.999Z",
+      "observation_times_in_id": [
+        "20260629T043018",
+        "20260629T043054"
+      ],
+      "name_metadata": {
+        "cycle": "024",
+        "track": "043",
+        "direction": "D",
+        "frame": "059",
+        "mode": "4005",
+        "polarization_code": "DHDH"
+      },
+      "download_urls": [
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_024_043_D_059_4005_DHDH_A_20260629T043018_20260629T043054_P05023_N_F_J_001/NISAR_L2_PR_GCOV_024_043_D_059_4005_DHDH_A_20260629T043018_20260629T043054_P05023_N_F_J_001.h5",
+        "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_024_043_D_059_4005_DHDH_A_20260629T043018_20260629T043054_P05023_N_F_J_001/NISAR_L2_PR_GCOV_024_043_D_059_4005_DHDH_A_20260629T043018_20260629T043054_P05023_N_F_J_001.h5",
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_024_043_D_059_4005_DHDH_A_20260629T043018_20260629T043054_P05023_N_F_J_001/NISAR_L2_PR_GCOV_024_043_D_059_4005_DHDH_A_20260629T043018_20260629T043054_P05023_N_F_J_001_QA_STATS.h5"
+      ],
+      "browse_url": "https://search.asf.alaska.edu/",
+      "footprint_from_CMR": [
+        [
+          "59.55401 -134.40275 57.5109 -136.23773 56.49761 -132.40964 58.48359 -130.40517 59.55401 -134.40275"
+        ]
+      ],
+      "geolocation_validated": false,
+      "actual_file_opened": false
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_024_063_A_031_4005_DHDH_A_20260630T133153_20260630T133229_P05023_N_F_J_001",
+      "cmr_concept_id": "G4251360935-ASF",
+      "collection_concept_id": "C2854338529-ASF",
+      "product": "GCOV",
+      "maturity": "PROVISIONAL",
+      "acquisition_start_utc": "2026-06-30T13:31:53.000Z",
+      "acquisition_end_utc": "2026-06-30T13:32:29.999Z",
+      "observation_times_in_id": [
+        "20260630T133153",
+        "20260630T133229"
+      ],
+      "name_metadata": {
+        "cycle": "024",
+        "track": "063",
+        "direction": "A",
+        "frame": "031",
+        "mode": "4005",
+        "polarization_code": "DHDH"
+      },
+      "download_urls": [
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_024_063_A_031_4005_DHDH_A_20260630T133153_20260630T133229_P05023_N_F_J_001/NISAR_L2_PR_GCOV_024_063_A_031_4005_DHDH_A_20260630T133153_20260630T133229_P05023_N_F_J_001.h5",
+        "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_024_063_A_031_4005_DHDH_A_20260630T133153_20260630T133229_P05023_N_F_J_001/NISAR_L2_PR_GCOV_024_063_A_031_4005_DHDH_A_20260630T133153_20260630T133229_P05023_N_F_J_001.h5",
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_024_063_A_031_4005_DHDH_A_20260630T133153_20260630T133229_P05023_N_F_J_001/NISAR_L2_PR_GCOV_024_063_A_031_4005_DHDH_A_20260630T133153_20260630T133229_P05023_N_F_J_001_QA_STATS.h5"
+      ],
+      "browse_url": "https://search.asf.alaska.edu/",
+      "footprint_from_CMR": [
+        [
+          "57.48898 -133.62434 59.53674 -135.43933 58.46895 -139.43407 56.4764 -137.45302 57.48898 -133.62434"
+        ]
+      ],
+      "geolocation_validated": false,
+      "actual_file_opened": false
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_024_072_D_058_4005_DHDH_A_20260701T044622_20260701T044658_P05023_N_F_J_001",
+      "cmr_concept_id": "G4246934346-ASF",
+      "collection_concept_id": "C2854338529-ASF",
+      "product": "GCOV",
+      "maturity": "PROVISIONAL",
+      "acquisition_start_utc": "2026-07-01T04:46:22.000Z",
+      "acquisition_end_utc": "2026-07-01T04:46:58.999Z",
+      "observation_times_in_id": [
+        "20260701T044622",
+        "20260701T044658"
+      ],
+      "name_metadata": {
+        "cycle": "024",
+        "track": "072",
+        "direction": "D",
+        "frame": "058",
+        "mode": "4005",
+        "polarization_code": "DHDH"
+      },
+      "download_urls": [
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_024_072_D_058_4005_DHDH_A_20260701T044622_20260701T044658_P05023_N_F_J_001/NISAR_L2_PR_GCOV_024_072_D_058_4005_DHDH_A_20260701T044622_20260701T044658_P05023_N_F_J_001.h5",
+        "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_024_072_D_058_4005_DHDH_A_20260701T044622_20260701T044658_P05023_N_F_J_001/NISAR_L2_PR_GCOV_024_072_D_058_4005_DHDH_A_20260701T044622_20260701T044658_P05023_N_F_J_001.h5",
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_024_072_D_058_4005_DHDH_A_20260701T044622_20260701T044658_P05023_N_F_J_001/NISAR_L2_PR_GCOV_024_072_D_058_4005_DHDH_A_20260701T044622_20260701T044658_P05023_N_F_J_001_QA_STATS.h5"
+      ],
+      "browse_url": "https://search.asf.alaska.edu/",
+      "footprint_from_CMR": [
+        [
+          "61.44209 -136.63755 59.42149 -138.67092 58.36809 -134.73215 60.32532 -132.51963 61.44209 -136.63755"
+        ]
+      ],
+      "geolocation_validated": false,
+      "actual_file_opened": false
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_024_072_D_059_4005_DHDH_A_20260701T044657_20260701T044719_P05023_N_P_J_001",
+      "cmr_concept_id": "G4251915746-ASF",
+      "collection_concept_id": "C2854338529-ASF",
+      "product": "GCOV",
+      "maturity": "PROVISIONAL",
+      "acquisition_start_utc": "2026-07-01T04:46:57.000Z",
+      "acquisition_end_utc": "2026-07-01T04:47:19.999Z",
+      "observation_times_in_id": [
+        "20260701T044657",
+        "20260701T044719"
+      ],
+      "name_metadata": {
+        "cycle": "024",
+        "track": "072",
+        "direction": "D",
+        "frame": "059",
+        "mode": "4005",
+        "polarization_code": "DHDH"
+      },
+      "download_urls": [
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_024_072_D_059_4005_DHDH_A_20260701T044657_20260701T044719_P05023_N_P_J_001/NISAR_L2_PR_GCOV_024_072_D_059_4005_DHDH_A_20260701T044657_20260701T044719_P05023_N_P_J_001.h5",
+        "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_024_072_D_059_4005_DHDH_A_20260701T044657_20260701T044719_P05023_N_P_J_001/NISAR_L2_PR_GCOV_024_072_D_059_4005_DHDH_A_20260701T044657_20260701T044719_P05023_N_P_J_001.h5",
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_024_072_D_059_4005_DHDH_A_20260701T044657_20260701T044719_P05023_N_P_J_001/NISAR_L2_PR_GCOV_024_072_D_059_4005_DHDH_A_20260701T044657_20260701T044719_P05023_N_P_J_001_QA_STATS.h5"
+      ],
+      "browse_url": "https://search.asf.alaska.edu/",
+      "footprint_from_CMR": [
+        [
+          "59.53551 -138.58384 58.26691 -139.74186 57.24007 -135.87645 58.47284 -134.61229 59.53551 -138.58384"
+        ]
+      ],
+      "geolocation_validated": false,
+      "actual_file_opened": false
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_024_135_A_031_4005_DHDH_A_20260705T132334_20260705T132410_P05023_N_F_J_001",
+      "cmr_concept_id": "G4248088811-ASF",
+      "collection_concept_id": "C2854338529-ASF",
+      "product": "GCOV",
+      "maturity": "PROVISIONAL",
+      "acquisition_start_utc": "2026-07-05T13:23:34.000Z",
+      "acquisition_end_utc": "2026-07-05T13:24:10.999Z",
+      "observation_times_in_id": [
+        "20260705T132334",
+        "20260705T132410"
+      ],
+      "name_metadata": {
+        "cycle": "024",
+        "track": "135",
+        "direction": "A",
+        "frame": "031",
+        "mode": "4005",
+        "polarization_code": "DHDH"
+      },
+      "download_urls": [
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_024_135_A_031_4005_DHDH_A_20260705T132334_20260705T132410_P05023_N_F_J_001/NISAR_L2_PR_GCOV_024_135_A_031_4005_DHDH_A_20260705T132334_20260705T132410_P05023_N_F_J_001.h5",
+        "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_024_135_A_031_4005_DHDH_A_20260705T132334_20260705T132410_P05023_N_F_J_001/NISAR_L2_PR_GCOV_024_135_A_031_4005_DHDH_A_20260705T132334_20260705T132410_P05023_N_F_J_001.h5",
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_024_135_A_031_4005_DHDH_A_20260705T132334_20260705T132410_P05023_N_F_J_001/NISAR_L2_PR_GCOV_024_135_A_031_4005_DHDH_A_20260705T132334_20260705T132410_P05023_N_F_J_001_QA_STATS.h5"
+      ],
+      "browse_url": "https://search.asf.alaska.edu/",
+      "footprint_from_CMR": [
+        [
+          "57.51984 -131.59873 59.5654 -133.42438 58.51498 -137.35389 56.52295 -135.36864 57.51984 -131.59873"
+        ]
+      ],
+      "geolocation_validated": false,
+      "actual_file_opened": false
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_024_144_D_059_4005_DHDH_A_20260706T043837_20260706T043913_P05023_N_F_J_001",
+      "cmr_concept_id": "G4245663229-ASF",
+      "collection_concept_id": "C2854338529-ASF",
+      "product": "GCOV",
+      "maturity": "PROVISIONAL",
+      "acquisition_start_utc": "2026-07-06T04:38:37.000Z",
+      "acquisition_end_utc": "2026-07-06T04:39:13.999Z",
+      "observation_times_in_id": [
+        "20260706T043837",
+        "20260706T043913"
+      ],
+      "name_metadata": {
+        "cycle": "024",
+        "track": "144",
+        "direction": "D",
+        "frame": "059",
+        "mode": "4005",
+        "polarization_code": "DHDH"
+      },
+      "download_urls": [
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_024_144_D_059_4005_DHDH_A_20260706T043837_20260706T043913_P05023_N_F_J_001/NISAR_L2_PR_GCOV_024_144_D_059_4005_DHDH_A_20260706T043837_20260706T043913_P05023_N_F_J_001.h5",
+        "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_024_144_D_059_4005_DHDH_A_20260706T043837_20260706T043913_P05023_N_F_J_001/NISAR_L2_PR_GCOV_024_144_D_059_4005_DHDH_A_20260706T043837_20260706T043913_P05023_N_F_J_001.h5",
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_024_144_D_059_4005_DHDH_A_20260706T043837_20260706T043913_P05023_N_F_J_001/NISAR_L2_PR_GCOV_024_144_D_059_4005_DHDH_A_20260706T043837_20260706T043913_P05023_N_F_J_001_QA_STATS.h5"
+      ],
+      "browse_url": "https://search.asf.alaska.edu/",
+      "footprint_from_CMR": [
+        [
+          "59.55642 -136.47133 57.51258 -138.3035 56.52145 -134.55454 58.51134 -132.56218 59.55642 -136.47133"
+        ]
+      ],
+      "geolocation_validated": false,
+      "actual_file_opened": false
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_025_034_A_031_4005_DHDH_A_20260710T131514_20260710T131550_P05023_N_F_J_001",
+      "cmr_concept_id": "G4249336900-ASF",
+      "collection_concept_id": "C2854338529-ASF",
+      "product": "GCOV",
+      "maturity": "PROVISIONAL",
+      "acquisition_start_utc": "2026-07-10T13:15:14.000Z",
+      "acquisition_end_utc": "2026-07-10T13:15:50.999Z",
+      "observation_times_in_id": [
+        "20260710T131514",
+        "20260710T131550"
+      ],
+      "name_metadata": {
+        "cycle": "025",
+        "track": "034",
+        "direction": "A",
+        "frame": "031",
+        "mode": "4005",
+        "polarization_code": "DHDH"
+      },
+      "download_urls": [
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_025_034_A_031_4005_DHDH_A_20260710T131514_20260710T131550_P05023_N_F_J_001/NISAR_L2_PR_GCOV_025_034_A_031_4005_DHDH_A_20260710T131514_20260710T131550_P05023_N_F_J_001.h5",
+        "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_025_034_A_031_4005_DHDH_A_20260710T131514_20260710T131550_P05023_N_F_J_001/NISAR_L2_PR_GCOV_025_034_A_031_4005_DHDH_A_20260710T131514_20260710T131550_P05023_N_F_J_001.h5",
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_025_034_A_031_4005_DHDH_A_20260710T131514_20260710T131550_P05023_N_F_J_001/NISAR_L2_PR_GCOV_025_034_A_031_4005_DHDH_A_20260710T131514_20260710T131550_P05023_N_F_J_001_QA_STATS.h5"
+      ],
+      "browse_url": "https://search.asf.alaska.edu/",
+      "footprint_from_CMR": [
+        [
+          "57.49875 -129.48545 59.54956 -131.28847 58.49722 -135.23006 56.50677 -133.24037 57.49875 -129.48545"
+        ]
+      ],
+      "geolocation_validated": false,
+      "actual_file_opened": false
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_025_034_A_032_4005_DHDH_A_20260710T131549_20260710T131625_P05023_N_F_J_001",
+      "cmr_concept_id": "G4249321587-ASF",
+      "collection_concept_id": "C2854338529-ASF",
+      "product": "GCOV",
+      "maturity": "PROVISIONAL",
+      "acquisition_start_utc": "2026-07-10T13:15:49.000Z",
+      "acquisition_end_utc": "2026-07-10T13:16:25.999Z",
+      "observation_times_in_id": [
+        "20260710T131549",
+        "20260710T131625"
+      ],
+      "name_metadata": {
+        "cycle": "025",
+        "track": "034",
+        "direction": "A",
+        "frame": "032",
+        "mode": "4005",
+        "polarization_code": "DHDH"
+      },
+      "download_urls": [
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_025_034_A_032_4005_DHDH_A_20260710T131549_20260710T131625_P05023_N_F_J_001/NISAR_L2_PR_GCOV_025_034_A_032_4005_DHDH_A_20260710T131549_20260710T131625_P05023_N_F_J_001.h5",
+        "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_025_034_A_032_4005_DHDH_A_20260710T131549_20260710T131625_P05023_N_F_J_001/NISAR_L2_PR_GCOV_025_034_A_032_4005_DHDH_A_20260710T131549_20260710T131625_P05023_N_F_J_001.h5",
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_025_034_A_032_4005_DHDH_A_20260710T131549_20260710T131625_P05023_N_F_J_001/NISAR_L2_PR_GCOV_025_034_A_032_4005_DHDH_A_20260710T131549_20260710T131625_P05023_N_F_J_001_QA_STATS.h5"
+      ],
+      "browse_url": "https://search.asf.alaska.edu/",
+      "footprint_from_CMR": [
+        [
+          "59.43837 -131.18983 61.46038 -133.2183 60.3509 -137.3201 58.39207 -135.11148 59.43837 -131.18983"
+        ]
+      ],
+      "geolocation_validated": false,
+      "actual_file_opened": false
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_025_043_D_059_4005_DHDH_A_20260711T043017_20260711T043053_P05023_N_F_J_001",
+      "cmr_concept_id": "G4252285359-ASF",
+      "collection_concept_id": "C2854338529-ASF",
+      "product": "GCOV",
+      "maturity": "PROVISIONAL",
+      "acquisition_start_utc": "2026-07-11T04:30:17.000Z",
+      "acquisition_end_utc": "2026-07-11T04:30:53.999Z",
+      "observation_times_in_id": [
+        "20260711T043017",
+        "20260711T043053"
+      ],
+      "name_metadata": {
+        "cycle": "025",
+        "track": "043",
+        "direction": "D",
+        "frame": "059",
+        "mode": "4005",
+        "polarization_code": "DHDH"
+      },
+      "download_urls": [
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_025_043_D_059_4005_DHDH_A_20260711T043017_20260711T043053_P05023_N_F_J_001/NISAR_L2_PR_GCOV_025_043_D_059_4005_DHDH_A_20260711T043017_20260711T043053_P05023_N_F_J_001.h5",
+        "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_025_043_D_059_4005_DHDH_A_20260711T043017_20260711T043053_P05023_N_F_J_001/NISAR_L2_PR_GCOV_025_043_D_059_4005_DHDH_A_20260711T043017_20260711T043053_P05023_N_F_J_001.h5",
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_025_043_D_059_4005_DHDH_A_20260711T043017_20260711T043053_P05023_N_F_J_001/NISAR_L2_PR_GCOV_025_043_D_059_4005_DHDH_A_20260711T043017_20260711T043053_P05023_N_F_J_001_QA_STATS.h5"
+      ],
+      "browse_url": "https://search.asf.alaska.edu/",
+      "footprint_from_CMR": [
+        [
+          "59.57919 -134.3823 57.53524 -136.21507 56.52138 -132.38564 58.50742 -130.38007 59.57919 -134.3823"
+        ]
+      ],
+      "geolocation_validated": false,
+      "actual_file_opened": false
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_025_063_A_031_4005_DHDH_A_20260712T133153_20260712T133229_P05023_N_F_J_001",
+      "cmr_concept_id": "G4252763754-ASF",
+      "collection_concept_id": "C2854338529-ASF",
+      "product": "GCOV",
+      "maturity": "PROVISIONAL",
+      "acquisition_start_utc": "2026-07-12T13:31:53.000Z",
+      "acquisition_end_utc": "2026-07-12T13:32:29.999Z",
+      "observation_times_in_id": [
+        "20260712T133153",
+        "20260712T133229"
+      ],
+      "name_metadata": {
+        "cycle": "025",
+        "track": "063",
+        "direction": "A",
+        "frame": "031",
+        "mode": "4005",
+        "polarization_code": "DHDH"
+      },
+      "download_urls": [
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_025_063_A_031_4005_DHDH_A_20260712T133153_20260712T133229_P05023_N_F_J_001/NISAR_L2_PR_GCOV_025_063_A_031_4005_DHDH_A_20260712T133153_20260712T133229_P05023_N_F_J_001.h5",
+        "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_025_063_A_031_4005_DHDH_A_20260712T133153_20260712T133229_P05023_N_F_J_001/NISAR_L2_PR_GCOV_025_063_A_031_4005_DHDH_A_20260712T133153_20260712T133229_P05023_N_F_J_001.h5",
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_025_063_A_031_4005_DHDH_A_20260712T133153_20260712T133229_P05023_N_F_J_001/NISAR_L2_PR_GCOV_025_063_A_031_4005_DHDH_A_20260712T133153_20260712T133229_P05023_N_F_J_001_QA_STATS.h5"
+      ],
+      "browse_url": "https://search.asf.alaska.edu/",
+      "footprint_from_CMR": [
+        [
+          "57.52007 -133.64981 59.56476 -135.47891 58.49857 -139.46597 56.50651 -137.48165 57.52007 -133.64981"
+        ]
+      ],
+      "geolocation_validated": false,
+      "actual_file_opened": false
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_025_072_D_058_4005_DHDH_A_20260713T044621_20260713T044657_P05023_N_F_J_001",
+      "cmr_concept_id": "G4252928698-ASF",
+      "collection_concept_id": "C2854338529-ASF",
+      "product": "GCOV",
+      "maturity": "PROVISIONAL",
+      "acquisition_start_utc": "2026-07-13T04:46:21.000Z",
+      "acquisition_end_utc": "2026-07-13T04:46:57.999Z",
+      "observation_times_in_id": [
+        "20260713T044621",
+        "20260713T044657"
+      ],
+      "name_metadata": {
+        "cycle": "025",
+        "track": "072",
+        "direction": "D",
+        "frame": "058",
+        "mode": "4005",
+        "polarization_code": "DHDH"
+      },
+      "download_urls": [
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_025_072_D_058_4005_DHDH_A_20260713T044621_20260713T044657_P05023_N_F_J_001/NISAR_L2_PR_GCOV_025_072_D_058_4005_DHDH_A_20260713T044621_20260713T044657_P05023_N_F_J_001.h5",
+        "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_025_072_D_058_4005_DHDH_A_20260713T044621_20260713T044657_P05023_N_F_J_001/NISAR_L2_PR_GCOV_025_072_D_058_4005_DHDH_A_20260713T044621_20260713T044657_P05023_N_F_J_001.h5",
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_025_072_D_058_4005_DHDH_A_20260713T044621_20260713T044657_P05023_N_F_J_001/NISAR_L2_PR_GCOV_025_072_D_058_4005_DHDH_A_20260713T044621_20260713T044657_P05023_N_F_J_001_QA_STATS.h5"
+      ],
+      "browse_url": "https://search.asf.alaska.edu/",
+      "footprint_from_CMR": [
+        [
+          "61.46686 -136.61083 59.4456 -138.643 58.39078 -134.70047 60.34858 -132.48838 61.46686 -136.61083"
+        ]
+      ],
+      "geolocation_validated": false,
+      "actual_file_opened": false
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_025_072_D_059_4005_DHDH_A_20260713T044656_20260713T044718_P05023_N_P_J_001",
+      "cmr_concept_id": "G4252892253-ASF",
+      "collection_concept_id": "C2854338529-ASF",
+      "product": "GCOV",
+      "maturity": "PROVISIONAL",
+      "acquisition_start_utc": "2026-07-13T04:46:56.000Z",
+      "acquisition_end_utc": "2026-07-13T04:47:18.999Z",
+      "observation_times_in_id": [
+        "20260713T044656",
+        "20260713T044718"
+      ],
+      "name_metadata": {
+        "cycle": "025",
+        "track": "072",
+        "direction": "D",
+        "frame": "059",
+        "mode": "4005",
+        "polarization_code": "DHDH"
+      },
+      "download_urls": [
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_025_072_D_059_4005_DHDH_A_20260713T044656_20260713T044718_P05023_N_P_J_001/NISAR_L2_PR_GCOV_025_072_D_059_4005_DHDH_A_20260713T044656_20260713T044718_P05023_N_P_J_001.h5",
+        "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_025_072_D_059_4005_DHDH_A_20260713T044656_20260713T044718_P05023_N_P_J_001/NISAR_L2_PR_GCOV_025_072_D_059_4005_DHDH_A_20260713T044656_20260713T044718_P05023_N_P_J_001.h5",
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_025_072_D_059_4005_DHDH_A_20260713T044656_20260713T044718_P05023_N_P_J_001/NISAR_L2_PR_GCOV_025_072_D_059_4005_DHDH_A_20260713T044656_20260713T044718_P05023_N_P_J_001_QA_STATS.h5"
+      ],
+      "browse_url": "https://search.asf.alaska.edu/",
+      "footprint_from_CMR": [
+        [
+          "59.56099 -138.56142 58.29221 -139.71958 57.26403 -135.84987 58.49573 -134.58122 59.56099 -138.56142"
+        ]
+      ],
+      "geolocation_validated": false,
+      "actual_file_opened": false
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_025_135_A_031_4005_DHDH_A_20260717T132333_20260717T132409_P05023_N_F_J_001",
+      "cmr_concept_id": "G4254750726-ASF",
+      "collection_concept_id": "C2854338529-ASF",
+      "product": "GCOV",
+      "maturity": "PROVISIONAL",
+      "acquisition_start_utc": "2026-07-17T13:23:33.000Z",
+      "acquisition_end_utc": "2026-07-17T13:24:09.999Z",
+      "observation_times_in_id": [
+        "20260717T132333",
+        "20260717T132409"
+      ],
+      "name_metadata": {
+        "cycle": "025",
+        "track": "135",
+        "direction": "A",
+        "frame": "031",
+        "mode": "4005",
+        "polarization_code": "DHDH"
+      },
+      "download_urls": [
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_025_135_A_031_4005_DHDH_A_20260717T132333_20260717T132409_P05023_N_F_J_001/NISAR_L2_PR_GCOV_025_135_A_031_4005_DHDH_A_20260717T132333_20260717T132409_P05023_N_F_J_001.h5",
+        "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_025_135_A_031_4005_DHDH_A_20260717T132333_20260717T132409_P05023_N_F_J_001/NISAR_L2_PR_GCOV_025_135_A_031_4005_DHDH_A_20260717T132333_20260717T132409_P05023_N_F_J_001.h5",
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_025_135_A_031_4005_DHDH_A_20260717T132333_20260717T132409_P05023_N_F_J_001/NISAR_L2_PR_GCOV_025_135_A_031_4005_DHDH_A_20260717T132333_20260717T132409_P05023_N_F_J_001_QA_STATS.h5"
+      ],
+      "browse_url": "https://search.asf.alaska.edu/",
+      "footprint_from_CMR": [
+        [
+          "57.50743 -131.57728 59.55275 -133.40322 58.50148 -137.33707 56.50912 -135.35371 57.50743 -131.57728"
+        ]
+      ],
+      "geolocation_validated": false,
+      "actual_file_opened": false
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_025_144_D_059_4005_DHDH_A_20260718T043837_20260718T043912_P05023_N_F_J_001",
+      "cmr_concept_id": "G4255146948-ASF",
+      "collection_concept_id": "C2854338529-ASF",
+      "product": "GCOV",
+      "maturity": "PROVISIONAL",
+      "acquisition_start_utc": "2026-07-18T04:38:37.000Z",
+      "acquisition_end_utc": "2026-07-18T04:39:12.999Z",
+      "observation_times_in_id": [
+        "20260718T043837",
+        "20260718T043912"
+      ],
+      "name_metadata": {
+        "cycle": "025",
+        "track": "144",
+        "direction": "D",
+        "frame": "059",
+        "mode": "4005",
+        "polarization_code": "DHDH"
+      },
+      "download_urls": [
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_025_144_D_059_4005_DHDH_A_20260718T043837_20260718T043912_P05023_N_F_J_001/NISAR_L2_PR_GCOV_025_144_D_059_4005_DHDH_A_20260718T043837_20260718T043912_P05023_N_F_J_001.h5",
+        "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_025_144_D_059_4005_DHDH_A_20260718T043837_20260718T043912_P05023_N_F_J_001/NISAR_L2_PR_GCOV_025_144_D_059_4005_DHDH_A_20260718T043837_20260718T043912_P05023_N_F_J_001.h5",
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_025_144_D_059_4005_DHDH_A_20260718T043837_20260718T043912_P05023_N_F_J_001/NISAR_L2_PR_GCOV_025_144_D_059_4005_DHDH_A_20260718T043837_20260718T043912_P05023_N_F_J_001_QA_STATS.h5"
+      ],
+      "browse_url": "https://search.asf.alaska.edu/",
+      "footprint_from_CMR": [
+        [
+          "59.51324 -136.51498 57.5241 -138.29456 56.53274 -134.54474 58.46893 -132.60739 59.51324 -136.51498"
+        ]
+      ],
+      "geolocation_validated": false,
+      "actual_file_opened": false
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_026_034_A_031_4005_DHDH_A_20260722T131513_20260722T131549_P05023_N_F_J_001",
+      "cmr_concept_id": "G4260033048-ASF",
+      "collection_concept_id": "C2854338529-ASF",
+      "product": "GCOV",
+      "maturity": "PROVISIONAL",
+      "acquisition_start_utc": "2026-07-22T13:15:13.000Z",
+      "acquisition_end_utc": "2026-07-22T13:15:49.999Z",
+      "observation_times_in_id": [
+        "20260722T131513",
+        "20260722T131549"
+      ],
+      "name_metadata": {
+        "cycle": "026",
+        "track": "034",
+        "direction": "A",
+        "frame": "031",
+        "mode": "4005",
+        "polarization_code": "DHDH"
+      },
+      "download_urls": [
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_026_034_A_031_4005_DHDH_A_20260722T131513_20260722T131549_P05023_N_F_J_001/NISAR_L2_PR_GCOV_026_034_A_031_4005_DHDH_A_20260722T131513_20260722T131549_P05023_N_F_J_001.h5",
+        "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_026_034_A_031_4005_DHDH_A_20260722T131513_20260722T131549_P05023_N_F_J_001/NISAR_L2_PR_GCOV_026_034_A_031_4005_DHDH_A_20260722T131513_20260722T131549_P05023_N_F_J_001.h5",
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_026_034_A_031_4005_DHDH_A_20260722T131513_20260722T131549_P05023_N_F_J_001/NISAR_L2_PR_GCOV_026_034_A_031_4005_DHDH_A_20260722T131513_20260722T131549_P05023_N_F_J_001_QA_STATS.h5"
+      ],
+      "browse_url": "https://search.asf.alaska.edu/",
+      "footprint_from_CMR": [
+        [
+          "57.48398 -129.47256 59.53542 -131.27227 58.48414 -135.21078 56.49282 -133.2248 57.48398 -129.47256"
+        ]
+      ],
+      "geolocation_validated": false,
+      "actual_file_opened": false
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_026_034_A_032_4005_DHDH_A_20260722T131548_20260722T131624_P05023_N_F_J_001",
+      "cmr_concept_id": "G4260029403-ASF",
+      "collection_concept_id": "C2854338529-ASF",
+      "product": "GCOV",
+      "maturity": "PROVISIONAL",
+      "acquisition_start_utc": "2026-07-22T13:15:48.000Z",
+      "acquisition_end_utc": "2026-07-22T13:16:24.999Z",
+      "observation_times_in_id": [
+        "20260722T131548",
+        "20260722T131624"
+      ],
+      "name_metadata": {
+        "cycle": "026",
+        "track": "034",
+        "direction": "A",
+        "frame": "032",
+        "mode": "4005",
+        "polarization_code": "DHDH"
+      },
+      "download_urls": [
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_026_034_A_032_4005_DHDH_A_20260722T131548_20260722T131624_P05023_N_F_J_001/NISAR_L2_PR_GCOV_026_034_A_032_4005_DHDH_A_20260722T131548_20260722T131624_P05023_N_F_J_001.h5",
+        "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_026_034_A_032_4005_DHDH_A_20260722T131548_20260722T131624_P05023_N_F_J_001/NISAR_L2_PR_GCOV_026_034_A_032_4005_DHDH_A_20260722T131548_20260722T131624_P05023_N_F_J_001.h5",
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_026_034_A_032_4005_DHDH_A_20260722T131548_20260722T131624_P05023_N_F_J_001/NISAR_L2_PR_GCOV_026_034_A_032_4005_DHDH_A_20260722T131548_20260722T131624_P05023_N_F_J_001_QA_STATS.h5"
+      ],
+      "browse_url": "https://search.asf.alaska.edu/",
+      "footprint_from_CMR": [
+        [
+          "59.42471 -131.1717 61.44545 -133.2045 60.33748 -137.30116 58.37959 -135.09015 59.42471 -131.1717"
+        ]
+      ],
+      "geolocation_validated": false,
+      "actual_file_opened": false
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_026_043_D_059_4005_DHDH_A_20260723T043016_20260723T043052_P05023_N_F_J_001",
+      "cmr_concept_id": "G4260355898-ASF",
+      "collection_concept_id": "C2854338529-ASF",
+      "product": "GCOV",
+      "maturity": "PROVISIONAL",
+      "acquisition_start_utc": "2026-07-23T04:30:16.000Z",
+      "acquisition_end_utc": "2026-07-23T04:30:52.999Z",
+      "observation_times_in_id": [
+        "20260723T043016",
+        "20260723T043052"
+      ],
+      "name_metadata": {
+        "cycle": "026",
+        "track": "043",
+        "direction": "D",
+        "frame": "059",
+        "mode": "4005",
+        "polarization_code": "DHDH"
+      },
+      "download_urls": [
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_026_043_D_059_4005_DHDH_A_20260723T043016_20260723T043052_P05023_N_F_J_001/NISAR_L2_PR_GCOV_026_043_D_059_4005_DHDH_A_20260723T043016_20260723T043052_P05023_N_F_J_001.h5",
+        "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_026_043_D_059_4005_DHDH_A_20260723T043016_20260723T043052_P05023_N_F_J_001/NISAR_L2_PR_GCOV_026_043_D_059_4005_DHDH_A_20260723T043016_20260723T043052_P05023_N_F_J_001.h5",
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_026_043_D_059_4005_DHDH_A_20260723T043016_20260723T043052_P05023_N_F_J_001/NISAR_L2_PR_GCOV_026_043_D_059_4005_DHDH_A_20260723T043016_20260723T043052_P05023_N_F_J_001_QA_STATS.h5"
+      ],
+      "browse_url": "https://search.asf.alaska.edu/",
+      "footprint_from_CMR": [
+        [
+          "59.59612 -134.36273 57.55312 -136.20031 56.53865 -132.36891 58.52387 -130.35962 59.59612 -134.36273"
+        ]
+      ],
+      "geolocation_validated": false,
+      "actual_file_opened": false
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_026_063_A_031_4005_DHDH_A_20260724T133152_20260724T133228_P05023_N_F_J_001",
+      "cmr_concept_id": "G4260920902-ASF",
+      "collection_concept_id": "C2854338529-ASF",
+      "product": "GCOV",
+      "maturity": "PROVISIONAL",
+      "acquisition_start_utc": "2026-07-24T13:31:52.000Z",
+      "acquisition_end_utc": "2026-07-24T13:32:28.999Z",
+      "observation_times_in_id": [
+        "20260724T133152",
+        "20260724T133228"
+      ],
+      "name_metadata": {
+        "cycle": "026",
+        "track": "063",
+        "direction": "A",
+        "frame": "031",
+        "mode": "4005",
+        "polarization_code": "DHDH"
+      },
+      "download_urls": [
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_026_063_A_031_4005_DHDH_A_20260724T133152_20260724T133228_P05023_N_F_J_001/NISAR_L2_PR_GCOV_026_063_A_031_4005_DHDH_A_20260724T133152_20260724T133228_P05023_N_F_J_001.h5",
+        "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_026_063_A_031_4005_DHDH_A_20260724T133152_20260724T133228_P05023_N_F_J_001/NISAR_L2_PR_GCOV_026_063_A_031_4005_DHDH_A_20260724T133152_20260724T133228_P05023_N_F_J_001.h5",
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_026_063_A_031_4005_DHDH_A_20260724T133152_20260724T133228_P05023_N_F_J_001/NISAR_L2_PR_GCOV_026_063_A_031_4005_DHDH_A_20260724T133152_20260724T133228_P05023_N_F_J_001_QA_STATS.h5"
+      ],
+      "browse_url": "https://search.asf.alaska.edu/",
+      "footprint_from_CMR": [
+        [
+          "57.49882 -133.63395 59.5465 -135.44978 58.47831 -139.44551 56.48594 -137.46333 57.49882 -133.63395"
+        ]
+      ],
+      "geolocation_validated": false,
+      "actual_file_opened": false
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_027_135_A_031_4005_DHDH_A_20260810T132332_20260810T132408_P05023_N_F_J_001",
+      "cmr_concept_id": "G4277990157-ASF",
+      "collection_concept_id": "C2854338529-ASF",
+      "product": "GCOV",
+      "maturity": "PROVISIONAL",
+      "acquisition_start_utc": "2026-08-10T13:23:32.000Z",
+      "acquisition_end_utc": "2026-08-10T13:24:08.999Z",
+      "observation_times_in_id": [
+        "20260810T132332",
+        "20260810T132408"
+      ],
+      "name_metadata": {
+        "cycle": "027",
+        "track": "135",
+        "direction": "A",
+        "frame": "031",
+        "mode": "4005",
+        "polarization_code": "DHDH"
+      },
+      "download_urls": [
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_027_135_A_031_4005_DHDH_A_20260810T132332_20260810T132408_P05023_N_F_J_001/NISAR_L2_PR_GCOV_027_135_A_031_4005_DHDH_A_20260810T132332_20260810T132408_P05023_N_F_J_001.h5",
+        "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_027_135_A_031_4005_DHDH_A_20260810T132332_20260810T132408_P05023_N_F_J_001/NISAR_L2_PR_GCOV_027_135_A_031_4005_DHDH_A_20260810T132332_20260810T132408_P05023_N_F_J_001.h5",
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_027_135_A_031_4005_DHDH_A_20260810T132332_20260810T132408_P05023_N_F_J_001/NISAR_L2_PR_GCOV_027_135_A_031_4005_DHDH_A_20260810T132332_20260810T132408_P05023_N_F_J_001_QA_STATS.h5"
+      ],
+      "browse_url": "https://search.asf.alaska.edu/",
+      "footprint_from_CMR": [
+        [
+          "57.50519 -131.57623 59.55067 -133.4014 58.49933 -137.33551 56.50705 -135.35198 57.50519 -131.57623"
+        ]
+      ],
+      "geolocation_validated": false,
+      "actual_file_opened": false
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_027_144_D_059_4005_DHDH_A_20260811T043835_20260811T043913_P05023_N_F_J_001",
+      "cmr_concept_id": "G4279667886-ASF",
+      "collection_concept_id": "C2854338529-ASF",
+      "product": "GCOV",
+      "maturity": "PROVISIONAL",
+      "acquisition_start_utc": "2026-08-11T04:38:35.000Z",
+      "acquisition_end_utc": "2026-08-11T04:39:13.999Z",
+      "observation_times_in_id": [
+        "20260811T043835",
+        "20260811T043913"
+      ],
+      "name_metadata": {
+        "cycle": "027",
+        "track": "144",
+        "direction": "D",
+        "frame": "059",
+        "mode": "4005",
+        "polarization_code": "DHDH"
+      },
+      "download_urls": [
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_027_144_D_059_4005_DHDH_A_20260811T043835_20260811T043913_P05023_N_F_J_001/NISAR_L2_PR_GCOV_027_144_D_059_4005_DHDH_A_20260811T043835_20260811T043913_P05023_N_F_J_001.h5",
+        "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_027_144_D_059_4005_DHDH_A_20260811T043835_20260811T043913_P05023_N_F_J_001/NISAR_L2_PR_GCOV_027_144_D_059_4005_DHDH_A_20260811T043835_20260811T043913_P05023_N_F_J_001.h5",
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_027_144_D_059_4005_DHDH_A_20260811T043835_20260811T043913_P05023_N_F_J_001/NISAR_L2_PR_GCOV_027_144_D_059_4005_DHDH_A_20260811T043835_20260811T043913_P05023_N_F_J_001_QA_STATS.h5"
+      ],
+      "browse_url": "https://search.asf.alaska.edu/",
+      "footprint_from_CMR": [
+        [
+          "59.56926 -136.45868 57.41482 -138.38723 56.42617 -134.64558 58.52278 -132.54488 59.56926 -136.45868"
+        ]
+      ],
+      "geolocation_validated": false,
+      "actual_file_opened": false
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_028_034_A_031_4005_DHDH_A_20260815T131512_20260815T131548_P05023_N_F_J_001",
+      "cmr_concept_id": "G4284074506-ASF",
+      "collection_concept_id": "C2854338529-ASF",
+      "product": "GCOV",
+      "maturity": "PROVISIONAL",
+      "acquisition_start_utc": "2026-08-15T13:15:12.000Z",
+      "acquisition_end_utc": "2026-08-15T13:15:48.999Z",
+      "observation_times_in_id": [
+        "20260815T131512",
+        "20260815T131548"
+      ],
+      "name_metadata": {
+        "cycle": "028",
+        "track": "034",
+        "direction": "A",
+        "frame": "031",
+        "mode": "4005",
+        "polarization_code": "DHDH"
+      },
+      "download_urls": [
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_028_034_A_031_4005_DHDH_A_20260815T131512_20260815T131548_P05023_N_F_J_001/NISAR_L2_PR_GCOV_028_034_A_031_4005_DHDH_A_20260815T131512_20260815T131548_P05023_N_F_J_001.h5",
+        "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_028_034_A_031_4005_DHDH_A_20260815T131512_20260815T131548_P05023_N_F_J_001/NISAR_L2_PR_GCOV_028_034_A_031_4005_DHDH_A_20260815T131512_20260815T131548_P05023_N_F_J_001.h5",
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_028_034_A_031_4005_DHDH_A_20260815T131512_20260815T131548_P05023_N_F_J_001/NISAR_L2_PR_GCOV_028_034_A_031_4005_DHDH_A_20260815T131512_20260815T131548_P05023_N_F_J_001_QA_STATS.h5"
+      ],
+      "browse_url": "https://search.asf.alaska.edu/",
+      "footprint_from_CMR": [
+        [
+          "57.49149 -129.4799 59.54307 -131.2794 58.49017 -135.22343 56.50012 -133.23273 57.49149 -129.4799"
+        ]
+      ],
+      "geolocation_validated": false,
+      "actual_file_opened": false
+    },
+    {
+      "granule_id": "NISAR_L2_PR_GCOV_028_034_A_032_4005_DHDH_A_20260815T131547_20260815T131623_P05023_N_F_J_001",
+      "cmr_concept_id": "G4284077192-ASF",
+      "collection_concept_id": "C2854338529-ASF",
+      "product": "GCOV",
+      "maturity": "PROVISIONAL",
+      "acquisition_start_utc": "2026-08-15T13:15:47.000Z",
+      "acquisition_end_utc": "2026-08-15T13:16:23.999Z",
+      "observation_times_in_id": [
+        "20260815T131547",
+        "20260815T131623"
+      ],
+      "name_metadata": {
+        "cycle": "028",
+        "track": "034",
+        "direction": "A",
+        "frame": "032",
+        "mode": "4005",
+        "polarization_code": "DHDH"
+      },
+      "download_urls": [
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_028_034_A_032_4005_DHDH_A_20260815T131547_20260815T131623_P05023_N_F_J_001/NISAR_L2_PR_GCOV_028_034_A_032_4005_DHDH_A_20260815T131547_20260815T131623_P05023_N_F_J_001.h5",
+        "s3://sds-n-cumulus-prod-nisar-products/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_028_034_A_032_4005_DHDH_A_20260815T131547_20260815T131623_P05023_N_F_J_001/NISAR_L2_PR_GCOV_028_034_A_032_4005_DHDH_A_20260815T131547_20260815T131623_P05023_N_F_J_001.h5",
+        "https://nisar.asf.earthdatacloud.nasa.gov/NISAR/NISAR_L2_GCOV_PROVISIONAL_V1/NISAR_L2_PR_GCOV_028_034_A_032_4005_DHDH_A_20260815T131547_20260815T131623_P05023_N_F_J_001/NISAR_L2_PR_GCOV_028_034_A_032_4005_DHDH_A_20260815T131547_20260815T131623_P05023_N_F_J_001_QA_STATS.h5"
+      ],
+      "browse_url": "https://search.asf.alaska.edu/",
+      "footprint_from_CMR": [
+        [
+          "59.43182 -131.18099 61.45423 -133.20746 60.34459 -137.31056 58.38613 -135.10105 59.43182 -131.18099"
+        ]
+      ],
+      "geolocation_validated": false,
+      "actual_file_opened": false
+    }
+  ],
+  "note": "Search intersection and filename metadata alone do not establish aligned pixels, event-time flooding, or science validity."
+}

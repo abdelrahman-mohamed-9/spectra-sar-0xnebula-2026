@@ -1,0 +1,42 @@
+{
+  "project": "SPECTRA-SAR",
+  "handoff_version": "m1_t04_v1",
+  "status": "DISCOVERY_ONLY_AWAITING_REAL_RASTERS",
+  "case_study": "Mendenhall Glacier / Valley, Juneau, Alaska, USA",
+  "gcov": {
+    "granule_ids": [
+      "NISAR_L2_PR_GCOV_031_034_A_031_4005_DHDH_A_20260920T131512_20260920T131548_P05023_N_F_J_001",
+      "NISAR_L2_PR_GCOV_032_034_A_031_4005_DHDH_A_20261002T131512_20261002T131548_P05023_N_F_J_001"
+    ],
+    "dates": [
+      "2026-09-20",
+      "2026-10-02"
+    ],
+    "data_layer_candidate": "frequencyA/HHHH",
+    "local_file_paths": {
+      "before": null,
+      "after": null
+    },
+    "raster_grid_verified": false,
+    "true_flood_extent_confirmed": false
+  },
+  "goff": {
+    "granule_id": "NISAR_L2_PR_GOFF_031_034_A_031_032_4000_SH_20260920T131512_20260920T131548_20261002T131512_20261002T131548_P05023_N_F_J_001",
+    "observation_window": [
+      "2026-09-20",
+      "2026-10-02"
+    ],
+    "local_file_paths": {
+      "offsets": null,
+      "quality_or_snr": null
+    },
+    "glacier_pixels_verified": false
+  },
+  "geospatial": {
+    "flood_aoi": "aoi/flood-aoi.geojson",
+    "glacier_aoi": "aoi/glacier-aoi.geojson",
+    "epsg": "EPSG:4326",
+    "note": "Discovery rectangles, refine once products opened"
+  },
+  "blocking_next_step": "Download actual same polarization GCOV COG for both dates through NASA Harmony, then validate image overlap and finite values"
+}

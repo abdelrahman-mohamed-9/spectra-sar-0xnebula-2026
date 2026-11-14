@@ -1,0 +1,45 @@
+{
+  "type": "FeatureCollection",
+  "name": "flood-aoi",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "flood-aoi",
+        "label": "Mendenhall Valley — flood study search window",
+        "purpose": "preliminary_search_and_Harmony_spatial_subset",
+        "authoritative_boundary": false,
+        "validated_raster_coverage": false,
+        "description": "Rectangular discovery AOI, NOT mapped inundation, not a hydrological watershed boundary.",
+        "source": "NASA CMR query bounding boxes in user-supplied M1 T02 results"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -134.7,
+              58.33
+            ],
+            [
+              -134.4,
+              58.33
+            ],
+            [
+              -134.4,
+              58.55
+            ],
+            [
+              -134.7,
+              58.55
+            ],
+            [
+              -134.7,
+              58.33
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+ "$schema":"https://json-schema.org/draft/2020-12/schema",
+ "title":"SPECTRA-SAR M2 to M3 exploratory delivery v1.0",
+ "type":"object","additionalProperties":false,
+ "required":["schema_version","producer","pair_id","polarization","created_utc","delivery_status","scientific_approval","input_qa_status","filtered_input_qa_status","registration_status","registration_subpixel_certified","change_detection","classification_available","uncertainty_available","evaluation_available","artifacts","stage_reports","limitations"],
+ "properties":{
+  "schema_version":{"const":"1.0"},"producer":{"const":"SPECTRA-SAR-M2-T09"},
+  "pair_id":{"type":"string","minLength":1},"polarization":{"enum":["VV","VH","HHHH"]},
+  "created_utc":{"type":"string","format":"date-time"},
+  "delivery_status":{"const":"EXPLORATORY_NOT_SCIENTIFICALLY_VALIDATED"},
+  "scientific_approval":{"const":false},
+  "input_qa_status":{"enum":["PASS","WARNING"]},
+  "filtered_input_qa_status":{"enum":["PASS","WARNING"]},
+  "registration_status":{"enum":["PASS","WARNING"]},
+  "registration_subpixel_certified":{"const":false},
+  "change_detection":{"type":"object","required":["method","threshold_db","candidate_change_area_km2","estimated_area_not_ground_truth"],"properties":{"method":{"type":"string"},"threshold_db":{"type":"number","exclusiveMinimum":0},"candidate_change_area_km2":{"type":"number","minimum":0},"estimated_area_not_ground_truth":{"const":true}}},
+  "classification_available":{"type":"boolean"},"uncertainty_available":{"type":"boolean"},"evaluation_available":{"type":"boolean"},
+  "artifacts":{"type":"object","minProperties":1,"additionalProperties":{"type":"object","required":["path","sha256","bands","dtype","width","height","crs","transform","nodata"],"properties":{"path":{"type":"string"},"sha256":{"type":"string","pattern":"^[0-9a-f]{64}$"},"bands":{"type":"integer","minimum":1},"dtype":{"type":"string"},"width":{"type":"integer","minimum":1},"height":{"type":"integer","minimum":1},"crs":{"type":"string"},"transform":{"type":"array","minItems":6,"maxItems":6,"items":{"type":"number"}},"nodata":{"type":["number","null"]}}}},
+  "stage_reports":{"type":"object"},"limitations":{"type":"array","minItems":1,"items":{"type":"string"}}
+ }
+}

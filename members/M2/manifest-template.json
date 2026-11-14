@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "pair_id": "<REAL_PAIR_ID>",
+  "source_provider": "ASF HyP3 or equivalent",
+  "processing_software": "<SOFTWARE>",
+  "processing_version": "<VERSION>",
+  "product_type": "RTC",
+  "acquisition_mode": "IW",
+  "radiometry": "gamma0_terrain",
+  "units": "linear_power",
+  "polarizations": [
+    "VV"
+  ],
+  "grid": {
+    "crs": "<UTM_EPSG>",
+    "pixel_size_m": 30,
+    "width": 0,
+    "height": 0
+  },
+  "before": {
+    "scene_id": "<REAL_SCENE_ID>",
+    "acquired_utc": "<ISO_8601_UTC>",
+    "relative_orbit": 0,
+    "orbit_direction": "ASCENDING",
+    "incidence_angle_deg_summary": null,
+    "raster_files": {
+      "VV": "before_VV.tif"
+    },
+    "valid_mask_file": "before_valid_mask.tif"
+  },
+  "after": {
+    "scene_id": "<REAL_SCENE_ID>",
+    "acquired_utc": "<ISO_8601_UTC>",
+    "relative_orbit": 0,
+    "orbit_direction": "ASCENDING",
+    "incidence_angle_deg_summary": null,
+    "raster_files": {
+      "VV": "after_VV.tif"
+    },
+    "valid_mask_file": "after_valid_mask.tif"
+  }
+}

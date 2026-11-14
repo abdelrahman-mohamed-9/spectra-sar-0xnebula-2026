@@ -1,0 +1,233 @@
+{
+  "task": "M1-T03",
+  "generated_utc": "2026-11-13T16:30:18.770365+00:00",
+  "source_selection": "/mnt/data/spectra-m1-t03/inputs/selected-scenes.json",
+  "source_selection_sha256": "5bbe929297e2460ad7b1e30682d4f4ba48ad3d4095496def94be9b66c591cf72",
+  "study_area": {
+    "title": "Mendenhall Glacier and Mendenhall Valley, Juneau, Alaska, USA",
+    "flood_aoi_bbox_lonlat": [
+      -134.7,
+      58.33,
+      -134.4,
+      58.55
+    ],
+    "glacier_aoi_bbox_lonlat": [
+      -134.69,
+      58.44,
+      -134.3,
+      58.7
+    ]
+  },
+  "catalog": {
+    "catalog_status": "PASS",
+    "checks": [
+      {
+        "name": "GCOV.before.required_metadata",
+        "outcome": "PASS",
+        "description": "Required CMR fields present",
+        "category": "catalog"
+      },
+      {
+        "name": "GCOV.before.type",
+        "outcome": "PASS",
+        "description": "Product: GCOV",
+        "category": "catalog"
+      },
+      {
+        "name": "GCOV.before.maturity",
+        "outcome": "PASS",
+        "description": "Maturity: PROVISIONAL",
+        "category": "catalog"
+      },
+      {
+        "name": "GCOV.before.source_identifier",
+        "outcome": "PASS",
+        "description": "CMR granule concept identifier",
+        "category": "catalog"
+      },
+      {
+        "name": "GCOV.before.download_location",
+        "outcome": "PASS",
+        "description": "Official ASF HTTPS download link recorded; accessibility not tested",
+        "category": "catalog"
+      },
+      {
+        "name": "GCOV.during_event.required_metadata",
+        "outcome": "PASS",
+        "description": "Required CMR fields present",
+        "category": "catalog"
+      },
+      {
+        "name": "GCOV.during_event.type",
+        "outcome": "PASS",
+        "description": "Product: GCOV",
+        "category": "catalog"
+      },
+      {
+        "name": "GCOV.during_event.maturity",
+        "outcome": "PASS",
+        "description": "Maturity: PROVISIONAL",
+        "category": "catalog"
+      },
+      {
+        "name": "GCOV.during_event.source_identifier",
+        "outcome": "PASS",
+        "description": "CMR granule concept identifier",
+        "category": "catalog"
+      },
+      {
+        "name": "GCOV.during_event.download_location",
+        "outcome": "PASS",
+        "description": "Official ASF HTTPS download link recorded; accessibility not tested",
+        "category": "catalog"
+      },
+      {
+        "name": "GCOV.match_track",
+        "outcome": "PASS",
+        "description": "before='034', during='034'",
+        "category": "catalog"
+      },
+      {
+        "name": "GCOV.match_direction",
+        "outcome": "PASS",
+        "description": "before='A', during='A'",
+        "category": "catalog"
+      },
+      {
+        "name": "GCOV.match_frame",
+        "outcome": "PASS",
+        "description": "before='031', during='031'",
+        "category": "catalog"
+      },
+      {
+        "name": "GCOV.match_mode",
+        "outcome": "PASS",
+        "description": "before='4005', during='4005'",
+        "category": "catalog"
+      },
+      {
+        "name": "GCOV.match_polarization_code",
+        "outcome": "PASS",
+        "description": "before='DHDH', during='DHDH'",
+        "category": "catalog"
+      },
+      {
+        "name": "GCOV.same_collection",
+        "outcome": "PASS",
+        "description": "C2854338529-ASF / C2854338529-ASF",
+        "category": "catalog"
+      },
+      {
+        "name": "GCOV.same_CRID",
+        "outcome": "PASS",
+        "description": "P05023 / P05023; filename-derived, HDF5 processing metadata pending",
+        "category": "catalog"
+      },
+      {
+        "name": "GCOV.time_order",
+        "outcome": "PASS",
+        "description": "Time difference 12.0 days",
+        "category": "catalog"
+      },
+      {
+        "name": "GOFF.primary.catalog_type",
+        "outcome": "PASS",
+        "description": "product=GOFF; maturity=PROVISIONAL",
+        "category": "catalog"
+      },
+      {
+        "name": "GOFF.primary.catalog_id",
+        "outcome": "PASS",
+        "description": "CMR GOFF granule identifier",
+        "category": "catalog"
+      },
+      {
+        "name": "GOFF.primary.catalog_coverage",
+        "outcome": "PASS",
+        "description": "Approximate AOI intersection 95.8%, NOT raster valid-pixel coverage",
+        "category": "catalog"
+      },
+      {
+        "name": "GOFF.primary.paired_epochs",
+        "outcome": "PASS",
+        "description": "First epoch 20260920T131512; second epoch 20261002T131512",
+        "category": "catalog"
+      },
+      {
+        "name": "GOFF.primary_same_epochs_as_GCOV",
+        "outcome": "PASS",
+        "description": "GOFF 20260920T131512 -> 20261002T131512, GCOV 20260920T131512 -> 20261002T131512",
+        "category": "catalog"
+      },
+      {
+        "name": "GOFF.backup.catalog_type",
+        "outcome": "PASS",
+        "description": "product=GOFF; maturity=PROVISIONAL",
+        "category": "catalog"
+      },
+      {
+        "name": "GOFF.backup.catalog_id",
+        "outcome": "PASS",
+        "description": "CMR GOFF granule identifier",
+        "category": "catalog"
+      },
+      {
+        "name": "GOFF.backup.catalog_coverage",
+        "outcome": "PASS",
+        "description": "Approximate AOI intersection 100.0%, NOT raster valid-pixel coverage",
+        "category": "catalog"
+      },
+      {
+        "name": "GOFF.backup.paired_epochs",
+        "outcome": "PASS",
+        "description": "First epoch 20260921T043015; second epoch 20261003T043015",
+        "category": "catalog"
+      },
+      {
+        "name": "GCOV.pixel_coverage_and_alignment",
+        "outcome": "PENDING",
+        "description": "Actual GCOV rasters not supplied; georeferencing/valid pixels unverified",
+        "category": "raster"
+      },
+      {
+        "name": "GOFF.offset_quality",
+        "outcome": "PENDING",
+        "description": "Actual GOFF displacement and SNR/outlier layers not supplied",
+        "category": "raster"
+      },
+      {
+        "name": "Flood_event_interpretation",
+        "outcome": "PENDING",
+        "description": "Flood-extent claim requires examination of actual data and independent flood evidence",
+        "category": "science"
+      }
+    ],
+    "time_baseline_days": 12.0,
+    "science_approved": false,
+    "assessment": "CATALOG_PASS_RASTER_AND_SCIENCE_PENDING"
+  },
+  "files": {
+    "before": null,
+    "during_event": null,
+    "goff": null,
+    "gcov_pair": {
+      "status": "PENDING",
+      "reason": "Real GCOV files not supplied"
+    }
+  },
+  "scientific_acceptance": {
+    "status": "NOT_APPROVED",
+    "reasons": [
+      "Catalog match cannot verify geocoded raster pixels or signal changes",
+      "Flood mapping requires actual event-appropriate observation and independent comparison",
+      "GOFF offset magnitude and SNR/outliers need scientific QA before motion velocity estimates"
+    ]
+  },
+  "handoff": {
+    "M2": "Catalog baseline and recommended matching GCOV layer; request extracted GeoTIFF files",
+    "M3": "AOI location known; area statistics cannot be asserted before real change masks",
+    "M4": "Scene CMR identifiers/URLs and selection file SHA256 can be recorded",
+    "M5": "Gatekeeper report available, but do not mark science_ready=true",
+    "M6": "Real scene metadata available; do not display flood/glacier results as verified yet"
+  }
+}

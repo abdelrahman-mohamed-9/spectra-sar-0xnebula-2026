@@ -1,0 +1,48 @@
+{
+  "project": "SPECTRA-SAR",
+  "member": "M1",
+  "phase": "1/5",
+  "study_area": "Mendenhall Glacier and Valley, Juneau, Alaska, USA",
+  "M1_tasks": {
+    "T01": {
+      "status": "COMPLETE",
+      "proof": "T01_Data_Sources/data-sources.md"
+    },
+    "T02": {
+      "status": "CATALOG_DISCOVERY_COMPLETE",
+      "proof": "NASA CMR returned GCOV and GOFF candidate metadata; shortlisted primary scenes; no pixels downloaded"
+    },
+    "T03": {
+      "status": "PARTIAL_RASTER_VALIDATION_PENDING",
+      "proof": "catalog validation report + tests; raster scientific approval pending"
+    },
+    "T04": {
+      "status": "PRELIMINARY_AOI_AND_METADATA_PREPARED",
+      "proof": "search rectangles, metadata + handoff"
+    },
+    "T05": {
+      "status": "DOWNLOADER_READY_REAL_DOWNLOAD_NOT_VERIFIED",
+      "proof": "scripts+tests only; user Mac run and NASA download not shown completed"
+    }
+  },
+  "gcov": {
+    "before_granule": "NISAR_L2_PR_GCOV_031_034_A_031_4005_DHDH_A_20260920T131512_20260920T131548_P05023_N_F_J_001",
+    "before_cmr": "G4319985062-ASF",
+    "after_granule": "NISAR_L2_PR_GCOV_032_034_A_031_4005_DHDH_A_20261002T131512_20261002T131548_P05023_N_F_J_001",
+    "after_cmr": "G4338819270-ASF",
+    "layer_candidate": "/science/LSAR/GCOV/grids/frequencyA/HHHH",
+    "real_before_tif_present": false,
+    "real_after_tif_present": false,
+    "qa_passed": false,
+    "flood_confirmed": false
+  },
+  "goff": {
+    "primary_granule": "NISAR_L2_PR_GOFF_031_034_A_031_032_4000_SH_20260920T131512_20260920T131548_20261002T131512_20261002T131548_P05023_N_F_J_001",
+    "cmr_concept_id": "G4338825825-ASF",
+    "downloaded": false,
+    "motion_verified": false
+  },
+  "next_action": "On the Mac, run T05_Real_Data_Access/run-on-mac.command with your NASA Earthdata access; upload t05-status.txt and t05-real-data-qa.json only if generated; do not share passwords.",
+  "scientific_ready_for_m2": false,
+  "scope_note": "Only preliminary candidate catalog metadata; no real GeoTIFF or GOFF pixel data in this package. Later, when new images are downloaded, move them into T05_Real_Data_Access/data/ and upload evidence reports separately."
+}
