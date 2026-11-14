@@ -1,0 +1,2 @@
+# Only needed to probe PostgreSQL directly:
+psycopg[binary]>=3.1,<4

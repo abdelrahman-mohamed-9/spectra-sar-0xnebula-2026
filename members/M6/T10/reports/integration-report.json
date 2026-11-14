@@ -1,0 +1,130 @@
+{
+  "project": "SPECTRA-SAR",
+  "component": "M6",
+  "phase": 1,
+  "task": "T10",
+  "generated_at": "2026-11-13T16:43:30.826273+00:00",
+  "overall": "BLOCKED",
+  "counts": {
+    "PASS": 9,
+    "FAIL": 0,
+    "BLOCKED": 10
+  },
+  "checks": [
+    {
+      "id": "package.T01",
+      "status": "PASS",
+      "detail": "Required entrypoints found",
+      "evidence": "../T01"
+    },
+    {
+      "id": "package.T02",
+      "status": "PASS",
+      "detail": "Required entrypoints found",
+      "evidence": "../T02"
+    },
+    {
+      "id": "package.T03",
+      "status": "PASS",
+      "detail": "Required entrypoints found",
+      "evidence": "../T03"
+    },
+    {
+      "id": "package.T04",
+      "status": "PASS",
+      "detail": "Required entrypoints found",
+      "evidence": "../T04"
+    },
+    {
+      "id": "package.T05",
+      "status": "PASS",
+      "detail": "Required entrypoints found",
+      "evidence": "../T05"
+    },
+    {
+      "id": "package.T06",
+      "status": "PASS",
+      "detail": "Required entrypoints found",
+      "evidence": "../T06"
+    },
+    {
+      "id": "package.T07",
+      "status": "PASS",
+      "detail": "Required entrypoints found",
+      "evidence": "../T07"
+    },
+    {
+      "id": "package.T08",
+      "status": "PASS",
+      "detail": "Required entrypoints found",
+      "evidence": "../T08"
+    },
+    {
+      "id": "package.T09",
+      "status": "PASS",
+      "detail": "Required entrypoints found",
+      "evidence": "../T09"
+    },
+    {
+      "id": "live.backend",
+      "status": "BLOCKED",
+      "detail": "Backend URL not supplied",
+      "evidence": null
+    },
+    {
+      "id": "live.database",
+      "status": "BLOCKED",
+      "detail": "DATABASE_URL not supplied",
+      "evidence": null
+    },
+    {
+      "id": "e2e.M1",
+      "status": "BLOCKED",
+      "detail": "No team evidence manifest supplied",
+      "evidence": null
+    },
+    {
+      "id": "e2e.M2",
+      "status": "BLOCKED",
+      "detail": "No team evidence manifest supplied",
+      "evidence": null
+    },
+    {
+      "id": "e2e.M3",
+      "status": "BLOCKED",
+      "detail": "No team evidence manifest supplied",
+      "evidence": null
+    },
+    {
+      "id": "e2e.M4",
+      "status": "BLOCKED",
+      "detail": "No team evidence manifest supplied",
+      "evidence": null
+    },
+    {
+      "id": "e2e.M5",
+      "status": "BLOCKED",
+      "detail": "No team evidence manifest supplied",
+      "evidence": null
+    },
+    {
+      "id": "e2e.real_sar",
+      "status": "BLOCKED",
+      "detail": "No verified Sentinel-1 processing evidence supplied",
+      "evidence": null
+    },
+    {
+      "id": "e2e.scientific",
+      "status": "BLOCKED",
+      "detail": "No independent reference evaluation evidence supplied",
+      "evidence": null
+    },
+    {
+      "id": "e2e.github",
+      "status": "BLOCKED",
+      "detail": "No GitHub-hosted workflow evidence supplied",
+      "evidence": null
+    }
+  ],
+  "note": "PASS for local/evidence probes is not scientific validation. Live end-to-end sign-off is separate."
+}
