@@ -9,7 +9,8 @@ Status updated 14 November 2026. A checked item only means the specific prerequi
 - [x] Confirmed AI tools identified: ChatGPT, Gamma AI and Manus AI.
 - [ ] Replace the older PDF in the repository with the final 12-page confirmed AI/SI edition.
 - [ ] Test the final public PDF download/view link in an Incognito browser window.
-- [ ] Publish and test the official ≤30 second demo video **or** a deck of ≤7 slides.
+- [x] Create seven-slide presentation at `docs/slides/index.html` in the GitHub repository.
+- [ ] Verify the public seven-slide deployment at https://abdelrahman-mohamed-9.github.io/spectra-sar-0xnebula-2026/slides/ in Incognito; attach its link to the NASA Project page.
 - [ ] Verify AI-generated scenes have visible labels and generated audio is credited in description/metadata, where applicable.
 - [ ] Fill in and verify the NASA project-page title, summary, description, data/resources, AI/SI disclosure and supporting links.
 - [ ] Confirm all project/team names and claims match across PDF, project page, GitHub and slides.
