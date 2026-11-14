@@ -1,14 +1,20 @@
-# Cairo 2026 submission checklist
+# SPECTRA-SAR — Cairo 2026 submission checklist
 
-- [ ] Official ≤30s demo video OR ≤7 slides; public link accessible in incognito
-- [ ] English Project Description PDF with project identity, workflow, tools, evidence, limitations
-- [ ] NASA data used and linked with source IDs; ensure chosen challenge resources requirement
-- [ ] All other datasets, images, software/code and licenses credited
-- [ ] AI/SI tools and contributions disclosed; generated media properly labeled
-- [ ] Public project link and working setup or GitHub Pages demo
-- [ ] English NASA Project Page title, summary, details, sources and correct working links
-- [ ] Cairo PDF public view link (no login), links verified
-- [ ] No tokens, local databases, API secrets or credentials committed
+Status updated 14 November 2026. A checked item only means the specific prerequisite described below has been completed or observed. It does not indicate that the final NASA submission has been accepted.
 
-Official NASA submission: Nov 15, 2026 11:59 PM local time; check any earlier local Cairo cutoff.
-Sources: user-supplied Cairo Project Description PDF Guidelines; https://www.spaceappschallenge.org/2026/
+- [x] Public GitHub repository with code and documentation: https://github.com/abdelrahman-mohamed-9/spectra-sar-0xnebula-2026
+- [x] Interactive GitHub Pages judge demo opened successfully by the team: https://abdelrahman-mohamed-9.github.io/spectra-sar-0xnebula-2026/
+- [x] NASA NISAR sources, identifiers and local-file SHA-256 evidence documented.
+- [x] Third-party resources and software credits described.
+- [x] Confirmed AI tools identified: ChatGPT, Gamma AI and Manus AI.
+- [ ] Replace the older PDF in the repository with the final 12-page confirmed AI/SI edition.
+- [ ] Test the final public PDF download/view link in an Incognito browser window.
+- [ ] Publish and test the official ≤30 second demo video **or** a deck of ≤7 slides.
+- [ ] Verify AI-generated scenes have visible labels and generated audio is credited in description/metadata, where applicable.
+- [ ] Fill in and verify the NASA project-page title, summary, description, data/resources, AI/SI disclosure and supporting links.
+- [ ] Confirm all project/team names and claims match across PDF, project page, GitHub and slides.
+- [ ] Submit officially and confirm the submission status/receipt before the event deadline.
+
+The public GitHub Pages frontend is not a public deployment of the authenticated backend. Local setup is documented in README.
+
+Source: team-provided Cairo Project Description PDF Guidelines. Check the official NASA and any Cairo-specific submission deadlines.
