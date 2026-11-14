@@ -1,0 +1,40 @@
+# Secrets, machine-local environment and private state
+.env
+.env.*
+!.env.example
+!.env.*.example
+.local.env
+**/operator-token.txt
+**/internal-api-key.txt
+**/jwt-secret.txt
+state/
+state-*/
+**/state/
+**/state-*/
+*.pem
+*.p12
+*.key
+# Virtualenv / caches / temporary tests
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+*.db
+*.sqlite
+*.sqlite3
+*.log
+.DS_Store
+# Generated results, raw archives, and local job data
+inputs/
+runs/
+results/
+results-phase3/*
+!results-phase3/external-ml-prediction.tif
+!results-phase3/external-evaluation.json
+results-phase3-population/
+legacy-phase1/
+legacy-phase2-results/
+reports/tests/
+FILE_MANIFEST.sha256
+members/M1/data/

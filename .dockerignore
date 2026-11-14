@@ -1,0 +1,12 @@
+.venv
+state*
+.git
+__pycache__
+**/__pycache__
+.pytest_cache
+reports
+results
+legacy-phase1
+legacy-phase2-results
+*.zip
+*.env
