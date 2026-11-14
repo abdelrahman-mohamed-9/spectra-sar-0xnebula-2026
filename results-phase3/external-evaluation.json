@@ -1,0 +1,430 @@
+{
+  "spatial_ml_training": {
+    "algorithm": "HistGradientBoostingClassifier",
+    "hyperparameters": {
+      "categorical_features": "from_dtype",
+      "class_weight": null,
+      "early_stopping": false,
+      "interaction_cst": null,
+      "l2_regularization": 1,
+      "learning_rate": 0.1,
+      "loss": "log_loss",
+      "max_bins": 255,
+      "max_depth": null,
+      "max_features": 1.0,
+      "max_iter": 80,
+      "max_leaf_nodes": 15,
+      "min_samples_leaf": 30,
+      "monotonic_cst": null,
+      "n_iter_no_change": 10,
+      "random_state": 24,
+      "scoring": "loss",
+      "tol": 1e-07,
+      "validation_fraction": 0.1,
+      "verbose": 0,
+      "warm_start": false
+    },
+    "feature_order": [
+      "after_vv_db",
+      "delta_vv_db",
+      "before_vv_db",
+      "after_mean5",
+      "after_sd5",
+      "delta_mean5",
+      "delta_sd5"
+    ],
+    "threshold": 0.44999999999999996,
+    "threshold_objective": "Mean country F1 on TRAIN-only out-of-fold predictions",
+    "validation_folds": [
+      {
+        "trained_on": "USA_1010394",
+        "validated_on": "Ghana_103272",
+        "pixels": 30000
+      },
+      {
+        "trained_on": "Ghana_103272",
+        "validated_on": "USA_1010394",
+        "pixels": 30000
+      }
+    ],
+    "threshold_curve": [
+      {
+        "threshold": 0.05,
+        "mean_country_f1": 0.25563404106711196
+      },
+      {
+        "threshold": 0.1,
+        "mean_country_f1": 0.2701319844176987
+      },
+      {
+        "threshold": 0.15,
+        "mean_country_f1": 0.2835438543786102
+      },
+      {
+        "threshold": 0.2,
+        "mean_country_f1": 0.2876789876789877
+      },
+      {
+        "threshold": 0.25,
+        "mean_country_f1": 0.28596344249809597
+      },
+      {
+        "threshold": 0.3,
+        "mean_country_f1": 0.28560489722014226
+      },
+      {
+        "threshold": 0.35,
+        "mean_country_f1": 0.2883479999252658
+      },
+      {
+        "threshold": 0.39999999999999997,
+        "mean_country_f1": 0.29087525176554574
+      },
+      {
+        "threshold": 0.44999999999999996,
+        "mean_country_f1": 0.29141752145754674
+      },
+      {
+        "threshold": 0.49999999999999994,
+        "mean_country_f1": 0.2834505623539434
+      },
+      {
+        "threshold": 0.5499999999999999,
+        "mean_country_f1": 0.2841519715431772
+      },
+      {
+        "threshold": 0.6,
+        "mean_country_f1": 0.27811668700122005
+      },
+      {
+        "threshold": 0.65,
+        "mean_country_f1": 0.2666445747547077
+      },
+      {
+        "threshold": 0.7,
+        "mean_country_f1": 0.2580238850531816
+      },
+      {
+        "threshold": 0.75,
+        "mean_country_f1": 0.2502827182070525
+      },
+      {
+        "threshold": 0.7999999999999999,
+        "mean_country_f1": 0.2356297977115821
+      },
+      {
+        "threshold": 0.85,
+        "mean_country_f1": 0.23075234111692958
+      },
+      {
+        "threshold": 0.9,
+        "mean_country_f1": 0.1761603375527426
+      },
+      {
+        "threshold": 0.95,
+        "mean_country_f1": 0.08523076350231787
+      }
+    ],
+    "test_labels_used_for_selection": false,
+    "training_pixels": 60000,
+    "limitations": [
+      "Only two training chips and one held-out test chip; no claim of broad generalization.",
+      "These water/flood labels do not validate generic change or Alaska NISAR.",
+      "Probabilities are not calibrated event or damage probabilities."
+    ]
+  },
+  "recall_policy": {
+    "objective": "Mean country F2 on TRAIN-only out-of-fold predictions",
+    "threshold": 1.4000000000000004,
+    "curve": [
+      {
+        "logit_threshold": -4.0,
+        "mean_country_f2": 0.04294147702679196
+      },
+      {
+        "logit_threshold": -3.8,
+        "mean_country_f2": 0.050717898237915546
+      },
+      {
+        "logit_threshold": -3.6,
+        "mean_country_f2": 0.06258865116371333
+      },
+      {
+        "logit_threshold": -3.4,
+        "mean_country_f2": 0.07965115871772614
+      },
+      {
+        "logit_threshold": -3.2,
+        "mean_country_f2": 0.10483134935275482
+      },
+      {
+        "logit_threshold": -3.0,
+        "mean_country_f2": 0.13901076503491222
+      },
+      {
+        "logit_threshold": -2.8,
+        "mean_country_f2": 0.1833869359989784
+      },
+      {
+        "logit_threshold": -2.5999999999999996,
+        "mean_country_f2": 0.23111076781665277
+      },
+      {
+        "logit_threshold": -2.4,
+        "mean_country_f2": 0.27644990376530526
+      },
+      {
+        "logit_threshold": -2.2,
+        "mean_country_f2": 0.3147807901584371
+      },
+      {
+        "logit_threshold": -2.0,
+        "mean_country_f2": 0.3406313835769291
+      },
+      {
+        "logit_threshold": -1.7999999999999998,
+        "mean_country_f2": 0.3532451667650725
+      },
+      {
+        "logit_threshold": -1.5999999999999996,
+        "mean_country_f2": 0.35996137881591467
+      },
+      {
+        "logit_threshold": -1.4,
+        "mean_country_f2": 0.3627052465052971
+      },
+      {
+        "logit_threshold": -1.1999999999999997,
+        "mean_country_f2": 0.3599701530640935
+      },
+      {
+        "logit_threshold": -1.0,
+        "mean_country_f2": 0.35773632513404163
+      },
+      {
+        "logit_threshold": -0.7999999999999998,
+        "mean_country_f2": 0.35740455369567
+      },
+      {
+        "logit_threshold": -0.5999999999999996,
+        "mean_country_f2": 0.3555815392253841
+      },
+      {
+        "logit_threshold": -0.3999999999999999,
+        "mean_country_f2": 0.3567412683910187
+      },
+      {
+        "logit_threshold": -0.19999999999999973,
+        "mean_country_f2": 0.35612744571546096
+      },
+      {
+        "logit_threshold": 0.0,
+        "mean_country_f2": 0.3604497878201518
+      },
+      {
+        "logit_threshold": 0.20000000000000018,
+        "mean_country_f2": 0.36626375189011207
+      },
+      {
+        "logit_threshold": 0.40000000000000036,
+        "mean_country_f2": 0.3742928705709622
+      },
+      {
+        "logit_threshold": 0.6000000000000005,
+        "mean_country_f2": 0.3803854250422449
+      },
+      {
+        "logit_threshold": 0.8000000000000007,
+        "mean_country_f2": 0.3889902003677156
+      },
+      {
+        "logit_threshold": 1.0,
+        "mean_country_f2": 0.3952788195655075
+      },
+      {
+        "logit_threshold": 1.2000000000000002,
+        "mean_country_f2": 0.40235489599604124
+      },
+      {
+        "logit_threshold": 1.4000000000000004,
+        "mean_country_f2": 0.4047805985886933
+      },
+      {
+        "logit_threshold": 1.6000000000000005,
+        "mean_country_f2": 0.4035960830083648
+      },
+      {
+        "logit_threshold": 1.8000000000000007,
+        "mean_country_f2": 0.3965571253577166
+      },
+      {
+        "logit_threshold": 2.0,
+        "mean_country_f2": 0.384619254563218
+      },
+      {
+        "logit_threshold": 2.2,
+        "mean_country_f2": 0.3637356847671862
+      },
+      {
+        "logit_threshold": 2.4000000000000004,
+        "mean_country_f2": 0.3372226147933452
+      },
+      {
+        "logit_threshold": 2.6000000000000005,
+        "mean_country_f2": 0.30075821699788985
+      },
+      {
+        "logit_threshold": 2.8000000000000007,
+        "mean_country_f2": 0.25824278454611976
+      },
+      {
+        "logit_threshold": 3.0,
+        "mean_country_f2": 0.21561255454746853
+      },
+      {
+        "logit_threshold": 3.2,
+        "mean_country_f2": 0.16797819604044856
+      },
+      {
+        "logit_threshold": 3.4000000000000004,
+        "mean_country_f2": 0.12621104719162501
+      },
+      {
+        "logit_threshold": 3.6000000000000005,
+        "mean_country_f2": 0.08896651842713546
+      },
+      {
+        "logit_threshold": 3.8000000000000007,
+        "mean_country_f2": 0.062390251067321864
+      },
+      {
+        "logit_threshold": 4.0,
+        "mean_country_f2": 0.044092658859533354
+      }
+    ],
+    "test_labels_used_for_selection": false,
+    "validation_countries": [
+      "Ghana_103272",
+      "USA_1010394"
+    ],
+    "interpretation": "Recall-oriented external comparator, not calibrated event probability or Alaska inference"
+  },
+  "source": "https://doi.org/10.5281/zenodo.7946594",
+  "license": "CC BY 4.0 (Zenodo record)",
+  "creator": "Ritu Yadav",
+  "status": "EXTERNAL_FLOOD_BENCHMARK_ONLY",
+  "sensor": "Sentinel-1 VV dB, first band; post minus pre",
+  "label_scope": "Published hand labels for flood/water mapping; not generic radiometric change labels",
+  "train_chips": [
+    "Ghana_103272",
+    "USA_1010394"
+  ],
+  "held_out_chip": "Spain_1167260",
+  "selection": "First matching chip in lexicographic order per selected country; distinct countries for fit and test",
+  "weights": [
+    -1.9096847093375533,
+    -1.1733961679067175,
+    -0.3315413245866651,
+    -1.0774438549056764
+  ],
+  "feature_mean": [
+    -12.151373132838183,
+    0.173351818729527,
+    -12.324724951567681
+  ],
+  "feature_scale": [
+    4.529595030412811,
+    2.8891331779697436,
+    4.043962458758625
+  ],
+  "train_samples": 13039,
+  "feature_order": [
+    "after_vv_db",
+    "delta_vv_db",
+    "before_vv_db"
+  ],
+  "evaluation": {
+    "fixed_darkening": {
+      "labeled_valid_pixels": 262119,
+      "tp": 24104,
+      "fp": 15450,
+      "tn": 204150,
+      "fn": 18415,
+      "precision": 0.6093947514789907,
+      "recall": 0.5668995037512642,
+      "f1": 0.5873795279811875,
+      "iou": 0.4158084493436147,
+      "false_positive_rate": 0.0703551912568306
+    },
+    "robust_darkening": {
+      "labeled_valid_pixels": 262119,
+      "tp": 2153,
+      "fp": 168,
+      "tn": 219432,
+      "fn": 40366,
+      "precision": 0.927617406290392,
+      "recall": 0.05063618617559209,
+      "f1": 0.09603033006244424,
+      "iou": 0.050436901164288894,
+      "false_positive_rate": 0.0007650273224043716
+    },
+    "logistic_baseline": {
+      "labeled_valid_pixels": 262119,
+      "tp": 21433,
+      "fp": 7412,
+      "tn": 212188,
+      "fn": 21086,
+      "precision": 0.743040388282198,
+      "recall": 0.5040805287048143,
+      "f1": 0.6006670029706855,
+      "iou": 0.4292523682682101,
+      "false_positive_rate": 0.033752276867030966
+    },
+    "logistic_train_f2_policy": {
+      "labeled_valid_pixels": 262119,
+      "tp": 11966,
+      "fp": 1696,
+      "tn": 217904,
+      "fn": 30553,
+      "precision": 0.8758600497730933,
+      "recall": 0.2814271266963005,
+      "f1": 0.4259803136291629,
+      "iou": 0.2706321384145652,
+      "false_positive_rate": 0.007723132969034608
+    },
+    "spatial_ml_tuned": {
+      "labeled_valid_pixels": 262119,
+      "tp": 11316,
+      "fp": 2975,
+      "tn": 216625,
+      "fn": 31203,
+      "precision": 0.7918270240011196,
+      "recall": 0.2661398433641431,
+      "f1": 0.39838056680161943,
+      "iou": 0.2487360970677452,
+      "false_positive_rate": 0.01354735883424408
+    }
+  },
+  "inputs_sha256": {
+    "Ghana_103272": {
+      "before.tif": "3ee3e2a8182a3abd99b4d15b29d767715dc360eb0a1e4ff55ee4a5f4a45a9a5c",
+      "after.tif": "1c46a973029c6d05ea931f7c82b1bce9f20282229cc44eb712b0fb84773fcab5",
+      "labels.tif": "0b295adc1c5831a534b9d285a1e079cb48715220a4c47e11c7fd59550830bb59"
+    },
+    "USA_1010394": {
+      "before.tif": "0d6655e5740ed5220b118d03e9f58620a44acdeb4f65281752e0c249a5c6c9ee",
+      "after.tif": "ea5b32388a30a837a0443ee2eae249370bcff2bb9127efd52a833a3d8216505f",
+      "labels.tif": "db7eff663a64d2cb7c890f1190d65739248066c7492323f42791e5d319021355"
+    },
+    "Spain_1167260": {
+      "before.tif": "dfbe640646f2fadd63ad79b5dfb09f8ec259ded816ea7fdc985087cfaee9bc7a",
+      "after.tif": "e838194f1f60dca63e111ce7df7f2705a6f76779fe4bc5b6181dc224e80d1f01",
+      "labels.tif": "7fb2d9b5f65885b57b0f7a2e2ac02e3342ece255d3e2a6f6cb10645937f6f6e3"
+    }
+  },
+  "limitations": [
+    "One external holdout chip is a comparison, not a generalization claim.",
+    "Flood/water labels cannot validate the Alaska NISAR scene.",
+    "Logistic model was not applied to Alaska or transferred across sensors."
+  ]
+}

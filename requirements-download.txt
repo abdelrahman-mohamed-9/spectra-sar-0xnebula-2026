@@ -1,0 +1,4 @@
+# Optional: original Phase 1 NASA/Harmony acquisition commands.
+-r requirements.txt
+harmony-py>=1.3,<2
+h5py>=3.10,<4

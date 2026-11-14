@@ -1,0 +1,10 @@
+numpy==2.5.4
+rasterio==1.5.2
+scipy==1.18.1
+shapely==2.2.0
+scikit-image==0.26.0
+pyproj==3.8.0
+fastapi==0.162.7
+uvicorn==0.54.0
+Pillow==12.3.0
+-e ./backend[dev,integration]

@@ -1,0 +1,60 @@
+{
+  "nisar-oct2026-ghsl2025": {
+    "geography/buildings.geojson": {
+      "sha256": "1ce7eb457779acd1dc230a1bcb4692d06f27533481f26cbfe0e9e599134c0cd4",
+      "bytes": 98
+    },
+    "geography/geography-source.json": {
+      "sha256": "ddb314a7feb5ae0cce8cbbf968f25267b729b879e85439494ec97263ef7d52cd",
+      "bytes": 2239
+    },
+    "geography/ghsl-2025-counts.tif": {
+      "sha256": "6b7d3acb53df9ae763398cd5b564041443f35e92b7540086a148766ae4424ea5",
+      "bytes": 2163
+    },
+    "geography/ghsl-source.json": {
+      "sha256": "4d9b268349d76244157aecd4760c7254c06f5c0c629a3a4e08169c27f01f59b0",
+      "bytes": 865
+    },
+    "geography/population.geojson": {
+      "sha256": "321b150d456881383f9a0061b6d995b1fc8019175104b5ccec35e8c677fe88d6",
+      "bytes": 428877
+    },
+    "geography/roads-2.geojson": {
+      "sha256": "ed778c73ea51338d6576fb5992b189f2b94d9f3d5e199f46c1af520d6b0b3e6c",
+      "bytes": 42
+    },
+    "geography/roads-6.geojson": {
+      "sha256": "ed778c73ea51338d6576fb5992b189f2b94d9f3d5e199f46c1af520d6b0b3e6c",
+      "bytes": 42
+    },
+    "geography/roads-8.geojson": {
+      "sha256": "ed778c73ea51338d6576fb5992b189f2b94d9f3d5e199f46c1af520d6b0b3e6c",
+      "bytes": 42
+    },
+    "nisar/after_HHHH.tif": {
+      "sha256": "396680ad535b69fbc34d18d82a877e6aab4371a70d1f6791f69fbcdd25c495ac",
+      "bytes": 310776
+    },
+    "nisar/after_valid_mask.tif": {
+      "sha256": "71d1424676c80c972841e695c92b8c3d55454192e393abc7079e6c4afcaad48a",
+      "bytes": 1033
+    },
+    "nisar/before_HHHH.tif": {
+      "sha256": "c1f87d53de0de13c48712c633bc8e5bfd6ae281441fcee876dc3c0bf49bee6e8",
+      "bytes": 311691
+    },
+    "nisar/before_valid_mask.tif": {
+      "sha256": "71d1424676c80c972841e695c92b8c3d55454192e393abc7079e6c4afcaad48a",
+      "bytes": 1033
+    },
+    "nisar/input-provenance.json": {
+      "sha256": "0f0d412fb94e6120e13a3faac58b4eaf29c9ac81ff174c52ae0694b347377c44",
+      "bytes": 1306
+    },
+    "nisar/manifest.json": {
+      "sha256": "dbe4be0902fa6325faf1cf7706e9697f250d8c375687985a6702e67b11f94805",
+      "bytes": 3035
+    }
+  }
+}

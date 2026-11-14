@@ -1,0 +1,16 @@
+{
+  "status": "PASS_FUNCTIONAL_ONLY",
+  "mode": "DOM functional checks against live local HTTP and separate worker; no browser layout rendering",
+  "checks": [
+    "Invalid token rejected",
+    "Authenticated dataset catalog loaded",
+    "Live review-mode job completed: 638 candidates; population unavailable",
+    "Raster mode switch and before/after slider update DOM",
+    "Download passed client SHA-256 verification",
+    "Disconnect clears view and returns login"
+  ],
+  "errors": [],
+  "rendering_not_tested": true,
+  "download": "REPORT.md",
+  "rendering_note": "Blob image rendering and layout were not tested by this DOM harness. Headless browser launch was unavailable."
+}

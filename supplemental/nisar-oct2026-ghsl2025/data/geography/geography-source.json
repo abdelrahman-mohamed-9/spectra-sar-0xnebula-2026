@@ -1,0 +1,60 @@
+{
+  "query_bbox_wgs84": [
+    -153.134,
+    64.6235,
+    -153.0561,
+    64.6564
+  ],
+  "queried_on": "2026-11-14",
+  "query_parameters": {
+    "where": "1=1",
+    "geometryType": "esriGeometryEnvelope",
+    "inSR": 4326,
+    "outSR": 4326,
+    "f": "geojson"
+  },
+  "population": {
+    "publisher": "U.S. Census Bureau",
+    "year": 2020,
+    "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/Census2020/Tracts_Blocks/MapServer/2/query",
+    "fields": "GEOID,POP100,AREALAND,AREAWATER",
+    "note": "Tabulation block geometry and total population, no sub-block population distribution."
+  },
+  "roads": {
+    "publisher": "U.S. Census Bureau TIGERweb",
+    "layers": [
+      2,
+      6,
+      8
+    ],
+    "base_url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Transportation/MapServer",
+    "note": "Mapped primary, secondary and local roads. Empty response does not prove absence."
+  },
+  "buildings": {
+    "publisher": "FEMA and ORNL, USA Structures via Esri",
+    "source": "https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0/query",
+    "fields": "OBJECTID",
+    "note": "Coverage limitations include the source minimum building size."
+  },
+  "population_raster": {
+    "source": "https://jrc-ghsl.s3.eu-central-1.amazonaws.com/ghs-pop/r2023a/54009/100m/2025/GHS_POP_E2025_GLOBE_R2023A_54009_100_V1_0.tif",
+    "publisher": "European Commission Joint Research Centre",
+    "product": "GHS-POP R2023A",
+    "year": 2025,
+    "units": "people_per_cell",
+    "resolution_m": 100,
+    "interpretation": "Modelled residential population projection for 2025, used with October 2026 SAR; not a live count",
+    "license": "CC BY 4.0",
+    "documentation": "https://human-settlement.emergency.copernicus.eu/ghs_pop2023.php",
+    "retrieved_at": "2026-11-14T02:18:54.763221+00:00",
+    "sha256": "6b7d3acb53df9ae763398cd5b564041443f35e92b7540086a148766ae4424ea5",
+    "transformation": "Native-grid window extraction only; no resampling",
+    "statistics": {
+      "valid_cells": 6342,
+      "download_sum": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "file": "ghsl-2025-counts.tif"
+  }
+}

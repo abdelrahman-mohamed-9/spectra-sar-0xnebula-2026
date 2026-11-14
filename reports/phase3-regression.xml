@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="9" skipped="0" tests="158" time="43.139" timestamp="2026-11-14T03:52:31.358071+02:00" hostname="DESKTOP-FD95L5V"><testcase classname="tests_phase2.test_m5_adapter" name="test_original_m5_app_mount_and_real_jwt" time="4.765" /><testcase classname="backend.tests.test_api" name="test_liveness" time="0.005" /><testcase classname="backend.tests.test_api" name="test_readiness_never_false_positive" time="0.008" /><testcase classname="backend.tests.test_api" name="test_api_index" time="0.005" /><testcase classname="backend.tests.test_api" name="test_openapi" time="0.066" /><testcase classname="backend.tests.test_api" name="test_request_id_header" time="0.004" /><testcase classname="backend.tests.test_api" name="test_cors_allowlist" time="0.007" /><testcase classname="backend.tests.test_database" name="test_url_normalization" time="0.000" /><testcase classname="backend.tests.test_database" name="test_database_status_checks_real_sql_contract" time="0.001" /><testcase classname="backend.tests.test_database" name="test_database_status_rejects_old_revision" time="0.001" /><testcase classname="backend.tests.test_database" name="test_database_health_does_not_leak_secrets" time="0.006" /><testcase classname="backend.tests.test_database" name="test_alembic_revision_is_discoverable" time="0.021"><failure message="alembic.util.exc.CommandError: Path doesn't exist: alembic.  Please use the 'init' command to create a new scripts folder.">def test_alembic_revision_is_discoverable():
+        from pathlib import Path
+        root = Path(__file__).resolve().parents[1]
+&gt;       scripts = ScriptDirectory.from_config(Config(str(root / "alembic.ini")))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+backend\tests\test_database.py:49: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\venv\Lib\site-packages\alembic\script\base.py:180: in from_config
+    return ScriptDirectory(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;alembic.script.base.ScriptDirectory object at 0x0000022BF1A44440&gt;
+dir = WindowsPath('alembic'), file_template = '%(rev)s_%(slug)s'
+truncate_slug_length = None, version_locations = None, sourceless = False
+output_encoding = 'utf-8', timezone = None, hooks = []
+recursive_version_locations = False
+messaging_opts = immutabledict({'quiet': False})
+
+    def __init__(
+        self,
+        dir: str | os.PathLike[str],  # noqa: A002
+        file_template: str = _default_file_template,
+        truncate_slug_length: int | None = 40,
+        version_locations: None | (Sequence[str | os.PathLike[str]]) = None,
+        sourceless: bool = False,
+        output_encoding: str = "utf-8",
+        timezone: str | None = None,
+        hooks: list[PostWriteHookConfig] = [],
+        recursive_version_locations: bool = False,
+        messaging_opts: MessagingOptions = cast(
+            "MessagingOptions", util.EMPTY_DICT
+        ),
+    ) -&gt; None:
+        self.dir = _preserving_path_as_str(dir)
+        self.version_locations = [
+            _preserving_path_as_str(p) for p in version_locations or ()
+        ]
+        self.file_template = file_template
+        self.truncate_slug_length = truncate_slug_length or 40
+        self.sourceless = sourceless
+        self.output_encoding = output_encoding
+        self.revision_map = revision.RevisionMap(self._load_revisions)
+        self.timezone = timezone
+        self.hooks = hooks
+        self.recursive_version_locations = recursive_version_locations
+        self.messaging_opts = messaging_opts
+    
+        if not os.access(dir, os.F_OK):
+&gt;           raise util.CommandError(
+                f"Path doesn't exist: {dir}.  Please use "
+                "the 'init' command to create a new "
+                "scripts folder."
+            )
+E           alembic.util.exc.CommandError: Path doesn't exist: alembic.  Please use the 'init' command to create a new scripts folder.
+
+..\..\venv\Lib\site-packages\alembic\script\base.py:99: CommandError</failure></testcase><testcase classname="backend.tests.test_database" name="test_initial_migration_contains_spatial_schema" time="0.026" /><testcase classname="backend.tests.test_phase1_service" name="test_ready_requires_all_protocol_checks" time="0.015" /><testcase classname="backend.tests.test_phase1_service" name="test_obsolete_migration_is_rejected" time="0.001" /><testcase classname="backend.tests.test_phase1_service" name="test_unified_handler_is_registered_and_rejects_unrelated_jobs" time="0.270" /><testcase classname="backend.tests.test_phase1_service" name="test_nisar_gcov_channel_cannot_be_relabelled_as_rtc" time="0.002" /><testcase classname="backend.tests.test_schema" name="test_tables_and_keys" time="0.001" /><testcase classname="backend.tests.test_schema" name="test_ddl_compiles_for_postgres" time="0.012" /><testcase classname="backend.tests.test_schema" name="test_geospatial_fields_and_indexes" time="0.000" /><testcase classname="backend.tests.test_schema" name="test_expected_foreign_keys" time="0.000" /><testcase classname="backend.tests.test_t05" name="test_scene_contract_accepts_reference_without_download" time="0.000" /><testcase classname="backend.tests.test_t05" name="test_scene_rejects_naive_time" time="0.000" /><testcase classname="backend.tests.test_t05" name="test_scene_rejects_fake_stac_shape" time="0.000" /><testcase classname="backend.tests.test_t05" name="test_scene_rejects_out_of_range_incidence" time="0.001" /><testcase classname="backend.tests.test_t05" name="test_scene_rejects_duplicate_polarization_and_order" time="0.000" /><testcase classname="backend.tests.test_t05" name="test_polygon_closed_ring_and_bounds" time="0.000" /><testcase classname="backend.tests.test_t05" name="test_spatial_expression_is_parameterized" time="0.001" /><testcase classname="backend.tests.test_t05" name="test_artifact_rejects_local_paths" time="0.001" /><testcase classname="backend.tests.test_t05" name="test_pair_rejects_equal_scene_ids" time="0.000" /><testcase classname="backend.tests.test_t05" name="test_change_confidence_and_impact_constraints" time="0.000" /><testcase classname="backend.tests.test_t05" name="test_job_type_and_repo_pagination_limits" time="0.000" /><testcase classname="backend.tests.test_t05" name="test_scene_repository_constructs_model_and_flushes" time="0.001" /><testcase classname="backend.tests.test_t05" name="test_repo_select_by_provider_id_uses_bind_parameters" time="0.082" /><testcase classname="backend.tests.test_t05" name="test_job_idempotency_lookup_and_no_autocommit" time="0.002" /><testcase classname="backend.tests.test_t06" name="test_missing_key_blocks_db" time="0.018" /><testcase classname="backend.tests.test_t06" name="test_wrong_key_rejected" time="0.015" /><testcase classname="backend.tests.test_t06" name="test_missing_config_fails_closed" time="0.015" /><testcase classname="backend.tests.test_t06" name="test_invalid_scene_returns_422" time="0.016" /><testcase classname="backend.tests.test_t06" name="test_valid_scene_contract_and_commit" time="0.017" /><testcase classname="backend.tests.test_t06" name="test_not_found" time="0.017" /><testcase classname="backend.tests.test_t06" name="test_pagination_validation" time="0.021" /><testcase classname="backend.tests.test_t06" name="test_db_conflict_rolls_back" time="0.017" /><testcase classname="backend.tests.test_t06" name="test_openapi_has_all_resources" time="0.065" /><testcase classname="backend.tests.test_t07" name="test_invalid_geometry_rejected[geometry0]" time="0.000" /><testcase classname="backend.tests.test_t07" name="test_invalid_geometry_rejected[geometry1]" time="0.000" /><testcase classname="backend.tests.test_t07" name="test_invalid_geometry_rejected[geometry2]" time="0.001" /><testcase classname="backend.tests.test_t07" name="test_invalid_geometry_rejected[geometry3]" time="0.000" /><testcase classname="backend.tests.test_t07" name="test_invalid_geometry_rejected[geometry4]" time="0.000" /><testcase classname="backend.tests.test_t07" name="test_invalid_geometry_rejected[geometry5]" time="0.000" /><testcase classname="backend.tests.test_t07" name="test_invalid_geometry_rejected[geometry6]" time="0.000" /><testcase classname="backend.tests.test_t07" name="test_invalid_geometry_rejected[geometry7]" time="0.000" /><testcase classname="backend.tests.test_t07" name="test_invalid_geometry_rejected[geometry8]" time="0.000" /><testcase classname="backend.tests.test_t07" name="test_polygon_normalization_and_feature" time="0.001" /><testcase classname="backend.tests.test_t07" name="test_valid_multipolygon" time="0.000" /><testcase classname="backend.tests.test_t07" name="test_bbox_invalid[31,30,32]" time="0.000" /><testcase classname="backend.tests.test_t07" name="test_bbox_invalid[nan,30,32,31]" time="0.000" /><testcase classname="backend.tests.test_t07" name="test_bbox_invalid[31,30,inf,31]" time="0.000" /><testcase classname="backend.tests.test_t07" name="test_bbox_invalid[32,30,31,31]" time="0.000" /><testcase classname="backend.tests.test_t07" name="test_bbox_invalid[31,31,32,30]" time="0.000" /><testcase classname="backend.tests.test_t07" name="test_bbox_invalid[-181,30,32,31]" time="0.000" /><testcase classname="backend.tests.test_t07" name="test_bbox_invalid[31,30,32,91]" time="0.000" /><testcase classname="backend.tests.test_t07" name="test_bbox_invalid[179,-10,-179,10]" time="0.000" /><testcase classname="backend.tests.test_t07" name="test_bbox_invalid[hello]" time="0.000" /><testcase classname="backend.tests.test_t07" name="test_bbox_valid" time="0.000" /><testcase classname="backend.tests.test_t07" name="test_scenes_sql_uses_spatial_intersection_and_pagination" time="0.002" /><testcase classname="backend.tests.test_t07" name="test_impacts_sql_restricted_to_project" time="0.002" /><testcase classname="backend.tests.test_t07" name="test_footprint_feature_reads_real_db_geometry" time="0.001" /><testcase classname="backend.tests.test_t07" name="test_impact_footprint_includes_risk" time="0.001" /><testcase classname="backend.tests.test_t07" name="test_geo_endpoints_require_api_key" time="0.020" /><testcase classname="backend.tests.test_t07" name="test_geo_bbox_validation_http" time="0.019" /><testcase classname="backend.tests.test_t07" name="test_geo_http_feature_collection" time="0.019" /><testcase classname="backend.tests.test_t07" name="test_geo_http_not_found" time="0.019" /><testcase classname="backend.tests.test_t07" name="test_geo_openapi_routes" time="0.061" /><testcase classname="backend.tests.test_t08" name="test_claim_uses_atomic_compare_and_swap" time="0.001" /><testcase classname="backend.tests.test_t08" name="test_claim_refuses_conflict" time="0.001" /><testcase classname="backend.tests.test_t08" name="test_finish_rejects_empty_failure_reason" time="0.000" /><testcase classname="backend.tests.test_t08" name="test_finish_only_running_jobs" time="0.001" /><testcase classname="backend.tests.test_t08" name="test_cancel_only_queued" time="0.001" /><testcase classname="backend.tests.test_t08" name="test_cannot_cancel_running_job" time="0.001" /><testcase classname="backend.tests.test_t08" name="test_get_job_status_missing" time="0.000" /><testcase classname="backend.tests.test_t08" name="test_get_job_status_existing" time="0.000" /><testcase classname="backend.tests.test_t08" name="test_job_routes_require_auth" time="0.031" /><testcase classname="backend.tests.test_t08" name="test_dispatch_accepted_only_after_broker_ack" time="0.021" /><testcase classname="backend.tests.test_t08" name="test_dispatch_rejected_if_already_running" time="0.020" /><testcase classname="backend.tests.test_t08" name="test_broker_outage_is_503" time="0.021" /><testcase classname="backend.tests.test_t08" name="test_cancel_conflict" time="0.020" /><testcase classname="backend.tests.test_t08" name="test_openapi_exposes_job_routes" time="0.058" /><testcase classname="backend.tests.test_t09" name="test_bad_filenames[../bad.tif]" time="0.000" /><testcase classname="backend.tests.test_t09" name="test_bad_filenames[/bad.tif]" time="0.000" /><testcase classname="backend.tests.test_t09" name="test_bad_filenames[evil.exe]" time="0.000" /><testcase classname="backend.tests.test_t09" name="test_bad_filenames[.hidden.png]" time="0.000" /><testcase classname="backend.tests.test_t09" name="test_bad_filenames[x\\bad.png]" time="0.000" /><testcase classname="backend.tests.test_t09" name="test_bad_filenames[name5]" time="0.000" /><testcase classname="backend.tests.test_t09" name="test_allowed_files[radar.tif-image/tiff]" time="0.000" /><testcase classname="backend.tests.test_t09" name="test_allowed_files[radar.tiff-image/tiff]" time="0.000" /><testcase classname="backend.tests.test_t09" name="test_allowed_files[map.geojson-application/geo+json]" time="0.000" /><testcase classname="backend.tests.test_t09" name="test_allowed_files[mask.png-image/png]" time="0.000" /><testcase classname="backend.tests.test_t09" name="test_allowed_files[results.json-application/json]" time="0.000" /><testcase classname="backend.tests.test_t09" name="test_allowed_files[bundle.zip-application/zip]" time="0.000" /><testcase classname="backend.tests.test_t09" name="test_invalid_signatures[.tif-xxxx]" time="0.000" /><testcase classname="backend.tests.test_t09" name="test_invalid_signatures[.png-notpng]" time="0.000" /><testcase classname="backend.tests.test_t09" name="test_invalid_signatures[.zip-badzip]" time="0.000" /><testcase classname="backend.tests.test_t09" name="test_invalid_signatures[.json-nope]" time="0.000" /><testcase classname="backend.tests.test_t09" name="test_valid_signatures[.tif-II*\x00image]" time="0.000" /><testcase classname="backend.tests.test_t09" name="test_valid_signatures[.png-\x89PNG\r\n\x1a\npng]" time="0.000" /><testcase classname="backend.tests.test_t09" name="test_valid_signatures[.zip-PK\x03\x04data]" time="0.000" /><testcase classname="backend.tests.test_t09" name="test_valid_signatures[.geojson-  {&quot;type&quot;:&quot;Feature&quot;}]" time="0.000" /><testcase classname="backend.tests.test_t09" name="test_hash_upload_and_object_key" time="0.001" /><testcase classname="backend.tests.test_t09" name="test_empty_and_invalid_content_not_uploaded" time="0.001" /><testcase classname="backend.tests.test_t09" name="test_limit_is_streamed" time="0.002" /><testcase classname="backend.tests.test_t09" name="test_private_uri_restrictions" time="0.000" /><testcase classname="backend.tests.test_t09" name="test_routes_fail_closed_without_service_key" time="0.030" /><testcase classname="backend.tests.test_t09" name="test_route_auth_and_not_found" time="0.010" /><testcase classname="backend.tests.test_t10" name="test_hashing_argon2id_and_wrong_password" time="0.151" /><testcase classname="backend.tests.test_t10" name="test_new_tables_and_roles" time="0.000" /><testcase classname="backend.tests.test_t10" name="test_jwt_issuer_audience_expiry_and_signature" time="0.049" /><testcase classname="backend.tests.test_t10" name="test_project_roles_and_nonmember_denied" time="0.094" /><testcase classname="backend.tests.test_t10" name="test_auth_http_login_me_and_cross_project" time="0.212" /><testcase classname="backend.tests.test_t10" name="test_disabled_user_denied" time="0.051" /><testcase classname="backend.tests.test_t10" name="test_no_jwt_secret_fails_closed" time="0.047" /><testcase classname="backend.tests.test_t11_contracts" name="test_all_module_owners_are_represented" time="0.000" /><testcase classname="backend.tests.test_t11_contracts" name="test_manifest_routes_exist_in_runtime_openapi" time="0.062" /><testcase classname="backend.tests.test_t11_contracts" name="test_generated_openapi_matches_actual_app" time="0.098"><failure message="AssertionError: assert {'components'..., ...}}, ...}} == {'openapi': '...: 'bearer'}}}}&#10;  &#10;  Omitting 3 identical items, use -vv to show&#10;  Differing items:&#10;[+2 more lines; full report in element text]">def test_generated_openapi_matches_actual_app():
+        exported=json.loads((ROOT/'contracts'/'generated'/'openapi.json').read_text())
+&gt;       assert exported==create_app().openapi()
+E       AssertionError: assert {'components'..., ...}}, ...}} == {'openapi': '...: 'bearer'}}}}
+E         
+E         Omitting 3 identical items, use -vv to show
+E         Differing items:
+E         {'components': {'schemas': {'ArtifactCreate': {'additionalProperties': False, 'properties': {'crs': {'anyOf': [...], '...], 'title': 'ChangeResultCreate', ...}, ...}, 'securitySchemes': {'HTTPBearer': {'scheme': 'bearer', 'type': 'http'}}}} != {'components': {'schemas': {'ArtifactCreate': {'properties': {'project_id': {'type': 'string', 'format': 'uuid', 'titl...algorithm', 'algorithm_version'], ...}, ...}, 'securitySchemes': {'HTTPBearer': {'type': 'http', 'scheme': 'bearer'}}}}
+E         Use -v to get more diff
+
+backend\tests\test_t11_contracts.py:28: AssertionError</failure></testcase><testcase classname="backend.tests.test_t11_contracts" name="test_exported_schema_matches_pydantic_models" time="0.126" /><testcase classname="backend.tests.test_t11_contracts" name="test_no_unapproved_browser_service_key" time="0.001" /><testcase classname="backend.tests.test_t11_contracts" name="test_example_routes_and_contract_paths" time="0.063" /><testcase classname="backend.tests.test_t11_contracts" name="test_internal_endpoints_remain_service_authenticated" time="0.062" /><testcase classname="backend.tests.test_t12_validation" name="test_liveness_is_public_and_valid" time="0.005" /><testcase classname="backend.tests.test_t12_validation" name="test_readiness_does_not_falsely_claim_production_ready" time="0.005" /><testcase classname="backend.tests.test_t12_validation" name="test_openapi_has_no_duplicate_operation_ids" time="0.062" /><testcase classname="backend.tests.test_t12_validation" name="test_protected_routes_reject_anonymous_requests" time="0.031" /><testcase classname="backend.tests.test_t12_validation" name="test_user_profile_rejects_anonymous_request" time="0.007" /><testcase classname="backend.tests.test_t12_validation" name="test_project_access_requires_jwt" time="0.005" /><testcase classname="backend.tests.test_t12_validation" name="test_request_id_is_returned_and_sanitized" time="0.007" /><testcase classname="backend.tests.test_t12_validation" name="test_generated_contracts_exist_and_are_parseable" time="0.002" /><testcase classname="backend.tests.test_t12_validation" name="test_compose_declares_required_services" time="0.019" /><testcase classname="backend.tests.test_t12_validation" name="test_deployment_secrets_are_required_not_hardcoded" time="0.001" /><testcase classname="backend.tests.test_t12_validation" name="test_schema_migrations_present_and_ordered" time="0.023" /><testcase classname="backend.tests.test_t12_validation" name="test_settings_limit_uploaded_object_size" time="0.003" /><testcase classname="backend.tests.test_t13_integration_bridge" name="test_no_real_m2_delivery_fails" time="0.004" /><testcase classname="backend.tests.test_t13_integration_bridge" name="test_real_file_verification_and_checksum_fail_closed" time="0.061" /><testcase classname="backend.tests.test_t13_integration_bridge" name="test_four_class_mask_converts_without_inventing_hazard" time="0.832" /><testcase classname="backend.tests.test_t13_integration_bridge" name="test_prepare_m3_and_protect_source_evidence" time="0.872" /><testcase classname="backend.tests.test_t13_integration_bridge" name="test_no_publish_without_credentials_or_valid_id" time="0.002" /><testcase classname="tests.test_population_gap_fix" name="test_only_all_nodata_accepted_as_gap" time="0.000" /><testcase classname="tests.test_population_gap_fix" name="test_no_data_with_other_science_error_stays_rejected" time="0.000" /><testcase classname="tests.test_population_gap_fix" name="test_no_population_gap_if_missing_qa" time="0.000" /><testcase classname="tests.test_population_gap_fix" name="test_gap_documents_but_other_five_members_continue" time="3.437"><failure message="AssertionError: assert 'BLOCKED' == 'PARTIAL'&#10;  &#10;  - PARTIAL&#10;  + BLOCKED">tmp_path = WindowsPath('C:/Users/LOQ/AppData/Local/Temp/pytest-of-LOQ/pytest-1/test_gap_documents_but_other_f0')
+
+    def test_gap_documents_but_other_five_members_continue(tmp_path):
+        import json
+        from phase1.pipeline import run
+        from phase1.common import write
+        from test_unified import pair_fixture
+        pair = pair_fixture(tmp_path/'pair')
+        report=tmp_path/'verified_source_gap.json'
+        write(report, {'status':'PARTIAL_DATA_GAP','estimated_people_exposed_to_radar_change':None,
+                       'population_spatial_status':'UNAVAILABLE','science_approved':False})
+        result=run({'pair_dir':str(pair),'min_pixels':1,'exploratory':True,
+                    'impact_gap':{'report':str(report),'status':'PARTIAL_DATA_GAP'}},tmp_path/'new_run')
+&gt;       assert result['status']=='PARTIAL'
+E       AssertionError: assert 'BLOCKED' == 'PARTIAL'
+E         
+E         - PARTIAL
+E         + BLOCKED
+
+tests\test_population_gap_fix.py:32: AssertionError</failure></testcase><testcase classname="tests.test_unified" name="test_six_member_full_pipeline_and_tamper_detection[HHHH]" time="6.200"><failure message="AssertionError: {&quot;schema_version&quot;: &quot;1.0&quot;, &quot;run_id&quot;: &quot;e7c413dd-2a01-4007-82f5-04ce87d548d7&quot;, &quot;created_at&quot;: &quot;2026-11-14T01:52:46.635570+00:00&quot;, &quot;status&quot;: &quot;BLOCKED&quot;, &quot;scientific_approval&quot;: false, &quot;data_kind&quot;: &quot;SYNTHETIC_TEST_ONLY&quot;, &quot;stages&quot;: {&quot;M1&quot;: {&quot;status&quot;: &quot;PASS&quot;, &quot;detail&quot;: &quot;Input snapshot + actual file digests created; scientific QA runs in M2&quot;}, &quot;M2&quot;: {&quot;status&quot;: &quot;PASS&quot;, &quot;detail&quot;: &quot;Original T02\u2013T05/T09 executed; optional T06\u2013T08 require model/reference&quot;, &quot;classification_available&quot;: fa...&#10;[+4 more lines; full report in element text]">tmp_path = WindowsPath('C:/Users/LOQ/AppData/Local/Temp/pytest-of-LOQ/pytest-1/test_six_member_full_pipeline_0')
+pol = 'HHHH'
+
+    @pytest.mark.parametrize('pol',['HHHH','VV'])
+    def test_six_member_full_pipeline_and_tamper_detection(tmp_path,pol):
+        pair=pair_fixture(tmp_path/'pair',pol)
+        impact=impact_fixture(tmp_path/'geo')
+        out=tmp_path/str(uuid.uuid4())
+        result=run({'pair_dir':str(pair),'exploratory':True,'impact':impact,'min_pixels':1,'data_kind':'SYNTHETIC_TEST_ONLY'},out)
+&gt;       assert result['status']=='COMPLETED_EXPLORATORY',json.dumps(result)
+E       AssertionError: {"schema_version": "1.0", "run_id": "e7c413dd-2a01-4007-82f5-04ce87d548d7", "created_at": "2026-11-14T01:52:46.635570+00:00", "status": "BLOCKED", "scientific_approval": false, "data_kind": "SYNTHETIC_TEST_ONLY", "stages": {"M1": {"status": "PASS", "detail": "Input snapshot + actual file digests created; scientific QA runs in M2"}, "M2": {"status": "PASS", "detail": "Original T02\u2013T05/T09 executed; optional T06\u2013T08 require model/reference", "classification_available": false, "evaluation_available": false}, "M3": {"status": "PASS", "detail": "Original T03\u2013T08 executed; risk remains REVIEW_REQUIRED"}, "M4": {"status": "BLOCKED", "detail": "-m exited 1; see M4.log"}, "M5": {"status": "BLOCKED", "detail": "Upstream M4 did not complete"}, "M6": {"status": "BLOCKED", "detail": "Upstream M4 did not complete"}}, "finished_at": "2026-11-14T01:52:52.814651+00:00"}
+E       assert 'BLOCKED' == 'COMPLETED_EXPLORATORY'
+E         
+E         - COMPLETED_EXPLORATORY
+E         + BLOCKED
+
+tests\test_unified.py:59: AssertionError</failure></testcase><testcase classname="tests.test_unified" name="test_six_member_full_pipeline_and_tamper_detection[VV]" time="5.932"><failure message="AssertionError: {&quot;schema_version&quot;: &quot;1.0&quot;, &quot;run_id&quot;: &quot;d3396a9b-ee2f-45d5-b3f3-71e8f9610b9c&quot;, &quot;created_at&quot;: &quot;2026-11-14T01:52:52.838299+00:00&quot;, &quot;status&quot;: &quot;BLOCKED&quot;, &quot;scientific_approval&quot;: false, &quot;data_kind&quot;: &quot;SYNTHETIC_TEST_ONLY&quot;, &quot;stages&quot;: {&quot;M1&quot;: {&quot;status&quot;: &quot;PASS&quot;, &quot;detail&quot;: &quot;Input snapshot + actual file digests created; scientific QA runs in M2&quot;}, &quot;M2&quot;: {&quot;status&quot;: &quot;PASS&quot;, &quot;detail&quot;: &quot;Original T02\u2013T05/T09 executed; optional T06\u2013T08 require model/reference&quot;, &quot;classification_available&quot;: fa...&#10;[+4 more lines; full report in element text]">tmp_path = WindowsPath('C:/Users/LOQ/AppData/Local/Temp/pytest-of-LOQ/pytest-1/test_six_member_full_pipeline_1')
+pol = 'VV'
+
+    @pytest.mark.parametrize('pol',['HHHH','VV'])
+    def test_six_member_full_pipeline_and_tamper_detection(tmp_path,pol):
+        pair=pair_fixture(tmp_path/'pair',pol)
+        impact=impact_fixture(tmp_path/'geo')
+        out=tmp_path/str(uuid.uuid4())
+        result=run({'pair_dir':str(pair),'exploratory':True,'impact':impact,'min_pixels':1,'data_kind':'SYNTHETIC_TEST_ONLY'},out)
+&gt;       assert result['status']=='COMPLETED_EXPLORATORY',json.dumps(result)
+E       AssertionError: {"schema_version": "1.0", "run_id": "d3396a9b-ee2f-45d5-b3f3-71e8f9610b9c", "created_at": "2026-11-14T01:52:52.838299+00:00", "status": "BLOCKED", "scientific_approval": false, "data_kind": "SYNTHETIC_TEST_ONLY", "stages": {"M1": {"status": "PASS", "detail": "Input snapshot + actual file digests created; scientific QA runs in M2"}, "M2": {"status": "PASS", "detail": "Original T02\u2013T05/T09 executed; optional T06\u2013T08 require model/reference", "classification_available": false, "evaluation_available": false}, "M3": {"status": "PASS", "detail": "Original T03\u2013T08 executed; risk remains REVIEW_REQUIRED"}, "M4": {"status": "BLOCKED", "detail": "-m exited 1; see M4.log"}, "M5": {"status": "BLOCKED", "detail": "Upstream M4 did not complete"}, "M6": {"status": "BLOCKED", "detail": "Upstream M4 did not complete"}}, "finished_at": "2026-11-14T01:52:58.752729+00:00"}
+E       assert 'BLOCKED' == 'COMPLETED_EXPLORATORY'
+E         
+E         - COMPLETED_EXPLORATORY
+E         + BLOCKED
+
+tests\test_unified.py:59: AssertionError</failure></testcase><testcase classname="tests.test_unified" name="test_missing_real_after_never_creates_results" time="0.046" /><testcase classname="tests.test_unified" name="test_missing_impact_keeps_other_integrations_and_reports_partial" time="2.455"><failure message="AssertionError: {'schema_version': '1.0', 'run_id': 'partial', 'created_at': '2026-11-14T01:52:58.821681+00:00', 'status': 'BLOCKED', ...}&#10;assert 'BLOCKED' == 'PARTIAL'&#10;  &#10;  - PARTIAL&#10;  + BLOCKED">tmp_path = WindowsPath('C:/Users/LOQ/AppData/Local/Temp/pytest-of-LOQ/pytest-1/test_missing_impact_keeps_othe0')
+
+    def test_missing_impact_keeps_other_integrations_and_reports_partial(tmp_path):
+        pair=pair_fixture(tmp_path/'pair')
+        out=tmp_path/'partial'
+        result=run({'pair_dir':str(pair),'exploratory':True,'min_pixels':1},out)
+&gt;       assert result['status']=='PARTIAL',result
+E       AssertionError: {'schema_version': '1.0', 'run_id': 'partial', 'created_at': '2026-11-14T01:52:58.821681+00:00', 'status': 'BLOCKED', ...}
+E       assert 'BLOCKED' == 'PARTIAL'
+E         
+E         - PARTIAL
+E         + BLOCKED
+
+tests\test_unified.py:81: AssertionError</failure></testcase><testcase classname="tests.test_unified" name="test_no_change_is_legitimate_not_fake_hazard" time="2.436"><failure message="AssertionError: {'schema_version': '1.0', 'run_id': 'out', 'created_at': '2026-11-14T01:53:01.280633+00:00', 'status': 'BLOCKED', ...}&#10;assert 'BLOCKED' == 'COMPLETED_EXPLORATORY'&#10;  &#10;  - COMPLETED_EXPLORATORY&#10;  + BLOCKED">tmp_path = WindowsPath('C:/Users/LOQ/AppData/Local/Temp/pytest-of-LOQ/pytest-1/test_no_change_is_legitimate_n0')
+
+    def test_no_change_is_legitimate_not_fake_hazard(tmp_path):
+        pair=pair_fixture(tmp_path/'pair',changed=False)
+        result=run({'pair_dir':str(pair),'exploratory':True},tmp_path/'out')
+&gt;       assert result['status']=='COMPLETED_EXPLORATORY',result
+E       AssertionError: {'schema_version': '1.0', 'run_id': 'out', 'created_at': '2026-11-14T01:53:01.280633+00:00', 'status': 'BLOCKED', ...}
+E       assert 'BLOCKED' == 'COMPLETED_EXPLORATORY'
+E         
+E         - COMPLETED_EXPLORATORY
+E         + BLOCKED
+
+tests\test_unified.py:88: AssertionError</failure></testcase><testcase classname="tests.test_unified" name="test_input_grid_mismatch_and_unapproved_warning_block" time="2.350" /><testcase classname="tests.test_unified" name="test_original_m5_api_auth_runs_files_and_verification" time="2.527"><failure message="AssertionError: {'schema_version': '1.0', 'run_id': '80e99ce4-872d-4ddd-bcab-4af62d1c9cde', 'created_at': '2026-11-14T01:53:06.097935+00:00', 'status': 'BLOCKED', ...}&#10;assert 'BLOCKED' == 'PARTIAL'&#10;  &#10;  - PARTIAL&#10;  + BLOCKED">tmp_path = WindowsPath('C:/Users/LOQ/AppData/Local/Temp/pytest-of-LOQ/pytest-1/test_original_m5_api_auth_runs0')
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x0000022BF89D48A0&gt;
+
+    def test_original_m5_api_auth_runs_files_and_verification(tmp_path,monkeypatch):
+        sys.path.insert(0,str(ROOT/'backend/src'))
+        from fastapi.testclient import TestClient
+        from spectra.core.config import get_settings
+        from spectra.main import create_app
+        key='software-test-secret-'+'x'*32
+        monkeypatch.setenv('INTERNAL_API_KEY',key)
+        monkeypatch.setenv('SPECTRA_RUNS_DIR',str(tmp_path/'runs'))
+        get_settings.cache_clear()
+        folder=tmp_path/'runs'/str(uuid.uuid4())
+        result=run({'pair_dir':str(pair_fixture(tmp_path/'pair')),'exploratory':True,'min_pixels':1},folder)
+&gt;       assert result['status']=='PARTIAL',result
+E       AssertionError: {'schema_version': '1.0', 'run_id': '80e99ce4-872d-4ddd-bcab-4af62d1c9cde', 'created_at': '2026-11-14T01:53:06.097935+00:00', 'status': 'BLOCKED', ...}
+E       assert 'BLOCKED' == 'PARTIAL'
+E         
+E         - PARTIAL
+E         + BLOCKED
+
+tests\test_unified.py:111: AssertionError</failure></testcase><testcase classname="tests.test_unified" name="test_no_overwrite" time="0.006" /><testcase classname="tests.test_unified" name="test_distributed_adapter_real_outputs_with_stubbed_infrastructure" time="5.894"><failure message="AssertionError: {'schema_version': '1.0', 'run_id': 'cca757fc-77d4-469f-ac7b-53ef6d8cc198', 'created_at': '2026-11-14T01:53:08.611644+00:00', 'status': 'BLOCKED', ...}&#10;assert 'BLOCKED' == 'COMPLETED_EXPLORATORY'&#10;  &#10;  - COMPLETED_EXPLORATORY&#10;  + BLOCKED">tmp_path = WindowsPath('C:/Users/LOQ/AppData/Local/Temp/pytest-of-LOQ/pytest-1/test_distributed_adapter_real_0')
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x0000022BF89D7620&gt;
+
+    def test_distributed_adapter_real_outputs_with_stubbed_infrastructure(tmp_path,monkeypatch):
+        """Actual science/artifact code; DB and S3 transports deliberately stubbed."""
+        sys.path.insert(0,str(ROOT/'backend/src'))
+        from types import SimpleNamespace
+        from spectra.persistence.models import ScenePair,SarScene,Artifact,ChangeResult,ImpactAssessment
+        import spectra.storage.storage_service as storage
+        from phase1.distributed import handle
+        pair_input=pair_fixture(tmp_path/'pair')
+        impact=impact_fixture(tmp_path/'geo')
+        job_id,project_id,pair_id,before_id,after_id=[uuid.uuid4() for _ in range(5)]
+        folder=tmp_path/'runs'/str(job_id)
+        result=run({'pair_dir':str(pair_input),'exploratory':True,'impact':impact,'min_pixels':1},folder)
+&gt;       assert result['status']=='COMPLETED_EXPLORATORY',result
+E       AssertionError: {'schema_version': '1.0', 'run_id': 'cca757fc-77d4-469f-ac7b-53ef6d8cc198', 'created_at': '2026-11-14T01:53:08.611644+00:00', 'status': 'BLOCKED', ...}
+E       assert 'BLOCKED' == 'COMPLETED_EXPLORATORY'
+E         
+E         - COMPLETED_EXPLORATORY
+E         + BLOCKED
+
+tests\test_unified.py:140: AssertionError</failure></testcase></testsuite></testsuites>

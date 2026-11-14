@@ -1,0 +1,14 @@
+{
+  "python": "3.12.14",
+  "platform": "Linux",
+  "phase1_passed": 373,
+  "phase1_skipped": 3,
+  "phase2_passed": 26,
+  "phase2_skipped": 0,
+  "live_http_artifacts_verified": 54,
+  "scientific_approval": false,
+  "docker": "NOT_RUN",
+  "hosted_ci": "NOT_RUN",
+  "browser_rendering": "NOT_VERIFIED",
+  "dependency_constraints": "constraints-tested.txt"
+}
